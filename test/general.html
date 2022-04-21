@@ -31,7 +31,12 @@
 	<body>
 		<h1 class = "header">headyHeader</h1>
 		
-        <button class="btn-toggle">night mode possible? idk</button>
+        <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
+		<span aria-hidden="true" class="dark-toggle">
+			<span class="DTspan"></span>
+		</span>
+		</button>
+		
 		<br>
 		<label>What language do you speak?
 			<select class="lang">
@@ -47,32 +52,6 @@
 		<hr class="solid"> <!-- text after this for footer -->
 		<a class="footer" href="/index.html">return to homepage</a>
 
-	<script>
-		const btn = document.querySelector(".btn-toggle");
-		const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-
-		const currentTheme = localStorage.getItem("theme");
-		if (currentTheme == "dark") {
-		  document.body.classList.toggle("dark-theme");
-		} else if (currentTheme == "light") {
-		  document.body.classList.toggle("light-theme");
-		}
-
-		btn.addEventListener("click", function () {
-		  if (prefersDarkScheme.matches) {
-			document.body.classList.toggle("light-theme");
-			var theme = document.body.classList.contains("light-theme")
-			  ? "light"
-			  : "dark";
-		  } else {
-			document.body.classList.toggle("dark-theme");
-			var theme = document.body.classList.contains("dark-theme")
-			  ? "dark"
-			  : "light";
-		  }
-		  localStorage.setItem("theme", theme);
-		});alStorage.setItem("theme", theme);
-	});
-	</script>
+	<script src="/js/dark.js"></script>
 	</body>
 </html>
