@@ -3,8 +3,9 @@
 	<meta charset="UTF-8">
 	<title>TITLEEEEEEEEEEEEEEEEEEEEEEE</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="stylesheet"  type="text/css" href="/css-styles/general.css">
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link href="/css-styles/light-theme.css" rel="stylesheet" id="theme-link">
+	
 	
 	<style>
 	</style>
@@ -41,13 +42,13 @@
 	// Listen for a click on the button
 	btn.addEventListener("click", function() {
 	  // If the current URL contains "ligh-theme.css"
-	  if (theme.getAttribute("href") == "light-theme.css") {
+	  if (theme.getAttribute("href") == "/css-styles/light-theme.css") {
 		// ... then switch it to "dark-theme.css"
-		theme.href = "dark-theme.css";
+		theme.href = "/css-styles/dark-theme.css";
 	  // Otherwise...
 	  } else {
 		// ... switch it to "light-theme.css"
-		theme.href = "light-theme.css";
+		theme.href = "/css-styles/light-theme.css";
 	  }
 	});
 	
