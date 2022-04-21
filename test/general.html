@@ -4,17 +4,24 @@
 	<title>TITLEEEEEEEEEEEEEEEEEEEEEEE</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-	<link href="/css-styles/light-theme.css" rel="stylesheet" id="theme-link">
+	<link href="/css-styles/general.css" rel="stylesheet" id="theme-link">
 	
 	
 	<style>
+	body.dark-theme {
+	background: rgb(255, 0, 0);
+	}
+
+	body.light-theme {
+		background: rgb(255, 255, 255)
+	}
 	</style>
 	
 
 	<body>
 		<h1 class = "header">headyHeader</h1>
 		
-        <button class="night" type="button">night mode possible? idk</button>
+        <button class="btn-toggle" type="button">night mode possible? idk</button>
 		
 		<br>
 		<label>What language do you speak?
@@ -32,27 +39,8 @@
 		<a class="footer" href="/index.html">return to homepage</a>
 
 	<script>
-	
 		// Select the button
-		const btn = document.querySelector(".night");
-		// Select the stylesheet <link>
-		const theme = document.querySelector("#theme-link");
-
-		// Listen for a click on the button
-		btn.addEventListener("click", function() {
-		  // If the current URL contains "ligh-theme.css"
-		  if (theme.getAttribute("href") == "/css-styles/light-theme.css") {
-			// ... then switch it to "dark-theme.css"
-			theme.href = "/css-styles/dark-theme.css";
-		  // Otherwise...
-		  } else {
-			// ... switch it to "light-theme.css"
-			theme.href = "/css-styles/light-theme.css";
-		  }
-		});
-		
-		
-		const btn = document.querySelector(".night");
+		const btn = document.querySelector(".btn-toggle");
 		// Check for dark mode preference at the OS level
 		const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 		 
@@ -67,7 +55,7 @@
 		  // ...let's toggle the .light-theme class on the body
 		  document.body.classList.toggle("light-mode");
 		}
-		 
+		 	
 		// Listen for a click on the button 
 		btn.addEventListener("click", function() {
 		  // If the user's OS setting is dark and matches our .dark-mode class...
