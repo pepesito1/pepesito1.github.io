@@ -1,0 +1,21 @@
+:root {
+	--background-color: rgb(255, 0, 0);
+	font-style:bold;
+	--text-color: white;
+}
+
+[data-theme="dark"] {
+  --background-color: (180, 22, 240);
+  --text-color: #fff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+
+.solid{
+	background-color: rgb(146, 127, 191);
+	margin:1.5%;
+} 
