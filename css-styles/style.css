@@ -1,24 +1,37 @@
- :root {
+/*background color changes the entire background, page-wide
+inner body only changes the entire text content background */
+
+:root {
 	--background-color: rgb(255, 0, 0);
 	--header-background:rgb(0,0,255);
-	--text-color: white;
+	--text-color: black;
 }
 
 [data-theme="dark"] {
-  --background-color: rgb(180, 22, 240);
-  --header-background:rgb(0,255,0);
-  --text-color: black;
+	--background-color: rgb(47,79,79);
+	--header-background: rgb(95,96,133);
+	--inner-body: rgb(64,64,64);
+	--text-color: white;
 }
 
 .header{
 	background-color: var(--header-background);
 }
 
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
+body{
+	background-color:var(--background-color);
+}
+
+.entireBody{
+	background-color: var(--inner-body);
+	color: var(--text-color);	
+}
+
+.header{
+	background-color: var(--header-background);
 }
 
 .solid{
 	background-color: rgb(146, 127, 191);
 	margin:1.5%;
+}
