@@ -6,14 +6,14 @@ inner body only changes the entire text content background */
 	--background-color: rgb(47,79,79);
 	--header-background: rgb(227, 227, 227);
     --inner-body: rgb(220,220,220);
-	--text-color: black;
+	--text-color: white;
 }
 
 [data-theme="dark"] {
-	--background-color: rgb(47,79,79);
-	--header-background: rgb(95,96,133);
-	--inner-body: rgb(64,64,64);
-	--text-color: white;
+	--background-color: rgb(47, 79, 79);
+	--header-background: rgb(95, 96, 133);
+	--inner-body: rgb(64, 64, 64);
+	--text-color: black;
 }
 
 body{
