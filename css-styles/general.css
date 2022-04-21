@@ -2,12 +2,13 @@ body {
 	background: rgb(14, 36, 45)
 }
 
-p{
+p {
 	background-color: rgb(28, 60, 65);
 }
 
 .header {
     background-color: rgb(36, 59, 77);
+	padding:10% 25%;
 }
 
 .footer {
