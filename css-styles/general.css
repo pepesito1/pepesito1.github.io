@@ -1,25 +1,25 @@
 body {
-	background: rgb(14, 36, 45);
-	color:rgb(13, 91, 64);
+	background: rgb(54, 59, 78);
+	color:rgb(196, 187, 240);
 }
 
 p {
-	background-color: rgb(255,255,255);
+	background-color: rgb(54, 59, 78);
 	font-style:bold;
 	padding: 5%;
 }
 
 .header {
-    background-color: rgb(36, 59, 77);
+    background-color: rgb(146, 127, 191);
 	padding:1% 2%;
 }
 
 .footer {
-    background-color: rgb(36, 59, 77);
+    background-color: rgb(54, 59, 78);
 	padding:1% 2%;
 }
 
 .entireBody{
+	background-color: rgb(79, 59, 120);
 	margin:3%;
-	color:rgb(255,255,0);
 }
