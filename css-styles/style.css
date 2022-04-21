@@ -1,19 +1,24 @@
 :root {
-	--background-color: rgb(255, 0, 0);
 	font-style:bold;
+	--background-color: rgb(255, 0, 0);
+	--header-background:rgb(0,0,255);
 	--text-color: white;
 }
 
 [data-theme="dark"] {
-  --background-color: (180, 22, 240);
-  --text-color: #fff;
+  --background-color: rgb(180, 22, 240);
+  --header-background:rgb(0,255,0);
+  --text-color: black;
+}
+
+.header{
+	background-color: var(--header-background);
 }
 
 body {
   background-color: var(--background-color);
   color: var(--text-color);
 }
-
 
 .solid{
 	background-color: rgb(146, 127, 191);
