@@ -5,18 +5,19 @@ inner body only changes the entire text content background */
 	font-style:bold;
 	--background-color: rgb(47,79,79);
 	--header-background: rgb(0,0,255);
-    --inner-body: rgb(169,169,169);
+    --inner-body: rgb(220,220,220);
 	--text-color: white;
 }
 
 [data-theme="dark"] {
-	--background-color: rgb(47,79,79);
-	--header-background: rgb(0,255,0);
-	--inner-body: rgb(112,128,144);
+	--background-color: rgb(47, 79, 79);
+	--header-background: rgb(0, 255, 0);
+	--inner-body: rgb(64, 64, 64);
 	--text-color: black;
 }
 
 body{
+	background-color:var(--background-color);
 }
 
 .entireBody{
