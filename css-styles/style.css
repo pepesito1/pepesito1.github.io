@@ -2,6 +2,7 @@
 inner body only changes the entire text content background */
 
 :root {
+	font-style:bold;
 	--background-color: rgb(47,79,79);
 	--header-background: rgb(227, 227, 227);
     --inner-body: rgb(220,220,220);
