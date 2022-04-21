@@ -4,38 +4,38 @@
 	<title>TITLEEEEEEEEEEEEEEEEEEEEEEE</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-	<link href="/css-styles/dark.css" rel="stylesheet">
+	<link href="/css-styles/general.css" rel="stylesheet">
+	<script type="text/javascript">
+	  // Wait for document to load
+	    document.addEventListener("DOMContentLoaded", function(event) {
+		document.documentElement.setAttribute("data-theme", "light");
+
+		// Get our button switcher
+		var themeSwitcher = document.getElementById("theme-switcher");
+
+		// When our button gets clicked
+		themeSwitcher.onclick = function() {
+		// Get the current selected theme, on the first run
+		// it should be `light`
+		var currentTheme = document.documentElement.getAttribute("data-theme");
+
+		// Switch between `dark` and `light`
+		var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+
+		// Set our currenet theme to the new one
+		document.documentElement.setAttribute("data-theme", switchToTheme);
+		}
+	  });
+	</script>
 	
 	<style>
-	body {
-		background: rgb(255, 255, 255);
-		color:rgb(0, 0 ,0);
-	}
-	body.dark-theme {
-		background: rgb(255, 0, 0);
-		color:rgb(0,255,0);
-	}
-	
-	@media (prefers-color-scheme: dark) {
-	  /* defaults to dark theme */
-	  body {
-		background: rgb(255, 255, 0);
-	  }
-	  body.light-theme {
-		background: rgb(255, 255, 255)
-	  }
-	}
 	</style>
 	
 
 	<body>
 		<h1 class = "header">headyHeader</h1>
 		
-        <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
-			<span aria-hidden="true" class="dark-toggle">
-				<span class="DTspan"></span>
-			</span>
-		</button>
+	<button id="theme-switcher">Switch themes!</button>
 		
 		<br>
 		<label>What language do you speak?
@@ -52,6 +52,10 @@
 		<hr class="solid"> <!-- text after this for footer -->
 		<a class="footer" href="/index.html">return to homepage</a>
 
-	<script src="/js/dark.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function(event) {
+		document.documentElement.setAttribute("data-theme", "dark");
+	  });
+	</script>
 	</body>
 </html>
