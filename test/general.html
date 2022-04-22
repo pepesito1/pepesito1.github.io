@@ -30,9 +30,9 @@
 	<a class="footer" href="/index.html">return to homepage</a>
 
 	<script>
-	  // Wait for document to load
+	    // Wait for document to load
 	    document.addEventListener("DOMContentLoaded", function(event) {
-		// sessionStorage.setItem("data-theme", "light");
+		// ZZZZZZZZZZZZZZZZZZZZZ sessionStorage.setItem("data-theme", "light");
 		document.documentElement.setAttribute("data-theme", "light");
 
 		// Get our button switcher
@@ -43,15 +43,15 @@
 		// Get the current selected theme, on the first run
 		// it should be `light`
 		
-		//var currentTheme = sessionStorage.getItem("data-theme");
+		// ZZZZZZZZZZZZZZZZZZZZZ var currentTheme = sessionStorage.getItem("data-theme");
 		var currentTheme = document.documentElement.getAttribute("data-theme");
 		
 		// Switch between `dark` and `light`
 		var switchToTheme = currentTheme === "dark" ? "light" : "dark"
 		
-		// ZZZ sessionStorage.setItem("data-theme", "currentTheme");
+		// ZZZZZZZZZZZZZZZZZZZZZZZZ sessionStorage.setItem("data-theme", "currentTheme");
 
-		// Set our currenet theme to the new one
+		// Set our current theme to the new one
 		document.documentElement.setAttribute("data-theme", switchToTheme);
 		}
 	  });
