@@ -15,13 +15,13 @@ inner body only changes the entire text content background */
 	--text-color: white;
 }
 
-.header{
+#header{
 	margin:2%;
 	padding:2%;
 	background-color: var(--header-background);
 }
 
-.footer{
+#footer{
 	margin:2%;
 	padding:2%;
 }
