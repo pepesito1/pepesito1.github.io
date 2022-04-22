@@ -9,32 +9,49 @@
 	<style>
 	</style>
 	
-<body>
-<div class="entireBody">
-	<h1 class = "header">headyHeader</h1>
+	<body>
+	<div class="entireBody">
+		<h1 class = "header">headyHeader</h1>
+			
+		<button id="theme-switcher">Switch themes!</button>
+		<br>
 		
-	<button id="theme-switcher">Switch themes!</button>
-	<br>
-	
-	<label>in what language do you want the page?
-		<select class="lang">
-			<option value="en">original</option>
-			<option value="es">spanish</option>
-			<option value="original">english</option>
-			<option value="secret">club penguin PSA/EPF code</option>
-		</select>
-	</label>
-	
-	<hr class="solid"> <!-- text before this for header, after for content -->
-	<p>this is <br> solid af <br> content bro in english</p>
-	<p>en español</p>	
-	<p>en original</p>
-	<p>in secret code</p>
-	
-	<hr class="solid"> <!-- text after this for footer -->
-	<a class="footer" href="/index.html">return to homepage</a>
+		<label>in what language do you want the page?
+			<select class="lang">
+				<option value="original">original</option>
+				<option value="es">spanish</option>
+				<option value="en">english</option>
+				<option value="secret">club penguin PSA/EPF code</option>
+			</select>
+		</label> <br>
+		<button id="language-switcher">Switch language!</button>
+		
+		<hr class="solid"> <!-- text before this for header, after for content -->
+		<div class="mainBodyContent"></div> <!-- will add .content to this -->
+		
+		<hr class="solid"> <!-- text after this for footer -->
+		<a class="footer" href="/index.html">return to homepage</a>
 
-	</div>
-	<script src="/js/darkbutton.js"></script>
-</body>
+		</div>
+		<script src="/js/darkbutton.js"></script>
+		<script>
+		var langSwitcher = document.getElementById("language-switcher");
+		var onLangSwitch = function() {
+			var lang = document.getElementById("lang").value;
+			var content;
+			if (lang === "original") {
+				content = "this is og language";
+			} else if (lang === "es") {
+				content = "spanis language";
+			} else if (lang === "en") {
+			content = "english content";
+			} else {
+				content = "spy code";
+			}
+			document.getElementById("message").textContent = content;  
+		  };
+		  
+		langSwitcher.addEventListener("click", onLangSwitch);
+		</script>
+	</body>
 </html>
