@@ -1,6 +1,3 @@
-var contentOg ="<em> hello </em>";
-var contentEn = "<i> english content </i>"
-var contentEs = "español"
 var langSwitcher = document.getElementById("languageSwitcher");
 var onLangSwitch = function() {
 	var lang = document.getElementById("lang").value;

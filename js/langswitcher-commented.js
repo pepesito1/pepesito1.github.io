@@ -1,8 +1,4 @@
-		var contentOg ="<em> hello </em>";
-		var contentEn = "<i> english content </i>"
-		var contentEs = "español"
-		
-		var langSwitcher = document.getElementById("languageSwitcher"); //fetch the button, store it on langSwitcher
+var langSwitcher = document.getElementById("languageSwitcher"); //fetch the button, store it on langSwitcher
 		
 		var onLangSwitch = function() {
 			var lang = document.getElementById("lang").value; //get whatever was chosen in the label option select thing
