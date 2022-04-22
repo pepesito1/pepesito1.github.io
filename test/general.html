@@ -40,8 +40,10 @@
 			var lang = document.getElementById("lang").value; //get whatever was chosen in the label option select thing
 			var translatedBody; //here we will store the body content
 			var fontFont; //here we will store the font
+			var bodyOgandEn; //body to use for original and spy code languages
 			if (lang === "original") {
-				translatedBody = "this is og language";
+				translatedBody = bodyOgandEn;
+				bodyOgandEn;"this is og language";
 				fontSizey = "100" //fontSizey is in percentage
 				} else if (lang === "es") {
 				translatedBody = "spanis language";
@@ -50,7 +52,7 @@
 				translatedBody = "english content";
 				fontSizey = "100"
 			} else if (lang ==="secret"){ //sets the fontFont to the secretFont file, sets the fontSizey to 180
-				translatedBody = "spy code";
+				translatedBody = bodyOgandEn;
 				fontFont = "secretFont";
 				fontSizey = "180"
 			}
