@@ -48,12 +48,12 @@
 				translatedBody = "english content";
 			} else if (lang ==="secret"){
 				translatedBody = "spy code";
-				fontFont = "secretFont"
-				fontSizey = "secretFontSize"
+				fontFont = "secretFont";
+				fontSizey = "180"
 			}
 			document.getElementById("mainBodyContent").textContent = translatedBody;
 			document.getElementById("mainBodyContent").style.fontFamily = fontFont;
-			document.getElementById("mainBodyContent").style.fontSize = fontSizey;
+			document.getElementById("mainBodyContent").style.fontSize = parseInt(fontSizey) + "%";
 		  };
 		  
 		langSwitcher.addEventListener("click", onLangSwitch);
