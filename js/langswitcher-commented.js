@@ -6,6 +6,7 @@ var langSwitcher = document.getElementById("languageSwitcher"); //fetch the butt
 			var bodyOgandEn; //body to use for original and spy code languages
 			var fontFont; //here we will store the font
 			
+			document.getElementById("mainBodyContent").innerHTML = contentOg; //displays contentOg by default
 			if (lang === "original") {
                 document.getElementById("mainBodyContent").innerHTML = contentOg; //sets the mainBodyContent content t o whatever was in contentOG, same for the rest
 				fontSizey = "100" //fontSizey is in percentage
