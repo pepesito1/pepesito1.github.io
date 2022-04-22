@@ -62,8 +62,7 @@
 				fontFont = "secretFont";
 				fontSizey = "180"
 			}
-			document.getElementById("mainBodyContent").textContent = translatedBody;
-			document.getElementById("mainBodyContent").style.fontFamily = fontFont;
+			document.getElementById("mainBodyContent").style.fontFamily = fontFont; //sets the font to each respective font
 			document.getElementById("mainBodyContent").style.fontSize = parseInt(fontSizey) + "%"; //here it turns fontSizey to an integer, makes it a percentage
 		  };
 		langSwitcher.addEventListener("click", onLangSwitch);
