@@ -1,6 +1,11 @@
 /*background color changes the entire background, page-wide
 inner body only changes the entire text content background */
 
+@font-face {
+  font-family: secretFont;
+  src: url(/fonts/secretfont.ttf);
+}
+
 :root {
 	--background-color: rgb(47,79,79);
 	--header-background:rgb(95,96,133);

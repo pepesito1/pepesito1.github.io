@@ -39,16 +39,19 @@
 		var onLangSwitch = function() {
 			var lang = document.getElementById("lang").value; //get whatever was chosen in the label option select thing
 			var translatedBody; //here we will store the body content
+			var fontFont; //here we will store the font
 			if (lang === "original") {
 				translatedBody = "this is og language";
 			} else if (lang === "es") {
 				translatedBody = "spanis language";
 			} else if (lang === "en") {
-				content = "english content";
+				translatedBody = "english content";
 			} else if (lang ==="secret"){
-				content = "spy code";
+				translatedBody = "spy code";
+				fontFont = "secretFont"
 			}
-			document.getElementById("mainBodyContent").textContent = translatedBody;  
+			document.getElementById("mainBodyContent").textContent = translatedBody;
+			document.getElementById("mainBodyContent").style.fontFamily = fontFont;
 		  };
 		  
 		langSwitcher.addEventListener("click", onLangSwitch);
