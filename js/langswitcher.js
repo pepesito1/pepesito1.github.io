@@ -18,7 +18,7 @@ var langSwitcher = document.getElementById("languageSwitcher"); //fetch the butt
 			} else if (lang === "en") {
 				document.getElementById("mainBodyContent").innerHTML = contentEn;
 				fontSizey = "100";
-				localStorage.setItem("contentLang", "contentEn"; //sets the contentLang to the current language
+				localStorage.setItem("contentLang", "contentEn"); //sets the contentLang to the current language
 			} else if (lang ==="secret"){ //sets the fontFont to the secretFont file, sets the fontSizey to 180
 			    document.getElementById("mainBodyContent").innerHTML = contentOg;
 				fontFont = "secretFont";
