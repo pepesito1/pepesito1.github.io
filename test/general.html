@@ -25,6 +25,7 @@
 	</label>
 	<hr class="solid"> <!-- text before this for header, after for content -->
 	<p>this is <br> solid af <br> content bro</p>
+	
 	<hr class="solid"> <!-- text after this for footer -->
 	<a class="footer" href="/index.html">return to homepage</a>
 
@@ -40,8 +41,11 @@
 		themeSwitcher.onclick = function() {
 		// Get the current selected theme, on the first run
 		// it should be `light`
+		currentTheme = sessionStorage.getItem("data-theme");
+		if (currentTheme == "null"){
 		var currentTheme = document.documentElement.getAttribute("data-theme");
-
+		}
+		
 		// Switch between `dark` and `light`
 		var switchToTheme = currentTheme === "dark" ? "light" : "dark"
 		sessionStorage.setItem("data-theme", "currentTheme");

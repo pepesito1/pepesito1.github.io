@@ -16,11 +16,20 @@ inner body only changes the entire text content background */
 }
 
 .header{
+	margin:2%;
+	padding:2%;
 	background-color: var(--header-background);
+}
+
+.footer{
+	margin:2%;
+	padding:2%;
 }
 
 body{
 	background-color:var(--background-color);
+	margin:2%;
+	padding:2%;
 }
 
 .entireBody{
@@ -28,10 +37,6 @@ body{
 	padding:2%;
 	background-color: var(--inner-body);
 	color: var(--text-color);	
-}
-
-.header{
-	background-color: var(--header-background);
 }
 
 .solid{
