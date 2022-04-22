@@ -1,6 +1,6 @@
 var langSwitcher = document.getElementById("languageSwitcher"); //fetch the button, store it on langSwitcher
 		var onLangSwitch = function() {
-			var lang = localStorage.getItem("contentLang")??'original'; //gets the contentLang from localStorage, if it doesnt exist its contentOg, renders the page with that
+			var lang = localStorage.getItem("contentLang")??'contentOg'; //gets the contentLang from localStorage, if it doesnt exist its contentOg, renders the page with that
 			
 			var bodyOgandEn; //body to use for original and spy code languages
 			var fontFont; //here we will store the font
@@ -27,3 +27,4 @@ var langSwitcher = document.getElementById("languageSwitcher"); //fetch the butt
 			document.getElementById("mainBodyContent").style.fontFamily = fontFont; //sets the font to each respective font
 			document.getElementById("mainBodyContent").style.fontSize = parseInt(fontSizey) + "%"; //here it turns fontSizey to an integer, makes it a percentage
 langSwitcher.addEventListener("click", onLangSwitch);
+		}
