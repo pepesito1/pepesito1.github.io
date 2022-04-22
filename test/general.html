@@ -51,7 +51,7 @@
 				var switchToTheme = currentTheme === "dark" ? "light" : "dark";
 				
 				//store in the localStorage whatever the data-theme's value is (the currentTheme)			
-				localStorage.setItem("data-theme", currentTheme);
+				localStorage.setItem("data-theme", switchToTheme);
 				// Set our current theme to the new one
 				document.documentElement.setAttribute("data-theme", switchToTheme);
 			}
