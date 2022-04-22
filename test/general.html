@@ -38,12 +38,13 @@
 		
 		// if it doesnt exist (which is null, i think) then it sets the data-theme value to light
 		if string(sessionVariable) == "null"{
-			document.documentElement.setAttribute("data-theme", "light");
-			
+			document.documentElement.setAttribute("data-theme", "light");	
 		// if it does exist, which means data-theme is either dark or light, then it sets it to that
 		} else{
 		document.documentElement.setAttribute("data-theme", string(sessionVariable))
 		}
+		
+		document.documentElement.setAttribute("data-theme", string(sessionVariable))
 
 		// Get our button switcher
 		var themeSwitcher = document.getElementById("theme-switcher");
