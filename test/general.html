@@ -32,7 +32,6 @@
 	<script>
 	    // Wait for document to load
 	    document.addEventListener("DOMContentLoaded", function(event) {
-		// ZZZZZZZZZZZZZZZZZZZZZ sessionStorage.setItem("data-theme", "light");
 		document.documentElement.setAttribute("data-theme", "light");
 
 		// Get our button switcher
@@ -40,16 +39,14 @@
 
 		// When our button gets clicked
 		themeSwitcher.onclick = function() {
-		// Get the current selected theme, on the first run
-		// it should be `light`
 		
-		// ZZZZZZZZZZZZZZZZZZZZZ var currentTheme = sessionStorage.getItem("data-theme");
+		// Get the current selected theme, on the first run  it should be `light`
 		var currentTheme = document.documentElement.getAttribute("data-theme");
 		
 		// Switch between `dark` and `light`
-		var switchToTheme = currentTheme === "dark" ? "light" : "dark"
-		
-		// ZZZZZZZZZZZZZZZZZZZZZZZZ sessionStorage.setItem("data-theme", "currentTheme");
+		var switchToTheme = currentTheme === "dark" ? "light" : "dark";
+		sessionStorage.setItem("data-theme", "currentTheme");
+		sessionStorage.getItem("data-theme");
 
 		// Set our current theme to the new one
 		document.documentElement.setAttribute("data-theme", switchToTheme);
