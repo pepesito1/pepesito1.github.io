@@ -42,18 +42,21 @@
 			var fontFont; //here we will store the font
 			if (lang === "original") {
 				translatedBody = "this is og language";
-			} else if (lang === "es") {
+				fontSizey = "100" //fontSizey is in percentage
+				} else if (lang === "es") {
 				translatedBody = "spanis language";
+				fontSizey= "100"
 			} else if (lang === "en") {
 				translatedBody = "english content";
-			} else if (lang ==="secret"){
+				fontSizey = "100"
+			} else if (lang ==="secret"){ //sets the fontFont to the secretFont file, sets the fontSizey to 180
 				translatedBody = "spy code";
 				fontFont = "secretFont";
 				fontSizey = "180"
 			}
 			document.getElementById("mainBodyContent").textContent = translatedBody;
 			document.getElementById("mainBodyContent").style.fontFamily = fontFont;
-			document.getElementById("mainBodyContent").style.fontSize = parseInt(fontSizey) + "%";
+			document.getElementById("mainBodyContent").style.fontSize = parseInt(fontSizey) + "%"; //here it turns fontSizey to an integer, makes it a percentage
 		  };
 		  
 		langSwitcher.addEventListener("click", onLangSwitch);
