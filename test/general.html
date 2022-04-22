@@ -44,6 +44,7 @@
 
 		// Switch between `dark` and `light`
 		var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+		sessionStorage.setItem("data-theme", "currentTheme");
 
 		// Set our currenet theme to the new one
 		document.documentElement.setAttribute("data-theme", switchToTheme);
