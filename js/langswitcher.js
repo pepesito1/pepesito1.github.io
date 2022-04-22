@@ -1,8 +1,7 @@
 var langSwitcher = document.getElementById("languageSwitcher"); //fetch the button, store it on langSwitcher
 		var onLangSwitch = function() {
 			var lang = localStorage.getItem("contentLang")??'contentOg'; //gets the contentLang from localStorage, if it doesnt exist its contentOg, renders the page with that
-			
-			var bodyOgandEn; //body to use for original and spy code languages
+
 			var fontFont; //here we will store the font
 			
 			document.getElementById("mainBodyContent").innerHTML = contentLang; //displays contentOg by default, once a contentLang has been stored it will use that
@@ -10,15 +9,15 @@ var langSwitcher = document.getElementById("languageSwitcher"); //fetch the butt
                 document.getElementById("mainBodyContent").innerHTML = contentOg; //sets the mainBodyContent content t o whatever was in contentOG, same for the rest
 				fontSizey = "100" //fontSizey is in percentage	
 				localStorage.setItem("contentLang", 'contentOg'); //sets the contentLang to the current language
-			} else if (lang === 'es') {
+			} else if (lang === 'contentEs') {
 				document.getElementById("mainBodyContent").innerHTML = contentEs;
 				fontSizey= "100";
 				localStorage.setItem("contentLang", 'contentEs'); //sets the contentLang to the current language
-			} else if (lang === "en") {
+			} else if (lang === "contentEn") {
 				document.getElementById("mainBodyContent").innerHTML = contentEn;
 				fontSizey = "100";
 				localStorage.setItem("contentLang", 'contentEn'); //sets the contentLang to the current language
-			} else if (lang ==="secret"){ //sets the fontFont to the secretFont file, sets the fontSizey to 180
+			} else if (lang ==="contentOg"){ //sets the fontFont to the secretFont file, sets the fontSizey to 180
 			    document.getElementById("mainBodyContent").innerHTML = contentOg;
 				fontFont = "secretFont";
 				fontSizey = "180";
