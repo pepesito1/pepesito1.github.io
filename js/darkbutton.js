@@ -1,5 +1,5 @@
 		// Wait for document to load
-		document.addEventListener("DOMContentLoaded", function(event) {
+		// document.addEventListener("DOMContentLoaded", function(event) {
 			//store in a variable whatever the data-theme is in the localStorage, if it doesnt exist, then it gets set to "light"
 			var localVariable = localStorage.getItem("data-theme")??'light';
 				
