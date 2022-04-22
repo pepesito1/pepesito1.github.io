@@ -49,9 +49,11 @@
 			} else if (lang ==="secret"){
 				translatedBody = "spy code";
 				fontFont = "secretFont"
+				fontSizey = "secretFontSize"
 			}
 			document.getElementById("mainBodyContent").textContent = translatedBody;
 			document.getElementById("mainBodyContent").style.fontFamily = fontFont;
+			document.getElementById("mainBodyContent").style.fontSize = fontSizey;
 		  };
 		  
 		langSwitcher.addEventListener("click", onLangSwitch);
