@@ -33,33 +33,25 @@
 	    // Wait for document to load
 	    document.addEventListener("DOMContentLoaded", function(event) {
 		
-		//store in a variable whatever the data-theme is in the sessionStorage
+		//store in a variable whatever the data-theme is in the sessionStorage, if it doesnt exist, then it gets set to "light"
 		var sessionVariable = sessionStorage.getItem("data-theme")??'light';
 		
-		/*// if it doesnt exist (which is null, i think) then it sets the data-theme value to light
-		if(sessionVariable === null)
-			document.documentElement.setAttribute("data-theme", "light");	
-		// if it does exist, which means data-theme is either dark or light, then it sets it to that
-		} else{
+		//sets the page attribute to be either dark or light
 		document.documentElement.setAttribute("data-theme", sessionVariable)
-		} */
-		document.documentElement.setAttribute("data-theme", sessionVariable) //THIS IS THE LINE THAT WORKS, I WOULD LIKE TO REMOVE IT FOR THE COMMENTED OUT CODE ABOVE
-
+		
 		// Get our button switcher
 		var themeSwitcher = document.getElementById("theme-switcher");
-
 		// When our button gets clicked
 		themeSwitcher.onclick = function() {
-		
-		// Get the current selected theme, on the first run  it should be `light`
-		var currentTheme = document.documentElement.getAttribute("data-theme");
-		
-		// Switch between `dark` and `light`
-		var switchToTheme = currentTheme === "dark" ? "light" : "dark";
-		
-		sessionStorage.setItem("data-theme", currentTheme); //store in the sessionStorage whatever the data-theme's value is (the currentTheme)
-		// Set our current theme to the new one
-		document.documentElement.setAttribute("data-theme", switchToTheme);
+			// Get the current selected theme, on the first run  it should be `light`
+			var currentTheme = document.documentElement.getAttribute("data-theme");
+			
+			// Switch between `dark` and `light`
+			var switchToTheme = currentTheme === "dark" ? "light" : "dark";
+			
+			sessionStorage.setItem("data-theme", currentTheme); //store in the sessionStorage whatever the data-theme's value is (the currentTheme)
+			// Set our current theme to the new one
+			document.documentElement.setAttribute("data-theme", switchToTheme);
 		}
 	  });
 	</script>
