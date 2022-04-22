@@ -26,4 +26,4 @@ var langSwitcher = document.getElementById("languageSwitcher"); //fetch the butt
 			document.getElementById("mainBodyContent").style.fontFamily = fontFont; //sets the font to each respective font
 			document.getElementById("mainBodyContent").style.fontSize = parseInt(fontSizey) + "%"; //here it turns fontSizey to an integer, makes it a percentage
 langSwitcher.addEventListener("click", onLangSwitch);
-		}
+		
