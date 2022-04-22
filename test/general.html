@@ -32,7 +32,8 @@
 	<script>
 	    // Wait for document to load
 	    document.addEventListener("DOMContentLoaded", function(event) {
-		document.documentElement.setAttribute("data-theme", "light");
+		var sessionVariable = sessionStorage.getItem("data-theme");
+		document.documentElement.setAttribute("data-theme", string(sessionVariable));
 
 		// Get our button switcher
 		var themeSwitcher = document.getElementById("theme-switcher");
