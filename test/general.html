@@ -34,16 +34,16 @@
 	    document.addEventListener("DOMContentLoaded", function(event) {
 		
 		//store in a variable whatever the data-theme is in the sessionStorage
-		var sessionVariable = sessionStorage.getItem("data-theme");
+		var sessionVariable = sessionStorage.getItem("data-theme")??'light';
 		
-		// if it doesnt exist (which is null, i think) then it sets the data-theme value to light
+		/*// if it doesnt exist (which is null, i think) then it sets the data-theme value to light
 		if(sessionVariable === null)
 			document.documentElement.setAttribute("data-theme", "light");	
 		// if it does exist, which means data-theme is either dark or light, then it sets it to that
 		} else{
 		document.documentElement.setAttribute("data-theme", sessionVariable)
-		}
-		// document.documentElement.setAttribute("data-theme", "light") //THIS IS THE LINE THAT WORKS, I WOULD LIKE TO REMOVE IT FOR THE COMMENTED OUT CODE ABOVE
+		} */
+		document.documentElement.setAttribute("data-theme", "light") //THIS IS THE LINE THAT WORKS, I WOULD LIKE TO REMOVE IT FOR THE COMMENTED OUT CODE ABOVE
 
 		// Get our button switcher
 		var themeSwitcher = document.getElementById("theme-switcher");
