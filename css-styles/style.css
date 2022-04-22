@@ -25,6 +25,7 @@ body{
 
 .entireBody{
 	margin:5%;
+	padding:2%;
 	background-color: var(--inner-body);
 	color: var(--text-color);	
 }
