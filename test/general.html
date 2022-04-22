@@ -24,10 +24,10 @@
 				<option value="secret">club penguin PSA/EPF code</option>
 			</select>
 		</label> <br>
-		<button id="language-switcher">Switch language!</button>
+		<button id="languageSwitcher">Switch language!</button>
 		
 		<hr class="solid"> <!-- text before this for header, after for content -->
-		<div class="mainBodyContent"></div> <!-- will add .content to this -->
+		<div id="mainBodyContent"></div> <!-- will add .content to this -->
 		
 		<hr class="solid"> <!-- text after this for footer -->
 		<a class="footer" href="/index.html">return to homepage</a>
@@ -35,20 +35,20 @@
 		</div>
 		<script src="/js/darkbutton.js"></script>
 		<script>
-		var langSwitcher = document.getElementById("language-switcher");
+		var langSwitcher = document.getElementById("languageSwitcher"); //fetch the button, store it on langSwitcher
 		var onLangSwitch = function() {
-			var lang = document.getElementById("lang").value;
-			var content;
+			var lang = document.getElementById("lang").value; //get whatever was chosen in the label option select thing
+			var translatedBody; //here we will store the body content
 			if (lang === "original") {
-				content = "this is og language";
+				translatedBody = "this is og language";
 			} else if (lang === "es") {
-				content = "spanis language";
+				translatedBody = "spanis language";
 			} else if (lang === "en") {
-			content = "english content";
-			} else {
+				content = "english content";
+			} translatedBody {
 				content = "spy code";
 			}
-			document.getElementById("mainBodyContent").textContent = content;  
+			document.getElementById("mainBodyContent").textContent = translatedBody;  
 		  };
 		  
 		langSwitcher.addEventListener("click", onLangSwitch);
