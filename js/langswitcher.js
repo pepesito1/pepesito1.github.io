@@ -6,7 +6,7 @@ var langSwitcher = document.getElementById("languageSwitcher"); //fetch the butt
 			var fontFont; //here we will store the font
 			
 			var localLangVariable = localStorage.getItem("contentLang")??'contentOg'; //gets the contentLang from localStorage, if it doesnt exist its contentOg, renders the page with that
-			document.getElementById("mainBodyContent").innerHTML = localLangVariable; //displays contentOg by default, once a contentLang has been stored it will use that
+			document.getElementById("mainBodyContent").innerHTML = contentLang; //displays contentOg by default, once a contentLang has been stored it will use that
 			if (lang === "original") {
                 document.getElementById("mainBodyContent").innerHTML = contentOg; //sets the mainBodyContent content t o whatever was in contentOG, same for the rest
 				fontSizey = "100" //fontSizey is in percentage	
