@@ -5,7 +5,7 @@ var langSwitcher = document.getElementById("languageSwitcher"); //fetch the butt
 			var bodyOgandEn; //body to use for original and spy code languages
 			var fontFont; //here we will store the font
 			
-			var localLangVariable = localStorage.getItem("contentLang")??'contentOg'; //gets the contentLang from localStorage
+			var localLangVariable = localStorage.getItem("contentLang")??'contentOg'; //gets the contentLang from localStorage, if it doesnt exist its contentOg, renders the page with that
 			document.getElementById("mainBodyContent").innerHTML = contentLang; //displays contentOg by default
 			if (lang === "original") {
                 document.getElementById("mainBodyContent").innerHTML = contentOg; //sets the mainBodyContent content t o whatever was in contentOG, same for the rest
