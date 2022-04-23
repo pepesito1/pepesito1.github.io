@@ -40,8 +40,12 @@ body{
 	padding:2%;
 }
 
+#mainBodyContent{
+	margin:1%;
+}
+
 .entireBody{
-	margin:10%;
+	margin:5%;
 	padding:2%;
 	background-color: var(--inner-body);
 	color: var(--text-color);	
