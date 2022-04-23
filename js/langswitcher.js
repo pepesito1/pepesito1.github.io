@@ -6,21 +6,14 @@
 	//localVariable is set to a string, so i turn that string back into the javascript variable defined in the main html
 	if (localVariable === "contentEn"){
 	document.getElementById("mainBodyContent").innerHTML = contentEn;
-	document.getElementById("savedChoice").innerHTML = "english"; ///////////
-	
 	}else if (localVariable === "contentEs"){
 	document.getElementById("mainBodyContent").innerHTML = contentEs;
-	document.getElementById("savedChoice").innerHTML = "spanish"; ////////////
-	
 	}else if (localVariable === "contentOg"){
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
-	document.getElementById("savedChoice").innerHTML = "original"; ////////////
-	
 	}else if (localVariable === "contentSpy"){
 	document.getElementById("mainBodyContent").style.fontFamily = "secretFont";
 	document.getElementById("mainBodyContent").style.fontSize = "180%";
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
-	document.getElementById("savedChoice").innerHTML = "club penguin PSA/EPF code"; ////////////
 	}
 	var onLangSwitch = function() {
 		var lang = document.getElementById("lang").value; //lang is equal to the label button, here the languages change freely after the page is loaded and user selects things
