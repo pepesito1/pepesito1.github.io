@@ -12,7 +12,7 @@ inner body only changes the entire text content background */
 	--inner-body: white;
 	--text-color: black;
 	--linkColor:#0000FF;
-	--visitedLinkColor: #800080;
+	--visitedLinkColor: #01A299;
 }
 
 [data-theme="dark"] {
@@ -20,7 +20,7 @@ inner body only changes the entire text content background */
 	--header-background: rgb(95,96,133);
 	--inner-body: rgb(64,64,64);
 	--text-color: white;
-	--linkColor: #70EFDE;
+	--linkColor: C8FFF4;
 	--visitedLinkColor: #017374;
 }
 

@@ -64,7 +64,7 @@ var onLangSwitch = function() {
 		document.getElementById("mainBodyContent").innerHTML = contentOg;
 		document.getElementById("header").innerHTML = headerContentOg;
 		fontSizey = "180";
-		fontFont = "Times New Roman";
+		fontFont = "secretFont";
 		letterSpacey = "3px";
 		localStorage.setItem("localContentLang", "contentSpy"); //sets to localContentLang the contentSpy
 	}
