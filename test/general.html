@@ -10,7 +10,7 @@
 	</style>
 	
 	<body>
-	<img src="/images/keeper.gif" id="boilerKeeper">
+	<img src="/images/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
 	<div class="entireBody">
 	<div class="onlyHeader">
 	<div id="header"></div>
@@ -31,25 +31,39 @@
 	<button id="languageSwitcher">Switch language!/cambiar idioma :)</button>
 	</div>
 		
-		<hr class="solid"> <!-- text before this for header, after for content -->
-		<div id="mainBodyContent"></div> <!-- will add content to this with the contentOgEsEn etc-->
+	<hr class="solid"> <!-- text before this for header, after for content -->
+	<div id="mainBodyContent"></div> <!-- will add content to this with the contentOgEsEn etc-->
 		
-		<hr class="solid"> <!-- text after this for footer -->
-		<a id="footer" href="/index.html">return to homepage</a>
+	<hr class="solid"> <!-- text after this for footer -->
+	<a id="footer" href="/index.html">return to homepage</a>
 
 	</div>
 	
-		<script src="/js/darkbutton.js"></script>
-		<script> //adding stuff to #header
-		var contentOg ="<em> hellllo </em>";
-		var headerContentOg	= "<h1>originalheadyHeader</h1><h2>text content is rn = original</h2>"
+	<script src="/js/darkbutton.js"></script>
+	<script> //puffle keeper script
+	var variableKeeper = document.getElementById("boilerKeeper");
+	var onPuffleClick = function(){
+		if (document.getElementById("boilerKeeper").src === "/images/greenKeeper.gif"){
+			document.getElementById("boilerKeeper").src = "/images/blueKeeper.gif";
+		} else if (document.getElementById("boilerKeeper").src == "/images/blueKeeper.gif"){
+			document.getElementById("boilerKeeper").src = "/images/yellowKeeper.gif";
+		} else if (document.getElementById("boilerKeeper").src == "/images/yellowKeeper.gif"){
+			document.getElementById("boilerKeeper").src = "/images/redKeeper.gif";	
+		} else if (document.getElementById("boilerKeeper").src == "/images/redKeeper.gif"){
+			document.getElementById("boilerKeeper").src = "/images/greenKeeper.gif";
+		}}
+	variableKeeper.addEventListener("click", onPuffleClick);
+	</script>
+	<script> //adding stuff to #header
+	var contentOg ="<em> hellllo </em>";
+	var headerContentOg	= "<h1>originalheadyHeader</h1><h2>text content is rn = original</h2>"
 		
-		var contentEn = "<i> english content </i>"
-		var headerContentEn	= "<h1>originalheadyHeader<br></h1><h2>text content is currently in = english</h2>"
+	var contentEn = "<i> english content </i>"
+	var headerContentEn	= "<h1>originalheadyHeader<br></h1><h2>text content is currently in = english</h2>"
 		
-		var contentEs = "español"
-		var headerContentEs	= "españolHeader"
-		var headerContentEs	= "<h1>originalheadyHeader<br></h1><h2>el contenido del texto esta actualmente en = español</h2>"
+	var contentEs = "español"
+	var headerContentEs	= "españolHeader"
+	var headerContentEs	= "<h1>originalheadyHeader<br></h1><h2>el contenido del texto esta actualmente en = español</h2>"
 		</script>
 		<script src="/js/langswitcher.js"></script>
 	</body>

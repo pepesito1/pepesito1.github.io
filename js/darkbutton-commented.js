@@ -20,6 +20,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			localStorage.setItem("data-theme", switchToTheme);
 			// Set our current theme to the new one
 			document.documentElement.setAttribute("data-theme", switchToTheme);
-			}
-	});
-	});
+		}
+});
