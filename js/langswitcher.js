@@ -9,7 +9,6 @@
 	}else if (localVariable === "contentOg"){
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
 	}
-	
 	var onLangSwitch = function() {
 		var lang = document.getElementById("lang").value; //lang is equal to the label button
 		var fontFont;
