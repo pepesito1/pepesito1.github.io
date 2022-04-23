@@ -68,10 +68,10 @@ a:hover {
   color: hotpink;
 }
 
-/* selected link */
 a:active {
   color: blue;
 }
+
 .solid{
 	background-color: rgb(146, 127, 191);
 	margin:1.5%;
