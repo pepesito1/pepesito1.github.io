@@ -8,19 +8,19 @@ if (localVariable === "contentEn"){
 	document.getElementById("mainBodyContent").innerHTML = contentEn
 	document.getElementById("header").innerHTML = headerContentEn;
 	fontSizey = "100";
-	fontFont = "Arial";
+	fontFont = "Times New Roman";
 	letterSpacey = "normal"
 }else if (localVariable === "contentEs"){
 	document.getElementById("mainBodyContent").innerHTML = contentEs;
 	document.getElementById("header").innerHTML = headerContentEs;
 	fontSizey= "100";
-	fontFont = "Arial";
+	fontFont = "Times New Roman";
 	letterSpacey = "normal"
 }else if (localVariable === "contentOg"){
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
 	document.getElementById("header").innerHTML = headerContentOg;
 	fontSizey= "100";
-	fontFont = "Arial";
+	fontFont = "Times New Roman";;
 	letterSpacey = "normal"
 }else if (localVariable === "contentSpy"){
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
@@ -43,28 +43,28 @@ var onLangSwitch = function() {
 		document.getElementById("mainBodyContent").innerHTML = contentOg; //contentOg is defined in the html
 		document.getElementById("header").innerHTML = headerContentOg; //grabs the header, headerContent is defined in the html
 		fontSizey = "100";
-		fontFont = "Arial";
+		fontFont = "Times New Roman";
 		letterSpacey = "normal"
 		localStorage.setItem("localContentLang", "contentOg"); //sets to localContentLang the contentOg
 	} else if (lang === "es") {
 		document.getElementById("mainBodyContent").innerHTML = contentEs; //contentEs is defined on the html
 		document.getElementById("header").innerHTML = headerContentEs; //grabs the header, headerContent is defined in the html
 		fontSizey= "100";
-		fontFont = "Arial";
+		fontFont = "Times New Roman";
 		letterSpacey = "normal"
 		localStorage.setItem("localContentLang", "contentEs"); //sets to localContentLang the contentEs
 	} else if (lang === "en") {
 		document.getElementById("mainBodyContent").innerHTML = contentEn; //content En is defined on the html
 		document.getElementById("header").innerHTML = headerContentEn; //grabs the header, headerContent is defined in the html
 		fontSizey = "100";
-		fontFont = "Arial";
+		fontFont = "Times New Roman";
 		letterSpacey = "normal"
 		localStorage.setItem("localContentLang", "contentEn"); //sets to localContentLang the contentEn
 	} else if (lang ==="secret"){
 		document.getElementById("mainBodyContent").innerHTML = contentOg;
 		document.getElementById("header").innerHTML = headerContentOg;
 		fontSizey = "180";
-		fontFont = "secretFont";
+		fontFont = "Times New Roman";
 		letterSpacey = "3px";
 		localStorage.setItem("localContentLang", "contentSpy"); //sets to localContentLang the contentSpy
 	}
