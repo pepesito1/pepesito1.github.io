@@ -32,6 +32,9 @@ if (localVariable === "contentEn"){
 document.getElementById("mainBodyContent").style.fontFamily = fontFont; //sets font
 document.getElementById("mainBodyContent").style.fontSize = parseInt(fontSizey) + "%"; //makes the fontSizey an integer, adds a %
 document.getElementById("mainBodyContent").style.letterSpacing = letterSpacey; //changes letters spacing
+document.getElementById("header").style.fontFamily = fontFont; //sets font
+document.getElementById("header").style.fontSize = parseInt(fontSizey) + "%"; //makes the fontSizey an integer, adds a %
+document.getElementById("header").style.letterSpacing = letterSpacey; //changes letters spacing
 	
 var onLangSwitch = function() {
 	var lang = document.getElementById("lang").value; //lang is equal to the label button, here the languages change freely after the page is loaded and user selects things
@@ -68,5 +71,8 @@ var onLangSwitch = function() {
 	document.getElementById("mainBodyContent").style.fontFamily = fontFont; //sets font
 	document.getElementById("mainBodyContent").style.fontSize = parseInt(fontSizey) + "%"; //makes the fontSizey an integer, adds a %
 	document.getElementById("mainBodyContent").style.letterSpacing = letterSpacey; //changes letters spacing
+	document.getElementById("header").style.fontFamily = fontFont; //sets font
+	document.getElementById("header").style.fontSize = parseInt(fontSizey) + "%"; //makes the fontSizey an integer, adds a %
+	document.getElementById("header").style.letterSpacing = letterSpacey; //changes letters spacing
 };
 langSwitcher.addEventListener("click", onLangSwitch); //runs function when button is clicked
