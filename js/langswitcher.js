@@ -4,7 +4,8 @@ var langSwitcher = document.getElementById("languageSwitcher"); //fetch the butt
 
 			var fontFont; //here we will store the font
 			
-			document.getElementById("mainBodyContent").innerHTML = contentLang; //displays contentOg by default, once a contentLang has been stored it will use that
+			document.getElementById("mainBodyContent").innerHTML = lang; //displays contentOg by default, once a contentLang has been stored it will use that
+			
 			if (lang === "contentOg") {
                 document.getElementById("mainBodyContent").innerHTML = contentOg; //sets the mainBodyContent content to whatever was in contentOg, same for the rest
 				fontSizey = "100" //fontSizey is in percentage	
