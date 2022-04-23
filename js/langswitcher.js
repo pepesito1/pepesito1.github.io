@@ -56,10 +56,10 @@ var onLangSwitch = function() {
 		fontFont = "Arial";
 		letterSpacey = ""
 		localStorage.setItem("localContentLang", "contentEn"); //sets to localContentLang the contentEn
-		} else if (lang ==="secret"){
+	} else if (lang ==="secret"){
 		document.getElementById("mainBodyContent").innerHTML = contentOg;
 		document.getElementById("header").innerHTML = headerContentOg;
-		fontSizey ="180";
+		fontSizey = "180";
 		fontFont = "secretFont";
 		letterSpacey = "3px"
 		localStorage.setItem("localContentLang", "contentSpy"); //sets to localContentLang the contentSpy
