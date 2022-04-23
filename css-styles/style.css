@@ -25,9 +25,12 @@ inner body only changes the entire text content background */
 	padding:2%;
 	background-color: var(--header-background);
 }
+.onlyHeader{
+	margin:1%;
+}
 
 #footer{
-	margin:0%;
+	margin:1%;
 	padding:2%;
 }
 
@@ -38,7 +41,7 @@ body{
 }
 
 .entireBody{
-	margin:5%;
+	margin:10%;
 	padding:2%;
 	background-color: var(--inner-body);
 	color: var(--text-color);	
