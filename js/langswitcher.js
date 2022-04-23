@@ -1,6 +1,7 @@
 	//esto funciona asi
 	
 	var langSwitcher = document.getElementById("languageSwitcher"); //fetches the button, stores it on langSwitcher
+	document.getElementById("mainBodyContent").innerHTML = contentOg; //displays contentOg by default
 	var onLangSwitch = function() {
 		var lang = document.getElementById("lang").value; //lang is equal to the label button
 		var fontFont;
