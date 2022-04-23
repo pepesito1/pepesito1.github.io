@@ -1,5 +1,5 @@
 var langSwitcher = document.getElementById("languageSwitcher"); //fetch the button, store it on langSwitcher
-var localLang = localStorage.getItem("contentLang")??'contentOg'; //gets the contentLang from localStorage, if it doesnt exist its contentOg, renders the page with that
+var localLang = localStorage.getItem("localLang")??'contentOg'; //gets the localLang from localStorage, if it doesnt exist its contentOg, renders the page with that
 document.getElementById("mainBodyContent").innerHTML = localLang; //displays contentOg by default, once a localLang has been stored it will use that
 
 	var onLangSwitch = function() {
