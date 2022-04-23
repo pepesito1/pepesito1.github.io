@@ -2,13 +2,14 @@
 	
 	var langSwitcher = document.getElementById("languageSwitcher"); //fetches the button, stores it on langSwitcher
 	var localVariable = localStorage.getItem("localContentLang")??'contentOg'; //grabs localContentLang, if it doesnt exist its set to contentOg, stores it in localVariable
-	if (localVariable === "contentEn"){ //localVariable is set to a string, so i turn that string back into the javascript variable defined in the main html
+	
+	//localVariable is set to a string, so i turn that string back into the javascript variable defined in the main html
+	if (localVariable === "contentEn"){
 	document.getElementById("mainBodyContent").innerHTML = contentEn;
 	}else if (localVariable === "contentEs"){
 	document.getElementById("mainBodyContent").innerHTML = contentEs;
 	}else if (localVariable === "contentOg"){
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
-	}
 	}else if (localVariable === "contentSpy"){
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
 	fontFont = "secretFont";
