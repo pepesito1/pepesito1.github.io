@@ -17,6 +17,7 @@
 	document.getElementById("mainBodyContent").style.fontFamily = "secretFont";
 	document.getElementById("mainBodyContent").style.fontSize = "180%";
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
+	document.getElementById("header").innerHTML = headerContentOg;
 	}
 	var onLangSwitch = function() {
 		var lang = document.getElementById("lang").value; //lang is equal to the label button, here the languages change freely after the page is loaded and user selects things
