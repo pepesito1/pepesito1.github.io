@@ -2,7 +2,7 @@
 	
 	var langSwitcher = document.getElementById("languageSwitcher"); //fetches the button, stores it on langSwitcher
 	var localVariable = localStorage.getItem("localContentLang")??'contentOg'; //grabs localContentLang, if it doesnt exist its set to contentOg
-	document.getElementById("mainBodyContent").innerHTML = localContentLang; //displays localContentLangs key, this line breaks everything
+	document.getElementById("mainBodyContent").innerHTML = localVariable; //this should make it whatever localContentLang is set to
 	var onLangSwitch = function() {
 		var lang = document.getElementById("lang").value; //lang is equal to the label button
 		var fontFont;
