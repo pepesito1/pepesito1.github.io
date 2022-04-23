@@ -2,15 +2,20 @@
 	
 	var langSwitcher = document.getElementById("languageSwitcher"); //fetches the button, stores it on langSwitcher
 	var localVariable = localStorage.getItem("localContentLang")??'contentOg'; //grabs localContentLang, if it doesnt exist its set to contentOg, stores it in localVariable
-	if (localVariable === "contentEn"){
+	if (localVariable === "contentEn"){ //localVariable is set to a string, so i turn that string back into the javascript variable defined in the main html
 	document.getElementById("mainBodyContent").innerHTML = contentEn;
 	}else if (localVariable === "contentEs"){
 	document.getElementById("mainBodyContent").innerHTML = contentEs;
 	}else if (localVariable === "contentOg"){
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
 	}
+	}else if (localVariable === "contentSpy"){
+	document.getElementById("mainBodyContent").innerHTML = contentOg;
+	fontFont = "secretFont";
+	fontSizey = "180";
+	}
 	var onLangSwitch = function() {
-		var lang = document.getElementById("lang").value; //lang is equal to the label button
+		var lang = document.getElementById("lang").value; //lang is equal to the label button, here the languages change freely after the page is loaded and user selects things
 		var fontFont;
 			if (lang === "original") {
 				document.getElementById("mainBodyContent").innerHTML = contentOg; //contentOg is defined in the html
@@ -28,7 +33,7 @@
 				document.getElementById("mainBodyContent").innerHTML = contentOg; //contentOg is defined in the html
 				fontFont = "secretFont";
 				fontSizey = "180";
-				localStorage.setItem("localContentLang", "contentOg"); //sets to localContentLang the contentOg
+				localStorage.setItem("localContentLang", "contentSpy"); //sets to localContentLang the contentOg
 			}
 			document.getElementById("mainBodyContent").style.fontFamily = fontFont; //sets font
 			document.getElementById("mainBodyContent").style.fontSize = parseInt(fontSizey) + "%"; //makes the fontSizey an integer, adds a %
