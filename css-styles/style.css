@@ -26,7 +26,7 @@ inner body only changes the entire text content background */
 
 #header{
 	margin:2%;
-	padding:2%%;
+	padding:2%;
 	background-color: var(--header-background);
 	font-size: 0.75em;
 }
