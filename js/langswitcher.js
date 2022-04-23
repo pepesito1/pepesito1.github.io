@@ -1,6 +1,6 @@
 var langSwitcher = document.getElementById("languageSwitcher"); //fetch the button, store it on langSwitcher
 		var onLangSwitch = function() {
-			var lang = localStorage.getItem("contentLang")??"contentOg"; //gets the contentLang from localStorage, if it doesnt exist its contentOg, renders the page with that
+			var lang = localStorage.getItem("contentLang")??document.getElementById("lang").value; //gets the contentLang from localStorage, if it doesnt exist its contentOg, renders the page with that
 
 			var fontFont; //here we will store the font
 			
