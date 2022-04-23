@@ -12,7 +12,7 @@
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
 	}else if (localVariable === "contentSpy"){
 	document.getElementById("mainBodyContent").style.fontFamily = "secretFont";
-	document.getElementById("mainBodyContent").style.fontSize = 180%;
+	document.getElementById("mainBodyContent").style.fontSize = "180%";
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
 	}
 	var onLangSwitch = function() {
