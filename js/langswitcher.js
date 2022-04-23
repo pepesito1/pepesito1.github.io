@@ -6,10 +6,13 @@
 	//localVariable is set to a string, so i turn that string back into the javascript variable defined in the main html
 	if (localVariable === "contentEn"){
 	document.getElementById("mainBodyContent").innerHTML = contentEn;
+	document.getElementById("header").innerHTML = headerContentEn;
 	}else if (localVariable === "contentEs"){
 	document.getElementById("mainBodyContent").innerHTML = contentEs;
+	document.getElementById("header").innerHTML = headerContentEs;
 	}else if (localVariable === "contentOg"){
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
+	document.getElementById("header").innerHTML = headerContentOg;
 	}else if (localVariable === "contentSpy"){
 	document.getElementById("mainBodyContent").style.fontFamily = "secretFont";
 	document.getElementById("mainBodyContent").style.fontSize = "180%";
