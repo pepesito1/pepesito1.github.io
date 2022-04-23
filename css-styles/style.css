@@ -11,6 +11,8 @@ inner body only changes the entire text content background */
 	--header-background:rgb(95,96,133);
 	--inner-body: white;
 	--text-color: black;
+	--linkColor:#0000FF;
+	--visitedLinkColor: #800080;
 }
 
 [data-theme="dark"] {
@@ -18,11 +20,13 @@ inner body only changes the entire text content background */
 	--header-background: rgb(95,96,133);
 	--inner-body: rgb(64,64,64);
 	--text-color: white;
+	--linkColor: #70EFDE;
+	--visitedLinkColor: #017374;
 }
 
 #header{
 	margin:2%;
-	padding:0%;
+	padding:2%%;
 	background-color: var(--header-background);
 	font-size: 0.75em;
 }
@@ -52,6 +56,22 @@ body{
 	color: var(--text-color);	
 }
 
+a:link {
+	color: var(--linkColor);
+}
+
+a:visited {
+	color: var(--visitedLinkColor);
+}
+
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
 .solid{
 	background-color: rgb(146, 127, 191);
 	margin:1.5%;
