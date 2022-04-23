@@ -15,6 +15,7 @@
 	document.getElementById("header").innerHTML = headerContentOg;
 	}else if (localVariable === "contentSpy"){
 	document.getElementById("mainBodyContent").style.fontFamily = "secretFont";
+	document.getElementById("header").style.fontFamily = "secretFont";
 	document.getElementById("mainBodyContent").style.fontSize = "180%";
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
 	document.getElementById("header").innerHTML = headerContentOg;
