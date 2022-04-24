@@ -41,18 +41,22 @@
 	
 	<script src="/js/darkbutton.js"></script>
 	<script> //puffle keeper script
-	var variableKeeper = document.getElementById("boilerKeeper");
-	var onPuffleClick = function(){
-		if (document.getElementById("boilerKeeper").src.includes === "/images/greenKeeper.gif"){
-			document.getElementById("boilerKeeper").src = "/images/blueKeeper.gif";
-		} else if (document.getElementById("boilerKeeper").src.includes == "/images/blueKeeper.gif"){
-			document.getElementById("boilerKeeper").src = "/images/yellowKeeper.gif";
-		} else if (document.getElementById("boilerKeeper").src.includes == "/images/yellowKeeper.gif"){
-			document.getElementById("boilerKeeper").src = "/images/redKeeper.gif";	
-		} else if (document.getElementById("boilerKeeper").src.includes == "/images/redKeeper.gif"){
-			document.getElementById("boilerKeeper").src = "/images/greenKeeper.gif";
-		}}
-	variableKeeper.addEventListener("click", onPuffleClick);
+	var storedColoredGif = document.getElementById("coloredGif"); //we grab the gif and store it in storedColoredGif
+	var onGifClick = function() {
+	  if (document.getElementById("coloredGif").src.includes("/images/green.gif")) {
+		document.getElementById("coloredGif").src = "/images/blue.gif";
+
+	  } else if (document.getElementById("coloredGif").src.includes("/images/blue.gif")) {
+		document.getElementById("coloredGif").src = "/images/yellow.gif";
+
+	  } else if (document.getElementById("coloredGif").src.includes("/images/yellow.gif")) {
+		document.getElementById("coloredGif").src = "/images/red.gif";
+
+	  } else if (document.getElementById("coloredGif").src.includes("/images/red.gif")) {
+		document.getElementById("coloredGif").src = "/images/green.gif";
+	  }
+	}
+	storedColoredGif.addEventListener("click", onGifClick);
 	</script>
 	<script> //adding stuff to #header
 	var contentOg ="<em> hellllo </em>";
