@@ -10,7 +10,7 @@
 	</style>
 	
 	<body>
-	<img src="/images/greenKeeper.gif" id="coloredGif" alt="bouncing puffle gif" title="Click me!">
+	<img src="/images/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
 	<div class="entireBody">
 	<div class="onlyHeader">
 	<div id="header"></div>
@@ -41,19 +41,19 @@
 	
 	<script src="/js/darkbutton.js"></script>
 	<script> //puffle keeper script
-	var storedGif = document.getElementById("coloredGif"); //we grab the gif and store it in storedColoredGif
+	var storedGif = document.getElementById("boilerKeeper"); //we grab the gif and store it in storedboilerKeeper
 	var onGifClick = function() {
-	  if (document.getElementById("coloredGif").src.includes("/images/greenKeeper.gif")) {
-		document.getElementById("coloredGif").src = "/images/blueKeeper.gif";
+	  if (document.getElementById("boilerKeeper").src.includes("/images/greenKeeper.gif")) {
+		document.getElementById("boilerKeeper").src = "/images/blueKeeper.gif";
 
-	  } else if (document.getElementById("coloredGif").src.includes("/images/blueKeeper.gif")) {
-		document.getElementById("coloredGif").src = "/images/yellowKeeper.gif";
+	  } else if (document.getElementById("boilerKeeper").src.includes("/images/blueKeeper.gif")) {
+		document.getElementById("boilerKeeper").src = "/images/yellowKeeper.gif";
 
-	  } else if (document.getElementById("coloredGif").src.includes("/images/yellowKeeper.gif")) {
-		document.getElementById("coloredGif").src = "/images/redKeeper.gif";
+	  } else if (document.getElementById("boilerKeeper").src.includes("/images/yellowKeeper.gif")) {
+		document.getElementById("boilerKeeper").src = "/images/redKeeper.gif";
 
-	  } else if (document.getElementById("coloredGif").src.includes("/images/redKeeper.gif")) {
-		document.getElementById("coloredGif").src = "/images/greenKeeper.gif";
+	  } else if (document.getElementById("boilerKeeper").src.includes("/images/redKeeper.gif")) {
+		document.getElementById("boilerKeeper").src = "/images/greenKeeper.gif";
 	  }
 	}
 	storedGif.addEventListener("click", onGifClick);
