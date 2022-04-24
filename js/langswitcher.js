@@ -1,9 +1,5 @@
-	//esto funciona asi
-	
-var langSwitcher = document.getElementById("languageSwitcher"); //fetches the button, stores it on langSwitcher
-var localVariable = localStorage.getItem("localContentLang")??'contentOg'; //grabs localContentLang, if it doesnt exist its set to contentOg, stores it in localVariable
-	
-//localVariable is set to a string, so i turn that string back into the javascript variable defined in the main html
+var langSwitcher = document.getElementById("languageSwitcher");
+var localVariable = localStorage.getItem("localContentLang")??'contentOg';
 if (localVariable === "contentEn"){
 	document.getElementById("mainBodyContent").innerHTML = contentEn
 	document.getElementById("header").innerHTML = headerContentEn;
@@ -29,50 +25,49 @@ if (localVariable === "contentEn"){
 	fontFont = "secretFont";
 	letterSpacey = "3px";
 }
-document.getElementById("mainBodyContent").style.fontFamily = fontFont; //sets font
-document.getElementById("mainBodyContent").style.fontSize = parseInt(fontSizey) + "%"; //makes the fontSizey an integer, adds a %
-document.getElementById("mainBodyContent").style.letterSpacing = letterSpacey; //changes letters spacing
-document.getElementById("header").style.fontFamily = fontFont; //sets font
-document.getElementById("header").style.fontSize = parseInt(fontSizey) + "%"; //makes the fontSizey an integer, adds a %
-document.getElementById("header").style.letterSpacing = letterSpacey; //changes letters spacing
-	
+document.getElementById("mainBodyContent").style.fontFamily = fontFont;
+document.getElementById("mainBodyContent").style.fontSize = parseInt(fontSizey) + "%";
+document.getElementById("mainBodyContent").style.letterSpacing = letterSpacey;
+document.getElementById("header").style.fontFamily = fontFont;
+document.getElementById("header").style.fontSize = parseInt(fontSizey) + "%";
+document.getElementById("header").style.letterSpacing = letterSpacey;
 var onLangSwitch = function() {
-	var lang = document.getElementById("lang").value; //lang is equal to the label button, here the languages change freely after the page is loaded and user selects things
+	var lang = document.getElementById("lang").value;
 	var fontFont;
 	if (lang === "original") {
-		document.getElementById("mainBodyContent").innerHTML = contentOg; //contentOg is defined in the html
-		document.getElementById("header").innerHTML = headerContentOg; //grabs the header, headerContent is defined in the html
+		document.getElementById("mainBodyContent").innerHTML = contentOg;
+		document.getElementById("header").innerHTML = headerContentOg;
 		fontSizey = "100";
 		fontFont = "Times New Roman";
 		letterSpacey = "normal"
-		localStorage.setItem("localContentLang", "contentOg"); //sets to localContentLang the contentOg
+		localStorage.setItem("localContentLang", "contentOg");
 	} else if (lang === "es") {
-		document.getElementById("mainBodyContent").innerHTML = contentEs; //contentEs is defined on the html
-		document.getElementById("header").innerHTML = headerContentEs; //grabs the header, headerContent is defined in the html
+		document.getElementById("mainBodyContent").innerHTML = contentEs;
+		document.getElementById("header").innerHTML = headerContentEs;
 		fontSizey= "100";
 		fontFont = "Times New Roman";
 		letterSpacey = "normal"
-		localStorage.setItem("localContentLang", "contentEs"); //sets to localContentLang the contentEs
+		localStorage.setItem("localContentLang", "contentEs");
 	} else if (lang === "en") {
-		document.getElementById("mainBodyContent").innerHTML = contentEn; //content En is defined on the html
-		document.getElementById("header").innerHTML = headerContentEn; //grabs the header, headerContent is defined in the html
+		document.getElementById("mainBodyContent").innerHTML = contentEn;
+		document.getElementById("header").innerHTML = headerContentEn;
 		fontSizey = "100";
 		fontFont = "Times New Roman";
 		letterSpacey = "normal"
-		localStorage.setItem("localContentLang", "contentEn"); //sets to localContentLang the contentEn
+		localStorage.setItem("localContentLang", "contentEn");
 	} else if (lang ==="secret"){
 		document.getElementById("mainBodyContent").innerHTML = contentOg;
 		document.getElementById("header").innerHTML = headerContentOg;
 		fontSizey = "180";
 		fontFont = "secretFont";
 		letterSpacey = "3px";
-		localStorage.setItem("localContentLang", "contentSpy"); //sets to localContentLang the contentSpy
+		localStorage.setItem("localContentLang", "contentSpy");
 	}
-	document.getElementById("mainBodyContent").style.fontFamily = fontFont; //sets font
-	document.getElementById("mainBodyContent").style.fontSize = parseInt(fontSizey) + "%"; //makes the fontSizey an integer, adds a %
-	document.getElementById("mainBodyContent").style.letterSpacing = letterSpacey; //changes letters spacing
-	document.getElementById("header").style.fontFamily = fontFont; //sets font
-	document.getElementById("header").style.fontSize = parseInt(fontSizey) + "%"; //makes the fontSizey an integer, adds a %
-	document.getElementById("header").style.letterSpacing = letterSpacey; //changes letters spacing
+	document.getElementById("mainBodyContent").style.fontFamily = fontFont;
+	document.getElementById("mainBodyContent").style.fontSize = parseInt(fontSizey) + "%";
+	document.getElementById("mainBodyContent").style.letterSpacing = letterSpacey;
+	document.getElementById("header").style.fontFamily = fontFont; 
+	document.getElementById("header").style.fontSize = parseInt(fontSizey) + "%";
+	document.getElementById("header").style.letterSpacing = letterSpacey;
 };
-langSwitcher.addEventListener("click", onLangSwitch); //runs function when button is clicked
+langSwitcher.addEventListener("click", onLangSwitch);
