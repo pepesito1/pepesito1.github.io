@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 	<html lang="en">
 	<meta charset="UTF-8">
-	<title>peps' homepage</title>
+	<title>webpage of a lifetime</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="stylesheet"  type="text/css" href="/css-styles/general.css">
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link href="/css-styles/style.css" rel="stylesheet">
 	
 	<style>
-		.header{
-		color:rgb(255,255,0);
-		}
 	</style>
 	
 	<body>
-		<h1 class="header">hellooo helloo </h1>
+	<img src="/images/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
+	
+	<div class="onlyHeader">
+	<div id="header"></div>
+	<div class="entireBody">
+	
+	<button id="theme-switcher">night night</button>
+	<br>
 		
-		<hr class="solid"> <! –– text before this for header, after for content ––>
-		<p>this is <br> solid af <br> content bro<br>
-		<a href=branch/bloginfo.html>blogposts</a></p>
-			
-		<hr class="solid"> <! –– text after this for footer ––>
-		<a class="footer" href="/index.html">return to homepage</a>
-	</body>
+	<div id="languageLabel"><label>language/idioma:
+		<select id="lang">
+			<option></option>
+			<option value="original">original</option>
+			<option value="es">spanish</option>
+			<option value="en">english</option>
+			<option value="secret">club penguin PSA/EPF code</option>
+		</select>
+	</label></div>
+		
+	<button id="languageSwitcher">Switch language!/cambiar idioma :)</button>
+	</div>
+		
+	<hr class="solid">
+	<div id="mainBodyContent"></div>
+		
+	<hr class="solid">
+	<a id="footer" href="/index.html">return to homepage</a>
 
-	<script src=""></script>
+	</div>
+	
+	<script src="/js/darkbutton.js"></script>
+	<script src="pufflescript.js"</script>
+	<script>
+	var contentOg ="welcome to my page :)";
+	var headerContentOg	= "<h1>original heady Header</h1><h2>text content is rn = original</h2>";
+		
+	var contentEn = "welcome to my page";
+	var headerContentEn	= "<h1>original heady Header</h1><h2>text content is currently in = english</h2>";
+		
+	var contentEs = "ESTA es mi pagina";
+	var headerContentEs	= "<h1>original heady Header</h1><h2>el contenido del texto esta actualmente en = español</h2>";
+		</script>
+	<script src="/js/langswitcher.js"></script>
+	</body>
 </html>
