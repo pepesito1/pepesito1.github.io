@@ -21,7 +21,7 @@ inner body only changes the entire text content background */
 	--inner-body: rgb(64,64,64);
 	--text-color: white;
 	--linkColor: #C8FFF4;
-	--visitedLinkColor: #017374;
+--visitedLinkColor: rgb(255,255,255);
 }
 
 #header{
