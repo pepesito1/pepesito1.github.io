@@ -92,6 +92,9 @@
 	</script>
 	<script src="/js/langswitcher.js"></script>
 	<script> // modeVariable is either light or dark for the theme, and the storedLocalContent is either contentEn,Es,Og or contentSpyZ
+	console.log(langSwitcher.id);
+	var modeVariable = localStorage.getItem("data-theme")??'light'; //we fetch it again, for some reason. i should use let and the other thingy instead of var
+	var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg';
 	phiHrefSwitch = function() {
 	console.log(modeVariable);
 	console.log(storedLocalContent);
