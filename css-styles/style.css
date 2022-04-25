@@ -1,4 +1,4 @@
-/*background color changes the entire background, page-wide
+/* background color changes the entire background, page-wide
 inner body only changes the entire text content background */
 
 @font-face {
@@ -7,31 +7,31 @@ inner body only changes the entire text content background */
 }
 
 :root {
-	--background-color: rgb(47,79,79);
-	--header-background:rgb(95,96,133);
-	--inner-body: white;
-	--text-color: black;
-	--linkColor:#00C4B4;
-	--visitedLinkColor: #018786;
-	--sidebarBg: rgb(134, 95, 134);
+  --background-color: rgb(47, 79, 79);
+  --header-background: rgb(95, 96, 133);
+  --inner-body: white;
+  --text-color: black;
+  --linkColor: #00C4B4;
+  --visitedLinkColor: #018786;
+  --sidebarBg: rgb(255, 154, 92);
 }
 
 [data-theme="dark"] {
-	--background-color: rgb(47,79,79);
-	--header-background: rgb(95,96,133);
-	--inner-body: rgb(64,64,64);
-	--text-color: white;
-	--linkColor: #C8FFF4;
-	--visitedLinkColor: rgb(255,255,255);
-	--sidebarBg: rgb(134, 95, 134);
+  --background-color: rgb(47, 79, 79);
+  --header-background: rgb(95, 96, 133);
+  --inner-body: rgb(64, 64, 64);
+  --text-color: white;
+  --linkColor: #C8FFF4;
+  --visitedLinkColor: rgb(255, 255, 255);
+  --sidebarBg: rgb(138, 70, 29);
 }
 
 a:link {
-	color: var(--linkColor);
+  color: var(--linkColor);
 }
 
 a:visited {
-	color: var(--visitedLinkColor);
+  color: var(--visitedLinkColor);
 }
 
 a:hover {
@@ -42,62 +42,62 @@ a:active {
   color: blue;
 }
 
-#sidebar{
-	float: right;
-	width: 10%;
-	margin: 5%;
-	padding: 3%;
-	padding-right: 5%;
-	background-color: var(--sidebarBg);
-	color: white;
+#sidebar {
+  float: right;
+  width: 10%;
+  margin: 5%;
+  padding: 3%;
+  padding-right: 5%;
+  background-color: var(--sidebarBg);
+  color: white;
 }
 
-#header{
-	margin:2%;
-	padding:2%;
-	background-color: var(--header-background);
-	font-size: 0.75em;
+#header {
+  margin: 2%;
+  padding: 2%;
+  background-color: var(--header-background);
+  font-size: 0.75em;
 }
 
-.onlyHeader{
-	margin:1%;
+.onlyHeader {
+  margin: 1%;
 }
 
-#footer{
-	margin:1%;
-	padding:2%;
+#footer {
+  margin: 1%;
+  padding: 2%;
 }
 
-body{
-	background-color:var(--background-color);
-	margin:2%;
-	padding:2%;
+body {
+  background-color: var(--background-color);
+  margin: 2%;
+  padding: 2%;
 }
 
-#mainBodyContent{
-	margin:1%;
+#mainBodyContent {
+  margin: 1%;
 }
 
-.entireBody{
-	margin:5%;
-	padding:2%;
-	background-color: var(--inner-body);
-	color: var(--text-color);	
+.entireBody {
+  margin: 5%;
+  padding: 2%;
+  background-color: var(--inner-body);
+  color: var(--text-color);
 }
 
-.solid{
-	background-color: rgb(146, 127, 191);
-	margin:1.5%;
+.solid {
+  background-color: rgb(146, 127, 191);
+  margin: 1.5%;
 }
 
-#languageLabel{
-    margin-top:1.5%;
-    margin-bottom:0.8%;
+#languageLabel {
+  margin-top: 1.5%;
+  margin-bottom: 0.8%;
 }
 
-#boilerKeeper{
-	position:fixed;
-	right: 5%;
-	bottom: 5%;
-	width: 50px;
+#boilerKeeper {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  width: 50px;
 }
