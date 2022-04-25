@@ -1,10 +1,10 @@
 // Wait for document to load
 document.addEventListener("DOMContentLoaded", function(event) {
 	//store in a variable whatever the data-theme is in the localStorage, if it doesnt exist, then it gets set to "light"
-	var localVariable = localStorage.getItem("data-theme")??'light';
+	var modeVariable = localStorage.getItem("data-theme")??'light';
 				
 	//sets the page attribute to be either dark or light
-	document.documentElement.setAttribute("data-theme", localVariable);
+	document.documentElement.setAttribute("data-theme", modeVariable);
 				
 	// Get our button switcher
 	var themeSwitcher = document.getElementById("theme-switcher");

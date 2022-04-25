@@ -1,24 +1,24 @@
 var langSwitcher = document.getElementById("languageSwitcher");
-var localVariable = localStorage.getItem("localContentLang")??'contentOg';
-if (localVariable === "contentEn"){
+var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg';
+if (storedLocalContent === "contentEn"){
 	document.getElementById("mainBodyContent").innerHTML = contentEn
 	document.getElementById("header").innerHTML = headerContentEn;
 	fontSizey = "100";
 	fontFont = "Times New Roman";
 	letterSpacey = "normal"
-}else if (localVariable === "contentEs"){
+}else if (storedLocalContent === "contentEs"){
 	document.getElementById("mainBodyContent").innerHTML = contentEs;
 	document.getElementById("header").innerHTML = headerContentEs;
 	fontSizey= "100";
 	fontFont = "Times New Roman";
 	letterSpacey = "normal"
-}else if (localVariable === "contentOg"){
+}else if (storedLocalContent === "contentOg"){
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
 	document.getElementById("header").innerHTML = headerContentOg;
 	fontSizey= "100";
 	fontFont = "Times New Roman";;
 	letterSpacey = "normal"
-}else if (localVariable === "contentSpy"){
+}else if (storedLocalContent === "contentSpy"){
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
 	document.getElementById("header").innerHTML = headerContentOg;
 	fontSizey = "120";
