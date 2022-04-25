@@ -91,8 +91,8 @@
 		`;
 	</script>
 	<script src="/js/langswitcher.js"></script>
-	<script> // modeVariable is either light or dark for the theme, and the storedLocalContent is either contentEn,Es,Og or contentSpy
-	document.getElementById("phiLink").onclick = function() {
+	<script> // modeVariable is either light or dark for the theme, and the storedLocalContent is either contentEn,Es,Og or contentSpyZ
+	phiHrefSwitch = function() {
 	console.log(modeVariable);
 	console.log(storedLocalContent);
 		if (modeVariable == "light" &&  storedLocalContent == "contentEn"){
@@ -119,6 +119,7 @@
 		} else if(modeVariable == "dark" &&  storedLocalContent == "contentSpy"){
 			document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
 		}};
+		langSwitcher.addEventListener("click", phiHrefSwitch);
 	</script>
 	</body>
 </html>
