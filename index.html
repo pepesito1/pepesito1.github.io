@@ -35,7 +35,7 @@
 	<hr class="solid">
 	<div id="mainBodyContent"></div>
 	<div id="sidebar">
-	<a href="" id="phiLink">phi></a>
+	<a href="" id="phiLink">phi</a>
 	</div>
 		
 	<hr class="solid">
@@ -93,8 +93,6 @@
 	<script src="/js/langswitcher.js"></script>
 	<script> // modeVariable is either light or dark for the theme, and the storedLocalContent is either contentEn,Es,Og or contentSpy
 	document.getElementById("phiLink").onclick = function() {
-		var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg';
-		var modeVariable = localStorage.getItem("data-theme")??'light';
 		if (modeVariable == "light" &&  storedLocalContent == "contentEn"){
 			document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
 			
