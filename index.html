@@ -34,6 +34,9 @@
 		
 	<hr class="solid">
 	<div id="mainBodyContent"></div>
+	<div id="sidebar">
+	<a href="/main/phi/en-dark/phi.html" id="phiLink">phi</a>
+	</div>
 		
 	<hr class="solid">
 	<a id="footer" href="/index.html">return to homepage</a>
@@ -78,7 +81,7 @@
 		<h2>el contenido del texto esta actualmente en = español</h2>
 		`;
 		var contentEs = `esto es un sitio web muy simple :) <br>
-		tras una eternidad.-.-.-.-<br>
+		tras una eternidad....<br>
 		con los 2 botones de arriba puedes cambiar entre modo blanco u oscuro<br>
 		o cambiar entre el idioma de la pagina<br><br>
 		<em>idioma original</em> mezcla entre ingles y español, este es el que escribo primero, despues traduzco<br>
@@ -88,5 +91,33 @@
 		`;
 	</script>
 	<script src="/js/langswitcher.js"></script>
+	<script> // modeVariable is either light or dark for the theme, and the storedLocalContent is either contentEn,Es,Og or contentSpy
+	var changingPhiLink = function() {
+	if (modeVariable == "light" &&  storedLocalContent == "contentEn"){
+		document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
+		
+	} else if (modeVariable == "light" &&  storedLocalContent == "contentEs"){
+		document.getElementById("phiLink").href = "/main/phi/esLight/phi.html";
+		
+	} else if (modeVariable == "light" &&  storedLocalContent == "contentOg"){
+		document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
+		
+	} else if(modeVariable == "light" &&  storedLocalContent == "contentSpy"){
+		document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
+		
+	} else if (modeVariable == "dark" &&  storedLocalContent == "contentEs"){
+		document.getElementById("phiLink").href = "/main/phi/esDark/phi.html";
+		
+	} else if (modeVariable == "dark" &&  storedLocalContent == "contentOg"){
+		document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
+		
+	} else if(modeVariable == "dark" &&  storedLocalContent == "contentSpy"){
+		document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
+		
+	} else if(modeVariable == "dark" &&  storedLocalContent == "contentSpy"){
+		document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
+	}};
+	langSwitcher.addEventListener("click", onLangSwitch); //listens to the langSwitch button and runs this function
+	</script>
 	</body>
 </html>

@@ -1,28 +1,28 @@
 	//esto funciona asi
 	
 var langSwitcher = document.getElementById("languageSwitcher"); //fetches the button, stores it on langSwitcher
-var localVariable = localStorage.getItem("localContentLang")??'contentOg'; //grabs localContentLang, if it doesnt exist its set to contentOg, stores it in localVariable
+var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg'; //grabs localContentLang, if it doesnt exist its set to contentOg, stores it in storedLocalContent
 	
-//localVariable is set to a string, so i turn that string back into the javascript variable defined in the main html
-if (localVariable === "contentEn"){
+//storedLocalContent is set to a string, so i turn that string back into the javascript variable defined in the main html
+if (storedLocalContent === "contentEn"){
 	document.getElementById("mainBodyContent").innerHTML = contentEn
 	document.getElementById("header").innerHTML = headerContentEn;
 	fontSizey = "100";
 	fontFont = "Times New Roman";
 	letterSpacey = "normal"
-}else if (localVariable === "contentEs"){
+}else if (storedLocalContent === "contentEs"){
 	document.getElementById("mainBodyContent").innerHTML = contentEs;
 	document.getElementById("header").innerHTML = headerContentEs;
 	fontSizey= "100";
 	fontFont = "Times New Roman";
 	letterSpacey = "normal"
-}else if (localVariable === "contentOg"){
+}else if (storedLocalContent === "contentOg"){
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
 	document.getElementById("header").innerHTML = headerContentOg;
 	fontSizey= "100";
 	fontFont = "Times New Roman";;
 	letterSpacey = "normal"
-}else if (localVariable === "contentSpy"){
+}else if (storedLocalContent === "contentSpy"){
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
 	document.getElementById("header").innerHTML = headerContentOg;
 	fontSizey = "180";
