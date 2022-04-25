@@ -21,7 +21,7 @@ if (localVariable === "contentEn"){
 }else if (localVariable === "contentSpy"){
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
 	document.getElementById("header").innerHTML = headerContentOg;
-	fontSizey = "180";
+	fontSizey = "120";
 	fontFont = "secretFont";
 	letterSpacey = "3px";
 }
@@ -58,7 +58,7 @@ var onLangSwitch = function() {
 	} else if (lang ==="secret"){
 		document.getElementById("mainBodyContent").innerHTML = contentOg;
 		document.getElementById("header").innerHTML = headerContentOg;
-		fontSizey = "180";
+		fontSizey = "120";
 		fontFont = "secretFont";
 		letterSpacey = "3px";
 		localStorage.setItem("localContentLang", "contentSpy");
