@@ -35,7 +35,7 @@
 	<hr class="solid">
 	<div id="mainBodyContent"></div>
 	<div id="sidebar">
-	<a href="/main/phi/en-dark/phi.html" id="phiLink">phi</a>
+	<a href="" id="phiLink">phi</a>
 	</div>
 		
 	<hr class="solid">
@@ -92,32 +92,31 @@
 	</script>
 	<script src="/js/langswitcher.js"></script>
 	<script> // modeVariable is either light or dark for the theme, and the storedLocalContent is either contentEn,Es,Og or contentSpy
-	var changingPhiLink = function() {
-	if (modeVariable == "light" &&  storedLocalContent == "contentEn"){
-		document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
-		
-	} else if (modeVariable == "light" &&  storedLocalContent == "contentEs"){
-		document.getElementById("phiLink").href = "/main/phi/esLight/phi.html";
-		
-	} else if (modeVariable == "light" &&  storedLocalContent == "contentOg"){
-		document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
-		
-	} else if(modeVariable == "light" &&  storedLocalContent == "contentSpy"){
-		document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
-		
-	} else if (modeVariable == "dark" &&  storedLocalContent == "contentEs"){
-		document.getElementById("phiLink").href = "/main/phi/esDark/phi.html";
-		
-	} else if (modeVariable == "dark" &&  storedLocalContent == "contentOg"){
-		document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
-		
-	} else if(modeVariable == "dark" &&  storedLocalContent == "contentSpy"){
-		document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
-		
-	} else if(modeVariable == "dark" &&  storedLocalContent == "contentSpy"){
-		document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
-	}};
-	langSwitcher.addEventListener("click", onLangSwitch); //listens to the langSwitch button and runs this function
+	document.getElementById("phiLink").onclick = function() {
+		if (modeVariable == "light" &&  storedLocalContent == "contentEn"){
+			document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
+			
+		} else if (modeVariable == "light" &&  storedLocalContent == "contentEs"){
+			document.getElementById("phiLink").href = "/main/phi/esLight/phi.html";
+			
+		} else if (modeVariable == "light" &&  storedLocalContent == "contentOg"){
+			document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
+			
+		} else if(modeVariable == "light" &&  storedLocalContent == "contentSpy"){
+			document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
+			
+		} else if (modeVariable == "dark" &&  storedLocalContent == "contentEs"){
+			document.getElementById("phiLink").href = "/main/phi/esDark/phi.html";
+			
+		} else if (modeVariable == "dark" &&  storedLocalContent == "contentOg"){
+			document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
+			
+		} else if(modeVariable == "dark" &&  storedLocalContent == "contentSpy"){
+			document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
+			
+		} else if(modeVariable == "dark" &&  storedLocalContent == "contentSpy"){
+			document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
+		}};
 	</script>
 	</body>
 </html>
