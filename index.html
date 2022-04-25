@@ -93,6 +93,8 @@
 	<script src="/js/langswitcher.js"></script>
 	<script> // modeVariable is either light or dark for the theme, and the storedLocalContent is either contentEn,Es,Og or contentSpy
 	document.getElementById("phiLink").onclick = function() {
+	console.log(modeVariable);
+	console.log(storedLocalContent);
 		if (modeVariable == "light" &&  storedLocalContent == "contentEn"){
 			document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
 			
