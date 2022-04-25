@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 	//store in a variable whatever the data-theme is in the localStorage, if it doesnt exist, then it gets set to "light"
 	var modeVariable = localStorage.getItem("data-theme")??'light';
-				
+
 	//sets the page attribute to be either dark or light
 	document.documentElement.setAttribute("data-theme", modeVariable);
 				

@@ -1,5 +1,3 @@
-	//esto funciona asi
-	
 var langSwitcher = document.getElementById("languageSwitcher"); //fetches the button, stores it on langSwitcher
 var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg'; //grabs localContentLang, if it doesnt exist its set to contentOg, stores it in storedLocalContent
 	
