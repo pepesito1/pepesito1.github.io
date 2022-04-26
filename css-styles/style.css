@@ -13,7 +13,7 @@ inner body only changes the entire text content background */
   --text-color: black;
   --linkColor: #00C4B4;
   --visitedLinkColor: #018786;
-  --sidebarBg: rgb(255, 154, 92);
+  --sidebarBg: rgb(138, 70, 29);
 }
 
 [data-theme="dark"] {
@@ -46,7 +46,6 @@ a:active {
   width: 15%;
   margin: 2%;
   padding: 3%;
-  padding-right: 5%;
   background-color: var(--sidebarBg);
   color: white;
 }
