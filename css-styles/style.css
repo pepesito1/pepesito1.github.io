@@ -14,6 +14,7 @@ inner body only changes the entire text content background */
   --linkColor: #00C4B4;
   --visitedLinkColor: #018786;
   --indexBg: rgb(235, 181, 131);
+  --indexLetterColor: black;
 }
 
 [data-theme="dark"] {
@@ -24,6 +25,7 @@ inner body only changes the entire text content background */
   --linkColor: #C8FFF4;
   --visitedLinkColor: rgb(255, 255, 255);
   --indexBg: rgb(138, 70, 29);
+  --indexLetterColor: white;
 }
 
 a:link {
@@ -47,7 +49,7 @@ a:active {
   padding: 1%;
   padding-right: 3%;
   background-color: var(--indexBg);
-  color: white;
+  color: var(--indexLetterColor);
   width: fit-content;
 }
 
