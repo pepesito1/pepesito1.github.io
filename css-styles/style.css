@@ -46,6 +46,7 @@ a:active {
   width: 15%;
   margin: 2%;
   padding: 1%;
+  padding-right: 3%;
   background-color: var(--sidebarBg);
   color: white;
 }
