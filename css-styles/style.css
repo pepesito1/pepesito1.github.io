@@ -48,11 +48,9 @@ a:active {
   padding-right: 3%;
   background-color: var(--indexBg);
   color: white;
+  width: fit-content;
 }
 
-.indexLinks{
-	width: -moz-fit-content;
-}
 
 #header {
   margin: 2%;
