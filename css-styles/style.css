@@ -13,7 +13,7 @@ inner body only changes the entire text content background */
   --text-color: black;
   --linkColor: #00C4B4;
   --visitedLinkColor: #018786;
-  --sidebarBg: rgb(138, 70, 29);
+  --indexBg: rgb(138, 70, 29);
 }
 
 [data-theme="dark"] {
@@ -23,7 +23,7 @@ inner body only changes the entire text content background */
   --text-color: white;
   --linkColor: #C8FFF4;
   --visitedLinkColor: rgb(255, 255, 255);
-  --sidebarBg: rgb(138, 70, 29);
+  --indexBg: rgb(138, 70, 29);
 }
 
 a:link {
@@ -42,13 +42,17 @@ a:active {
   color: blue;
 }
 
-#sidebar {
+#index {
   width: 15%;
   margin: 2%;
   padding: 1%;
   padding-right: 3%;
-  background-color: var(--sidebarBg);
+  background-color: var(--indexBg);
   color: white;
+}
+
+#indexLinks{
+	width: -moz-fit-content;
 }
 
 #header {
