@@ -13,7 +13,7 @@ inner body only changes the entire text content background */
   --text-color: black;
   --linkColor: #00C4B4;
   --visitedLinkColor: #018786;
-  --indexBg: rgb(138, 70, 29);
+  --indexBg: rgb(235, 181, 131);
 }
 
 [data-theme="dark"] {
