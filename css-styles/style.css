@@ -45,7 +45,7 @@ a:active {
 #sidebar {
   width: 15%;
   margin: 2%;
-  padding: 3%;
+  padding: 1%;
   background-color: var(--sidebarBg);
   color: white;
 }
