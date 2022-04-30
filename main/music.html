@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!-- this whole html is disgusting because im copying and pasting the entire music-containing block of code several times
+i know there are better ways to do it
+with appendChild perhaps?
+im just not interested in modifying the langswitcher.js so it works every time the language is switched
+sorry -->
 	<html lang="en">
 	<meta charset="UTF-8">
 	<title>music in da crib</title>
@@ -67,7 +72,7 @@
 		`;
 		var contentOg = `
 		<p>
-			(texto agarrado directo de spreadsheet, sin edits);<br>
+			(texto agarrado directo de spreadsheet, sin edits, solo adiciones);<br>
 			en, i dont know, en esta spreadsheet, o con whoever<br>
 			simply putting it: siempre me ha dado verguenza lo que siento, mis emociones y lo que me gusta<br>
 			y maybe<br>
@@ -77,7 +82,7 @@
 			tratar de hacer los que demas hacen, tratar de sentir lo que demas sienten, tratar de tener los mismos gustos de los demas, tratar de estar en situaciones sociales que straight up no me gustan<br>
 			y ahora lo digo proudly<br>
 			well, ah, one of the things ive always been ashamed of, is my music taste<br>
-		</p><strong><p style="color:red background:white">
+		</p><strong><p style="color:red;background:white">
 			esto seria un comentario escondido originalmente:<br>
 			fuck TRYING to use spotify just because everyone else did. i just cringe at the thought of it. wow.
 		</p></strong>
@@ -92,6 +97,8 @@
 			lets list some bangers<br>
 		</p>
 		<h3> por simplicidad, los archivos de musica en esta pagina estan en mp3 para evitar problemas de compatibilidad</h3><br>
+		<br>
+		<p>needless to say i also dont own any of this. i dont own any rights to this. support the devs and the games tho theyre all good especially great ace attorney and the wright x layton crossover :thumbsup:</p>
 		<br>
 			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
 				<figcaption>
@@ -126,6 +133,62 @@
 						<code>audio</code> element.
 				</audio>
 			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				great ace attorney 2: summation examination<br>
+				shit yo this wholes game soundtrack is fire
+				</figcaption>
+				<audio controls style="width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/155summ.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				xenoblade chronicles x: primordia, outside of nla
+				</figcaption>
+				<audio controls style="width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/302primordia.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				xenoblade chronicles x: oblivia. second half is good cuz its the night theme. banger.
+				</figcaption>
+				<audio controls style="width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/305oblivia.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				elder scrolls: oblivion town? i think. gorgeous
+				</figcaption>
+				<audio controls style="width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/town05.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				steins gate: technovision. unique.
+				</figcaption>
+				<audio controls style="width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/102tech.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
 		`;
 
 		var headerContentEn	= `
@@ -133,28 +196,249 @@
 		<h2>text content is = english</h2>
 		`;
 		var contentEn = `
-		this is a very simple website :) <br>
-		after 9 years in development, hopefully it has been worth the wait<br>
-		with the 2 buttons above you can switch between dark mode or light mode<br>
-		or switch between the pages languages<br><br>
-		<em>original language:</em> a mix between english and spanish, this is the one i write first, then i translate<br>
-		<em>english language:</em> translated straight into english<br>
-		<em>spanish language:</em> translated straight into spanish<br>
-		<em>club penguin PSA/EPF code:</em> everything written in secret agent code :p
+		<p>
+			(text grabbed AND <strong>translated</strong> directly from spreadsheet, no edits, only additions);<br>
+			in, i dont know, this spreadsheet, or with whoever<br>
+			simply putting it: ive always felt shame about what i feel, my emotions and what i like<br>
+			and maybe<br>
+			just maybe<br>
+			in middle or highschool, [which lasted like], 6 years, although amm i was very different [at the beginning vs the end], of course<br>
+			i always tried to, you know, i tried to just fit in<br>
+			trying to do what everyone else did, trying to feel what everyone else felt, trying to like the same things as everyone else, trying to be in social situations that i straight up dislike<br>
+			and now i say it proudly<br>
+			well, ah, one of the things ive always been ashamed of, is my music taste<br>
+		</p><strong><p style="color:red;background:white">
+			this wouldve been a hidden comment originally:<br>
+			fuck TRYING to use spotify just because everyone else did. i just cringe at the thought of it. wow.
+		</p></strong>
+		<p>
+			i really dont like listening to music. like, on my own. i just dont get it, silence is more enjoyable<br>
+			but clearly, SURELY, i HAVE to enjoy music, right?<br>
+			well, of course i do<br>
+			here is a list of music that<br>
+			i could listen to hours on loop with no end<br>
+			all of them are like, the memories of when, i heard that music for the first time, whatever<br>
+			im just tryin to not be ashamed here<br>
+			lets list some bangers<br>
+		</p>
+		<h3> (what im trying to say in the og language is): the files are in mp3 just out of simplicity and to avoid compatibility errors</h3><br>
+		<br>
+		<p>needless to say i also dont own any of this. i dont own any rights to this. support the devs and the games tho theyre all good especially great ace attorney and the wright x layton crossover :thumbsup:</p>
+		<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				great ace attorney 2: witnesses take the stand
+				</figcaption>
+				<audio controls style="width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/107stand.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				ragnarok online: be nice n easy
+				</figcaption>
+				<audio controls style="width: 100%">  <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/129nicen.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				professor layton vs wright: mass inquisition <br>
+				ok this one has to be of the best ever
+				</figcaption>
+				<audio controls style="width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/219mass.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				great ace attorney 2: summation examination<br>
+				shit yo this wholes game soundtrack is fire
+				</figcaption>
+				<audio controls style="width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/155summ.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				xenoblade chronicles x: primordia, outside of nla
+				</figcaption>
+				<audio controls style="width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/302primordia.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				xenoblade chronicles x: oblivia. second half is good cuz its the night theme. banger.
+				</figcaption>
+				<audio controls style="width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/305oblivia.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				elder scrolls: oblivion town? i think. gorgeous
+				</figcaption>
+				<audio controls style="width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/town05.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				steins gate: technovision. unique.
+				</figcaption>
+				<audio controls style="width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/102tech.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
 		`;
 			
 		var headerContentEs	= `
 		<h1>hoja de musica agarrada de un doc de google sheets :)</h1>
 		<h2>el contenido del texto esta actualmente en = español</h2>
 		`;
-		var contentEs = `esto es un sitio web muy simple :) <br>
-		tras una eternidad....<br>
-		con los 2 botones de arriba puedes cambiar entre modo blanco u oscuro<br>
-		o cambiar entre el idioma de la pagina<br><br>
-		<em>idioma original</em> mezcla entre ingles y español, este es el que escribo primero, despues traduzco<br>
-		<em>en ingles:</em> traducido directo al ingles<br>
-		<em>en español:</em> traducido directo al español<br>
-		<em>club penguin PSA/EPF code</em>: todo escrito en codigo de agente secreto :p
+		var contentEs = `
+		<p>
+			(texto agarrado Y <strong>traducido</strong> directamente de la hoja de calculo, sin edits, solo adiciones);<br>
+			en, nose, en esta spreadsheet, o con quien sea<br>
+			dicho de forma simple: siempre me ha dado verguenza lo que siento, mis emociones y lo que me gusta<br>
+			y tal vez<br>
+			SOLO tal vez<br>
+			en la secu-prepa, que es como, 6 años, aunque amm yo era muy diferente en 1ero de secu vs 6to semestre de prepa, claro<br>
+			siempre trate de, sabes, trate de [entrar, encajar, combinar]<br>
+			tratar de hacer los que demas hacen, tratar de sentir lo que demas sienten, tratar de tener los mismos gustos de los demas, tratar de estar en situaciones sociales que straight up no me gustan<br>
+			y ahora lo digo [sin problema]<br>
+			ah, una de las cosas que siempre me han dado verguenza, es mi gusto de musica<br>
+		</p><strong><p style="color:red;background:white">
+			esto seria un comentario escondido originalmente:<br>
+			[solo es un comentario que habla sobre que me da pena tratar de haber usado spotify pq los demas lo hacian :( ]
+		</p></strong>
+		<p>
+			de plano no me gusta escuchar mucho musica. como, por mi cuenta. no lo entiendo, el silencio es mas disfrutable<br>
+			pero claro que, SEGURAMENTE, me TIENE que gustar la musica, verdad?<br>
+			[bien], claro que lo hace<br>
+			aqui hay una lista de musica que<br>
+			podria escuchar por horas sin fin<br>
+			muchas son como, los recuerdos de cuando, oi esa musica por primera vez, o algo<br>
+			solo estoy tratando de que no me de verguenza esto lol<br>
+			lets list some bangers<br>
+		</p>
+		<h3> por simplicidad, los archivos de musica en esta pagina estan en mp3 para evitar problemas de compatibilidad</h3><br>
+		<br>
+		<p>sin necesidad de decirlo no soy dueño o creador de nada de esto. no tengo los derechos para nada de esto. aunque apoyen a los juegos y los desarrolladores lol todos son buenos especialmente great ace attorney y el crossover de wright x layton :thumbsup:</p>
+		<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				great ace attorney 2: witnesses take the stand
+				</figcaption>
+				<audio controls style="width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/107stand.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				ragnarok online: be nice n easy
+				</figcaption>
+				<audio controls style="width: 100%">  <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/129nicen.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				professor layton vs wright: mass inquisition <br>
+				MMMMM de las mejores
+				</figcaption>
+				<audio controls style="width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/219mass.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				great ace attorney 2: summation examination<br>
+				toda la musica de este juego es buenisima
+				</figcaption>
+				<audio controls style="width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/155summ.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				xenoblade chronicles x: primordia, fuera de nla
+				</figcaption>
+				<audio controls style="width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/302primordia.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				xenoblade chronicles x: oblivia. la segunda mitad es buena pq es el tema de noche. banger.
+				</figcaption>
+				<audio controls style="width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/305oblivia.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				elder scrolls: oblivion de un pueblo? creo? hermosa.
+				</figcaption>
+				<audio controls style="width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/town05.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				steins gate: technovision. unica.
+				</figcaption>
+				<audio controls style="width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/102tech.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
 		`;
 	</script>
 	<script src="/js/langswitcher.js"></script>
