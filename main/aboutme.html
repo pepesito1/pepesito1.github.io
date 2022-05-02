@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta charset="UTF-8">
+	<title>webpage of a lifetime</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link href="/css-styles/style.css" rel="stylesheet">
+	
+	<style>
+	th, td {
+	  border: 1px solid black;
+	  padding: 5px;
+	}
+	#t1{
+	  background-color: rgb(219, 219, 219);
+	}
+	p {
+	text-indent: -30px <!--nullifies the text indent in style.css . i realize i should be using <p> and </p> for every line but oh well -->
+	}
+	</style>
+	
+	<body>
+	<img src="/media/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
+	
+	<div class="entireBody">
+		<div class="onlyHeader">
+			<div id="header"></div>
+			
+			<button id="theme-switcher">night night</button>
+			<br>
+				
+			<div id="languageLabel"><label>language/idioma:
+				<select id="lang">
+					<option></option>
+					<option value="original">original</option>
+					<option value="es">spanish</option>
+					<option value="en">english</option>
+					<option value="secret">club penguin PSA/EPF code</option>
+				</select>
+			</label></div>
+				
+			<button id="languageSwitcher">Switch language!/cambiar idioma :)</button>
+		</div>
+			
+		<hr class="solid">
+		
+		<div id="index">
+			<ul>
+				<li><a href="/index.html">homepage</a></li>
+				<li><a href="/main/aboutme.html">about me</a></li>
+				<li><a href="" id="phiLink">gaming</a><br></li>
+				<li>blogposts?</li>
+					<ol>
+						<li><a href="/main/blogposts/life29time04spot2022.html">spot of a lifetime</a></li>
+					</ol>
+				<li><a href="/main/music.html">music</a><br></li>
+				<li><a href="/main/images.html">images</a><br></li>
+				<li><a href="/main/qualia.html">qualia</a><br></li>
+			</ul>
+		</div>
+		
+		<div id="mainBodyContent"></div>
+
+		<hr class="solid">
+		
+		<a id="footer" href="/index.html">return to homepage</a>
+	</div>
+	
+	<script src="/js/darkbutton.js"></script>
+	<script src="/js/pufflescript.js"></script>
+	<script>
+		var headerContentOg	= `
+		<h1>🎑🎑🎑🎑🎑🎑🎑🎑🎑🎑 about me idc</h1>
+		<h2>text content is = original</h2>
+		`;
+		var contentOg = `
+		<table>
+			<tr>
+			<td colspan="2">some quick info about me :)</td>
+			</tr>
+			<tr id="t1">
+				<td>name:</td>
+				<td>pepesito1</td>
+			</tr>
+			<tr id="t1">
+				<td>age:</td>
+				<td>>18</td>
+			</tr>
+			<tr id="t1">
+				<td>pronouns:</td>
+				<td>he/him</td>
+			</tr>
+			<tr id="t1">
+				<td>from:</td>
+				<td>mexico</td>
+			</tr>
+			<tr id="t1">
+				<td colspan="2"><strong>greatly introverted</strong></td>
+			</tr>
+			<tr id="t1">
+				<td>tw:</td>
+				<td>@peps4inkie</td>
+			</tr>
+			<tr id="t1">
+				<td>discord:</td>
+				<td>pepesito1#0553</td>
+			</tr>
+		</table>
+		
+		<p>i am way more introverted than what i would like to admit
+		like, no-social-skills level of introverted
+		im an enormous fan of certain franchises
+		monster hunter and ace attorney stand out
+
+		i used to be really, really insecure about myself
+		sometimes i reach certain realizations
+		but im just a dude trying to get by
+		trying to not lose his mind at the world</p>
+		`;
+
+		var headerContentEn	= `
+		<h1>about me</h1>
+		<h2>text content is = english</h2>
+		`;
+		var contentEn = `
+		<table>
+			<tr>
+			<td colspan="2">some quick info about me :)</td>
+			</tr>
+			<tr id="t1">
+				<td>name:</td>
+				<td>pepesito1</td>
+			</tr>
+			<tr id="t1">
+				<td>age:</td>
+				<td>>18</td>
+			</tr>
+			<tr id="t1">
+				<td>pronouns:</td>
+				<td>he/him</td>
+			</tr>
+			<tr id="t1">
+				<td>from:</td>
+				<td>mexico</td>
+			</tr>
+			<tr id="t1">
+				<td colspan="2"><strong>greatly introverted</strong></td>
+			</tr>
+			<tr id="t1">
+				<td>tw:</td>
+				<td>@peps4inkie</td>
+			</tr>
+			<tr id="t1">
+				<td>discord:</td>
+				<td>pepesito1#0553</td>
+			</tr>
+		</table>
+		
+		<p>i am way more introverted than what i would like to admit
+		like, no-social-skills level of introverted
+		im an enormous fan of certain franchises
+		monster hunter and ace attorney stand out
+
+		i used to be really, really insecure about myself
+		sometimes i reach certain realizations
+		but im just a dude trying to get by
+		trying to not lose his mind at the world</p>
+		`;
+			
+		var headerContentEs	= `
+		<h1>sobre Mi 🎑🎑🎑🎑</h1>
+		<h2>el contenido del texto esta actualmente en = español</h2>
+		`;
+		var contentEs = `
+		<table>
+			<tr>
+			<td colspan="2">mm sobre mi</td>
+			</tr>
+			<tr id="t1">
+				<td>nombre:</td>
+				<td>pepesito1</td>
+			</tr>
+			<tr id="t1">
+				<td>edad:</td>
+				<td>>18</td>
+			</tr>
+			<tr id="t1">
+				<td>pronombres?:</td>
+				<td>el/el? el/vos? nose</td>
+			</tr>
+			<tr id="t1">
+				<td>de:</td>
+				<td>mexico</td>
+			</tr>
+			<tr id="t1">
+				<td colspan="2"><strong>mu y introvertido</strong></td>
+			</tr>
+			<tr id="t1">
+				<td>tw:</td>
+				<td>@peps4inkie</td>
+			</tr>
+			<tr id="t1">
+				<td>discord:</td>
+				<td>pepesito1#0553</td>
+			</tr>
+		</table>
+		
+		<p>aqui habria un texto que no me gustaria traducir al español :)))) sorry. vean el idioma original o en ingles.</p>
+		`;
+	</script>
+	<script src="/js/langswitcher.js"></script>
+	<script src="/js/phiSwitcher.js"></script>
+	</body>
+</html>
