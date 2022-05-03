@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta charset="UTF-8">
+	<title>kinda fun content?</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link href="/css-styles/style.css" rel="stylesheet">
+	
+	<style>
+	p {
+	text-indent: 0px; /*nullifies the text indent in style.css . i realize i should be using <p> and </p> for every line but oh well*/
+	}
+	img {
+	max-width: 600px;
+	}
+	</style>
+	
+	<body>
+	<img src="/media/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
+	
+	<div class="entireBody">
+		<div class="onlyHeader">
+			<div id="header"></div>
+			
+			<button id="theme-switcher">night night</button>
+			<br>
+				
+			<div id="languageLabel"><label>language/idioma:
+				<select id="lang">
+					<option></option>
+					<option value="original">original</option>
+					<option value="es">spanish</option>
+					<option value="en">english</option>
+					<option value="secret">club penguin PSA/EPF code</option>
+				</select>
+			</label></div>
+				
+			<button id="languageSwitcher">Switch language!/cambiar idioma :)</button>
+		</div>
+			
+		<hr class="solid">
+		
+		<div id="index">
+			<ul>
+				<li><a href="/index.html">homepage</a></li>
+				<li><a href="/main/aboutme.html">about me</a></li>
+				<li><a href="" id="phiLink">gaming</a><br></li>
+				<li>blogposts?</li>
+					<ol>
+						<li><a href="/main/blogposts/life29time04spot2022.html">spot of a lifetime</a></li>
+					</ol>
+				<li><a href="/main/music.html">music</a><br></li>
+				<li><a href="/main/images.html">images</a><br></li>
+				<li><a href="/main/qualia.html">qualia</a><br></li>
+			</ul>
+		</div>
+		
+		<div id="mainBodyContent"></div>
+	
+		<hr class="solid">
+		
+		<a id="footer" href="/index.html">return to homepage</a>
+	</div>
+	
+	<script src="/js/darkbutton.js"></script>
+	<script src="/js/pufflescript.js"></script>
+	<script>
+		var headerContentOg	= `
+		<h1>images</h1>
+		<h2>text content is = original</h2>
+		`;
+		var contentOg = `
+		<p>this is not a complete collection of every single image i have ever loved, or something like that. its just random. wahtever i had stored in my hard drive or my google drive. yet here it is:</p>
+		<br>
+		<img src="/media/further/dibujo-kermes-09-1.webp" alt="club penguin game screenshot from 2009, i am in there" title="i dont know what the puffles name was. im sorry.">
+		<p>oldest picture of me in the internet. foto tomada el 11 de septiembre del 2009. soy YO en 2009 en club penguin.<a href="https://staraptor98.wordpress.com/2009/09/11/club-penguin-kermes-2009/"> este es el link del blog</a></p>
+		<br>
+		<img src="/media/further/susnet.png" alt="penguin looking at the horizon" title="svg art is unrivaled">
+		<p>arte svg de club penguin. aint it just nice?</p>
+		<br>
+		<img src="/media/further/itsthemonkeyaug2017.jpg" alt="screenshot of toontown rewritten game. a monkey character is approaching. my character says -its the monkey-" title="meow, meow meow meow meow">
+		<p>screenshot de toontown rewritten con tedthecaver, o yourpalmouse. shes a neat-ish friend of mine. shes great.</p>
+		<br>
+		<img src="/media/further/unknown-20.jpg" alt="screenshot of toontown rewritten game. it is my character standing next to another person" title="squeeeaak">
+		<p>mismo pero como en agosto de 2020. con mi homie 127. hes a great dude. again.</p>
+		<br>
+		<img src="/media/further/rainbow.png" alt="screenshot of club penguin island" title="colors :)">
+		<p>screenshot de cuando jugue club penguin island a inicios de 2021. lo jugue cuando estaba vivo como por 5 minutos, recuerdo que habia una colab con la peli de cars 3 lol. well, its full of colors, and its pretty, and i love it.</p>
+		<br>
+		<img src="/media/further/keep.png" alt="piccture of my homie keepit in club penguin" title="god damnit where have you gone">
+		<p>MMMMM tome esta en club penguin rewritten con el, creo que del 11 de agosto de 2020. hizo un impacto masivo en mi vida, de las personas mas importantes y significantes en mi vida y por mucho de forma directa.</p>
+		<br>
+		<p>i... really hope i matter the same way for him too</p>
+		
+		<h3>now lets add some drawings :)</h3>
+		<img src="/media/further/pepebirthday1.jpg" alt="drawing of a cartoon mouse, with a lot of in-jokes in it" title="yourplamou">
+		<p>drawn by ted on my birthday i think for august 2018. cant believe it was 4 years ago as of today (03/05/2022). i... can kind of recall most jokes but not all of them :(</p>
+		<br>
+		<img src="/media/further/RsgP6Ky.png" alt="a drawing of 2 mice laying together" title="this was NOT the skin color of my rat. they got it wrong">
+		<p>commissioned by ted for dirt cheap with in game money. it is gorgeous, that red ice cube was of my favorite items along with the fish earring. beautiful.</p>
+		<br>
+		<img src="/media/further/smiler.png" alt="drawing of daredevil with puffles on him" title="the man without fear">
+		<p>drawn by 127 on august 2020. 2 years ago. its matt murdock (i love daredevil and spiderman) with puffles on him, he was reading i think michael bendis' run during this time cuz i kept recommending it to him. i adore it. the linework is a bit wonky tbh but i adore it with all my heart. the puffles are so pretty.</p>
+		<br>
+		<img src="/media/further/76_sin_titulo_20200719143502.png" alt="simple drawing of a puffle" title="i fear not, the jaws of death">
+		<p>drawn by some sorta... person. i ah, really shouldnt be putting this drawing here. but i preserved it. the story behind it is just embarrasing. alas, i am a free person.</p>
+		<br>
+		<br>
+		<br>
+		<img src="/media/further/xenoblade-16-1.jpg" alt="pic of elma from xenoblade chronicles x" title="a fragile illusion">
+		<p>today, we use our power to fell a god, and then seize our destiny.</p>
+		`;
+
+		var headerContentEn	= `
+		<h1>this is my webpage</h1>
+		<h2>text content is = english</h2>
+		`;
+		var contentEn = `
+		translation soon
+		`;
+			
+		var headerContentEs	= `
+		<h1>esta es mi página</h1>
+		<h2>el contenido del texto esta actualmente en = español</h2>
+		`;
+		var contentEs = `
+		translation soon
+		`;
+	</script>
+	<script src="/js/langswitcher.js"></script>
+	<script src="/js/phiSwitcher.js"></script>
+	</body>
+</html>
