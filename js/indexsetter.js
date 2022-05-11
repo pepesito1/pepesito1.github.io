@@ -10,6 +10,6 @@ var indexContent = `
 		<li><a href="/main/music.html">music</a><br></li>
 		<li><a href="/main/images.html">images</a><br></li>
 		<li><a href="/main/qualia.html">qualia</a><br></li>
-	</ul>`
+	</ul>`;
 	
 document.getElementById("index").innerHTML = indexContent;
