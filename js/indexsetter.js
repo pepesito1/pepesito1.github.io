@@ -12,4 +12,4 @@ var indexContent = `
 		<li><a href="/main/qualia.html">qualia</a><br></li>
 	</ul>`
 	
-document.getElementById("index").innerHTML = indexContent
+document.getElementById("index").innerHTML = indexContent;

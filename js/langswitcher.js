@@ -27,6 +27,7 @@ if (storedLocalContent === "contentEn"){
 	fontFont = "secretFont";
 	letterSpacey = "3px";
 }
+
 document.getElementById("mainBodyContent").style.fontFamily = fontFont; //sets font
 document.getElementById("mainBodyContent").style.fontSize = parseInt(fontSizey) + "%"; //makes the fontSizey an integer, adds a %
 document.getElementById("mainBodyContent").style.letterSpacing = letterSpacey; //changes letters spacing
@@ -61,7 +62,7 @@ var onLangSwitch = function() {
 	} else if (lang ==="secret"){
 		document.getElementById("mainBodyContent").innerHTML = contentOg;
 		document.getElementById("header").innerHTML = headerContentOg;
-		fontSizey = "180";
+		fontSizey = "140";
 		fontFont = "secretFont";
 		letterSpacey = "3px";
 		localStorage.setItem("localContentLang", "contentSpy"); //sets to localContentLang the contentSpy
@@ -73,4 +74,5 @@ var onLangSwitch = function() {
 	document.getElementById("header").style.fontSize = parseInt(fontSizey) + "%"; //makes the fontSizey an integer, adds a %
 	document.getElementById("header").style.letterSpacing = letterSpacey; //changes letters spacing
 };
+
 langSwitcher.addEventListener("click", onLangSwitch); //runs function when button is clicked
