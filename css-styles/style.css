@@ -28,6 +28,16 @@ inner body only changes the entire text content background */
   --indexLetterColor: white;
 }
 
+[data-theme="secret"] {
+  --background-color: black;
+  --header-background: gray;
+  --inner-body: rgb(32, 32, 32);
+  --text-color: white;
+  --linkColor: #C8FFF4;
+  --visitedLinkColor: rgb(255, 255, 255);
+  --indexBg: rgb(158, 90, 49);
+  --indexLetterColor: white;
+}
 a:link {
   color: var(--linkColor);
 }

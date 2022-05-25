@@ -9,10 +9,10 @@ var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg';
 		document.getElementById("phiLink").href = "/main/phi/phi_es_light";
 
 	} else if (modeVariable == "light" &&  storedLocalContent == "contentOg"){
-		document.getElementById("phiLink").href = "/main/phi/phi_en_dark";
+		document.getElementById("phiLink").href = "/main/phi/phi_en_light";
 
 	} else if(modeVariable == "light" &&  storedLocalContent == "contentSpy"){
-		document.getElementById("phiLink").href = "/main/phi/phi_en_dark";
+		document.getElementById("phiLink").href = "/main/phi/phi_en_light";
 
 	} else if (modeVariable == "dark" &&  storedLocalContent == "contentEs"){
 		document.getElementById("phiLink").href = "/main/phi/phi_es_dark";
@@ -36,7 +36,7 @@ var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg';
 		document.getElementById("phiLink").href = "/main/phi/phi_en_dark";
 
 	} else if (modeVariable == "dark" &&  storedLocalContent == "contentEs"){
-		document.getElementById("phiLink").href = "/main/phi/phi_es_light";
+		document.getElementById("phiLink").href = "/main/phi/phi_es_dark";
 
 	} else if (modeVariable == "dark" &&  storedLocalContent == "contentOg"){
 		document.getElementById("phiLink").href = "/main/phi/phi_en_dark";
@@ -45,16 +45,16 @@ var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg';
 		document.getElementById("phiLink").href = "/main/phi/phi_en_dark";
 
 	} else if (modeVariable == "light" &&  storedLocalContent == "contentEs"){
-		document.getElementById("phiLink").href = "/main/phi/phi_es_dark";
+		document.getElementById("phiLink").href = "/main/phi/phi_es_light";
 
 	} else if(modeVariable == "light" &&  storedLocalContent == "contentOg"){
-		document.getElementById("phiLink").href = "/main/phi/phi_en_dark";
+		document.getElementById("phiLink").href = "/main/phi/phi_en_light";
 
 	} else if(modeVariable == "light" &&  storedLocalContent == "contentSpy"){
-		document.getElementById("phiLink").href = "/main/phi/phi_en_dark";
+		document.getElementById("phiLink").href = "/main/phi/phi_en_light";
 
 	} else if(modeVariable == "light" &&  storedLocalContent == "contentEn"){
-	document.getElementById("phiLink").href = "/main/phi/phi_en_dark";
+	document.getElementById("phiLink").href = "/main/phi/phi_en_light";
 	}};
 	//holy shit this code is bad
 	

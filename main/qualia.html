@@ -4,23 +4,205 @@
 	<title>dont let it get to you</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link href="/css-styles/style.css" rel="stylesheet">
 	
 	<style>
+	th, td {
+	  border: 1px solid black;
+	  padding: 5px;
+	  color: black;
+	}
+	#t1{
+	  background-color: rgb(219, 219, 219);
+	}
+	p {
+	text-indent: 0px /*nullifies the text indent in style.css . i realize i should be using <p> and </p> for every line but oh well*/
+	}
+	#mycanvasdiv{
+		text-align: center;
+	}
+	#mycanvas{ /* this is so god damn perfect. sets the width to 100% of the page but not TOO big, in case the user is using something like a computer. great- */
+		width: 100%;
+		max-width: 480px;
+		height: auto;
+	}
+	
 	</style>
 	
 	<body>
+	<img src="/media/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
+	
+	<div class="entireBody">
+		<div class="onlyHeader">
+			<div id="header"></div>
+			
+			<button id="theme-switcher">night night</button>
+			<br>
+				
+			<div id="languageLabel"><label>language/idioma:
+				<select id="lang">
+					<option></option>
+					<option value="original">original</option>
+					<option value="es">spanish</option>
+					<option value="en">english</option>
+					<option value="secret">club penguin PSA/EPF code</option>
+				</select>
+			</label></div>
+				
+			<button id="languageSwitcher">Switch language!/cambiar idioma :)</button>
+		</div>
+			
 		<hr class="solid">
-		<div>
-		<h2><a href="https://www.khanacademy.org/computer-programming/fish-tank-with-functioning-bubbles/6578527607504896">fish tank with functioning bubbles!</a></h2><script src="https://www.khanacademy.org/computer-programming/fish-tank-with-functioning-bubbles/6578527607504896/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script><p>Made using: <a href="http://www.khanacademy.org/computer-programming">Khan Academy Computer Science</a></p>
 		
-		<h2><a href="https://www.khanacademy.org/computer-programming/lights-out-minigame/5356772601151488">lights out minigame</a></h2><script src="https://www.khanacademy.org/computer-programming/lights-out-minigame/5356772601151488/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script><p>Made using: <a href="http://www.khanacademy.org/computer-programming">Khan Academy Computer Science</a></p>
+		<div id="index"></div>
+		<div id="mainBodyContent"></div>
+		
+		<div id="mycanvasdiv">
+			<canvas id="mycanvas"></canvas> 
+			<p>solve this for a lil secret ------- resuelve esto para un secretito</p>
 		</div>
 		
-		<p>nothing here yet. nada aun en qualia.html</p>
-
 		<hr class="solid">
 		
-		<a id="footer" href="/index.html">return to homepage</a>
+		<a id="footer" href="/index">return to homepage</a>
 	</div>
+	
+	<script src="/js/darkbutton.js"></script>
+	<script src="/js/pufflescript.js"></script>
+	<script src="/js/indexsetter.js"></script>
+	<script src="/js/phiSwitcher.js"></script>
+	
+	<script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+	<script> //grabbed directly from khan academy :) this and the line above runs the canvas
+		var sketchProc = function(processingInstance) {
+			with (processingInstance) {
+				size(400, 400); 
+				frameRate(60); //i changed the framerate from 30 to 60
+		
+				// ProgramCodeGoesHere
+				/*
+				this is a very simple lights out minigame!
+				at the beginning there are turned on "lights", ej. the white squares.
+				to win you have to turn ALL of them off.
+
+				but theres a catch, whenever you click on the light to turn if off, all of the lights around it turn on!
+
+				you can on the code inmediately below this change the color of the turned off and on lights, along with the grid size! try beating the game when the grids size is 10x10!
+				*/
+
+				var gridSize = 3; //feel free to change this value! it works. 
+				var color1 = color(138, 138, 138); //grey color by default. you can change this around!
+				var color2 = color(222, 222, 222); //white color by default
+
+				//define these 4 variables just for cleanliness{
+				var squareOnTopOfMouseX;
+				var squareOnTopOfMouseY;
+				var colorsq;
+				var victoryChecksq;
+				//}
+
+				//get() the values of the colors and other info{
+				/*
+				theres probably a more efficient way to do this. idk what the get() function returns but its some weirdass value. i color the canvas color1 to then get() the value, for simplicity and to be able to voluntarily change the color without problems. same for color2
+				*/
+				background(color1);
+				var color1Gotten = get(44, 20);
+				background(color2);
+				var color2Gotten = get(44, 20);
+					
+				var fraction = width/gridSize; //this divides the width of the canvas by the grid size. this allows us to put squares in each fraction (ej. if the gridsize is 5, then the fraction will divide the width of the canvas by 5, then with this we can draw a square in the first fifth of the canvas, second fifth of the canvas, etc. by multiplying the fraction by 1, 2, 3, 4, etc.)
+				//}
+
+				//creating the grid{
+				fill(color1); //makes the og grid black (color1)
+				for (var e = 0; e < gridSize; e++){ //i cant believe this works
+					for (var i = 0; i < gridSize; i++){ //first it draws the squares by columns
+						rect(i * fraction, fraction*e, fraction, fraction); //however it only draws them column by column, to make it go through all the rows i put it in yet another for loop that increments its variable e by 1, and draw each individual row with that
+					}
+				}
+				//}
+
+				//defining important functions{
+				var colorCheck = function(x, y) { //function to check the colors of the squares we are gonna place a new square in
+					colorsq = get(x + 5, y + 5); //color sq gets the color of the square in x and y. the +5 merely displaces it because otherwise i think its getting the color of the line, which i dont want.
+					if (colorsq === color1Gotten){ //checks the colors. colors it with the opposite or same color if needed
+						fill(color2);
+					} else if (colorsq === color2Gotten){
+						fill(color1);
+					} 
+				};
+
+				var drawAWhiteSquare = function(x, y){
+					fill(color2);
+					rect(x, y, fraction, fraction);
+				};
+				var drawAColoredSquare = function(x, y){
+					colorCheck(x, y); //run colorCheck
+					rect(x, y, fraction, fraction);
+				};
+
+				var drawARandomWhiteSquare = function(){ //this draws the random white squares at the beginning
+					for (var i = 0; i < floor(((3/10)*(gridSize*gridSize))); i++){ //we will generate random numbers, we will generate them equal to 30% of the total amount of grids. you dont have to understand this for function's arguments
+						var randomNumbX = floor(random(0, 400));
+						var randomNumbY = floor(random(0, 400));
+						var roundedRandomNumbX = (~~(randomNumbX / fraction)) * fraction; //we use the same function that rounds down my mouse X and Y coordinates to round down the random number. essentially giving us coordinates ready to be used.
+						var roundedRandomNumbY = (~~(randomNumbY / fraction)) * fraction;
+						drawAWhiteSquare(roundedRandomNumbX, roundedRandomNumbY);
+					}
+				};
+
+				var victoryCheck = function(){
+				/*
+				this uses mostly the same code used to draw the squares, except instead of drawing them, it gets their color. once one of the squares is -1842205 (in other words, white) it exits the first for loop. if theyre not white, which means if theyre all black, then it sets victoryChecksq to true. if victoryCheckSq is true (ej. the function successfully ran until the end, it didnt get break()'d by the for loops) then it draws the victory screen
+				*/
+					for (var e = 0; e < gridSize; e++){
+						for (var i = 0; i < gridSize; i++){
+							victoryChecksq = get(i * fraction + 5, fraction * e + 5);
+							if (victoryChecksq === color2Gotten){
+								break;
+							}
+						}
+					if (victoryChecksq === color2Gotten){
+						break;
+					}
+					victoryChecksq = true;
+					}
+					
+					if (victoryChecksq === true){ //sets the victory screen. i sincerely do not know why you cant create new squared by clicking on the canvas, but it works. i think its because by clicking, you are however not only breaking the colorCheck function(i think you create new blue squares every time), you also run the victoryCheck function every single time. which means whatever (redundant) blue squares you draw get erased by the victory screen inmediately.
+						background(0, 55, 255);
+						fill(255, 255, 255);
+						textSize(50);
+						text("you win :)", 100, 220);
+						
+						// Switch between `dark` and `light`
+						var switchToTheme = "secret"
+						//store in the localStorage whatever the data-theme's value is (the currentTheme)			
+						localStorage.setItem("data-theme", switchToTheme);
+						// Set our current theme to the new one
+						document.documentElement.setAttribute("data-theme", switchToTheme);
+					}
+				};
+				
+				//}
+
+				drawARandomWhiteSquare(); //one issue is that white squares can generate on top of each other. so depending on your luck, there is an astronomically small chance where you only get 1 single white square cuz all of the random numbers happened to be on the same spot. however i am not doing anything against the cases where squares generate on top of each other. so the amount of white squares will probably always change depending on your initial luck when running the program
+
+				mouseClicked = function() {
+					squareOnTopOfMouseX = (~~(mouseX / fraction)) * fraction; //i have no idea whatsoever how this works. remove the math.floor operator (the 2 wavy lines) and algebraically this just becomes literally mouseX. i dont know at ALL how this statement works but an user in stackoverflow gave it to me. im eternally thankful to them.
+					//i think these functions work by deducing in what square you are. it rounds it down to whichever segment of the grid youre in, then it multiplies it by the fraction to actually get the coordinates. its very clever, all that matters is that it works
+					squareOnTopOfMouseY = (~~(mouseY / fraction)) * fraction;
+					
+					drawAColoredSquare(squareOnTopOfMouseX, squareOnTopOfMouseY); //draws a rect where you are
+					drawAColoredSquare(squareOnTopOfMouseX - fraction, squareOnTopOfMouseY); //draws a rectangle 1 to the left
+					drawAColoredSquare(squareOnTopOfMouseX + fraction, squareOnTopOfMouseY); //draws a rectangle 1 to the right
+					drawAColoredSquare(squareOnTopOfMouseX, squareOnTopOfMouseY + fraction); //draws a rectangle 1 down
+					drawAColoredSquare(squareOnTopOfMouseX, squareOnTopOfMouseY - fraction); //draws a rectangle 1 up
+					victoryCheck(); //check for if all the squares are black (ej. color1)
+				};
+		// Get the canvas that Processing-js will use
+		var canvas = document.getElementById("mycanvas"); 
+		// Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+		var processingInstance = new Processing(canvas, sketchProc);
+	</script>
 	</body>
 </html>
