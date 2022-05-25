@@ -46,12 +46,12 @@
 		<hr class="solid">
 		
 		<div id="index"></div>
-		
 		<div id="mainBodyContent"></div>
-
+		<canvas id="mycanvas"></canvas> 
+		<p>fishies y pescaditos :)</p>
 		<hr class="solid">
 		
-		<a id="footer" href="/index.html">return to homepage</a>
+		<a id="footer" href="/index">return to homepage</a>
 	</div>
 	
 	<script src="/js/darkbutton.js"></script>
@@ -200,5 +200,161 @@
 	</script>
 	<script src="/js/langswitcher.js"></script>
 	<script src="/js/phiSwitcher.js"></script>
+	
+	<script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+	<script> //grabbed directly from khan academy :) this and the line above runs the canvas
+		var sketchProc = function(processingInstance) {
+			with (processingInstance) {
+				size(400, 400); 
+				frameRate(30);
+		
+				// ProgramCodeGoesHere
+				//I FINALLY FINISHED THIS PROJECT
+				//just click on the blue canvas to get started
+
+				var varForLooping = 0;
+				var waveHeight = 3.0; //this sets the waveheight for the bubblewobble. it oscillates, in this case, between 3 and -3
+				var cosinefunction; //just naming a variable in a global scope
+
+				//creating arrays to store all of the fish values
+				var fishArrayX = [
+					];
+				var fishArrayY = [
+					];
+				var fishArrayRand1 = [
+					];
+				var fishArrayRand2 = [
+					];
+				var fishArrayRand3 = [
+					];
+				var fishArrayBodyWidth = [
+					];
+				var fishArrayBodyHeight = [
+					];
+				var fishArrayTailWidth = [
+					];
+				var fishArrayTailHeight = [
+					];
+					
+				//these 4 'random' and mouse arrays are merely for the bubbles. must be defined outside functions.
+				//the mousearrays are solely for the bubbles. i should have named those arrays something different huh
+				var randomXArray = [
+				];
+				var randomYArray = [
+				];
+				var minirandomXArray = [
+				];
+				var minirandomYArray = [
+				];
+				var mouseXArray = [
+				];
+				var mouseYArray = [
+				];
+
+				var createFishAssets = function(centerX, centerY){ //needs centerX and Y, later in the function these are mouseX and mouseY
+					var bodyWidth = random(25,50); //drawFish grabs a random length and height for fish
+					var bodyHeight = random(25,35);
+
+					var random1 = random(0,255); //creates random values for the colors
+					var random2 = random(0,255);
+					var random3 = random(0,255);
+					
+					// tail
+					var tailWidth = bodyWidth/4; //width is a quarter of the body length
+					var tailHeight = bodyHeight/2;  //height is a half of the body height
+
+					fishArrayX.push(mouseX); //storing coordinates
+					fishArrayY.push(mouseY);
+					fishArrayRand1.push(random1); //storing colors
+					fishArrayRand2.push(random2);
+					fishArrayRand3.push(random3);
+					
+					fishArrayBodyWidth.push(bodyWidth); //storing body stuff
+					fishArrayBodyHeight.push(bodyHeight);
+					
+					fishArrayTailWidth.push(tailWidth); //storing tail stuff
+					fishArrayTailHeight.push(tailHeight);
+				 };
+				  
+				var drawFish = function(i){ //i is just varForLooping, which increments in 1 every time the mouse is clicked. i just named it i instead of leaving it as varForLooping because it looks cleaner. same for the bubbles() function below
+					noStroke();
+					
+					fill(fishArrayRand1[i], fishArrayRand2[i], fishArrayRand3[i]); //colors them with the random color set earlier
+					
+					ellipse(fishArrayX[i], fishArrayY[i], fishArrayBodyWidth[i], fishArrayBodyHeight[i]); //body centered on centerX and centerY, grabs them from the arrays in the i value
+					
+					triangle(fishArrayX[i]-fishArrayBodyWidth[i]/2, fishArrayY[i],
+					fishArrayX[i]-fishArrayBodyWidth[i]/2-fishArrayTailWidth[i], fishArrayY[i]-fishArrayTailHeight[i],
+					fishArrayX[i]-fishArrayBodyWidth[i]/2-fishArrayTailWidth[i], fishArrayY[i]+fishArrayTailHeight[i]); //tbh idk what this is all doing but it properly sets the coordinates for the tail
+					//READ BELOW TO SEE CLEARER WHAT THE PROPER CODE FOR THE TAIL IS. ITS MUCH EASIER TO READ WITHOUT THE ARRAYS THINGIES.
+					
+					fill(33, 33, 33); //eye color
+					ellipse(fishArrayX[i]+fishArrayBodyWidth[i]/4, fishArrayY[i], fishArrayBodyHeight[i]/5, fishArrayBodyHeight[i]/5); //eye position
+				}; 
+
+				/* THIS IS THE CODE FOR THE TAIL:
+					triangle(centerX-bodyWidth/2, centerY,
+					centerX-bodyWidth/2-tailWidth, centerY-tailHeight,
+					centerX-bodyWidth/2-tailWidth, centerY+tailHeight);
+					*/ //code for tail
+				  
+				var bubbles = function(i){
+					stroke(255,255,255); //white outline
+					fill(12, 143, 163); //blue color
+					
+					ellipse(mouseXArray[i] + randomXArray[i] + 32, mouseYArray[i] - randomYArray[i] + 20, 30, 30); //set bubble at the random coordinates, width n height of 30. the 32 adding to the x coordinate and 20 to the y sets it a bit ahead of the fish
+					
+					fill(255, 255, 255); //fills the tiny circle with white
+					ellipse(mouseXArray[i] + randomXArray[i] + minirandomXArray[i] + 32, mouseYArray[i] - randomYArray[i] + minirandomYArray[i] + 20, 5, 5); //coordinates it with the same coords of the big bubble, then randomly offsets it by a bit. the 32 adding to the x coordinate and 20 to the y sets it a bit ahead of the fish 
+					
+					mouseYArray[i]+= random(-6, -2); //it randomly (adds negative values, ej. substracts) to the Y coordinates to give it different "speeds"
+					
+				   cosinefunction = waveHeight * cos(mouseYArray[i]*5); //this cosinefunction basically gets the cosine of the y coordinate of the bubble (which is just basically a random number between -1 and 1, idk im scared to touch the code) and multiplies it by waveHeight to give it the wave height of the wobble. this is somewhat slightly advanced trigonometry. the 5 multiplying the mouseYArray sets the frequency of the waves
+				   
+				   if (mouseYArray[i] > -30){ //only makes the bubbles wobble when theyre onscreen. u could delete this if statement and leave the argument inside it alive and it works too.
+				   mouseXArray[i] += cosinefunction;
+					}
+				};
+
+				mousePressed = function(){
+					createFishAssets(mouseX, mouseY); //generates the assets. this is recycling old code
+					
+					var randomXOffset = random(-15, 40); //creates random values to give bubbles a bit of randomness
+					var randomYOffset = random(30, 60);
+					
+					var minirandomXOffset = random(-10, 10); //same but for tiny shiny spots
+					var minirandomYOffset = random(0, 5);
+					
+					randomXArray.push(randomXOffset); //stores in arrays the vaues that are ONLY generated when the mouse is clicked. this is for the bubbles. if i stored this in the draw function, a lot of unnecessary values would be generated every instant. thats inefficient.
+					randomYArray.push(randomYOffset);
+					
+					minirandomXArray.push(minirandomXOffset);
+					minirandomYArray.push(minirandomYOffset);
+					
+					mouseXArray.push(mouseX);
+					mouseYArray.push(mouseY);
+				};
+
+				draw = function() {
+					background(89, 216, 255); //this constantly redraws the background color.
+					
+					for (var i = 0; i < fishArrayX.length; i++){ //goes through all of the arrays values (theyre all the same length, so using only fishArrayX is enough) to constantly redraw the fishes. THE ENTIRE FISH DRAWING PROGRAM DEPENDS ON THIS for LOOP.
+						drawFish(i);
+						fishArrayX[i]++; //i have NO FCKING CLUE WHY THIS WORKS I DISCOVERED IT ACCIDENTALLY. i think every time this for loop ends, it begins again. technically its adding 1 to each fish x coordinate, one by one, but its so fast it looks like its happening at the same time for all of them. i have no clue man.
+						if  (fishArrayX[i] > 435){
+							fishArrayX[i] = -20;   //makes the fishies loop again
+						}
+						
+						bubbles(i);
+					}
+				};
+			}
+		};
+
+		// Get the canvas that Processing-js will use
+		var canvas = document.getElementById("mycanvas"); 
+		// Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+		var processingInstance = new Processing(canvas, sketchProc);
+	</script>
 	</body>
 </html>

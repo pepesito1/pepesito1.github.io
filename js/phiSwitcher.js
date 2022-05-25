@@ -3,28 +3,28 @@ phiHrefSwitch = function() {
 var modeVariable = localStorage.getItem("data-theme")??'light'; //we fetch it again, for some reason. i should use let and the other thingy instead of var
 var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg';
 	if (modeVariable == "light" &&  storedLocalContent == "contentEn"){
-		document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
+		document.getElementById("phiLink").href = "/main/phi/enLight/phi";
 
 	} else if (modeVariable == "light" &&  storedLocalContent == "contentEs"){
-		document.getElementById("phiLink").href = "/main/phi/esLight/phi.html";
+		document.getElementById("phiLink").href = "/main/phi/esLight/phi";
 
 	} else if (modeVariable == "light" &&  storedLocalContent == "contentOg"){
-		document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
+		document.getElementById("phiLink").href = "/main/phi/enLight/phi";
 
 	} else if(modeVariable == "light" &&  storedLocalContent == "contentSpy"){
-		document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
+		document.getElementById("phiLink").href = "/main/phi/enLight/phi";
 
 	} else if (modeVariable == "dark" &&  storedLocalContent == "contentEs"){
-		document.getElementById("phiLink").href = "/main/phi/esDark/phi.html";
+		document.getElementById("phiLink").href = "/main/phi/esDark/phi";
 
 	} else if(modeVariable == "dark" &&  storedLocalContent == "contentOg"){
-		document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
+		document.getElementById("phiLink").href = "/main/phi/enDark/phi";
 
 	} else if(modeVariable == "dark" &&  storedLocalContent == "contentSpy"){
-		document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
+		document.getElementById("phiLink").href = "/main/phi/enDark/phi";
 
 	} else if(modeVariable == "dark" &&  storedLocalContent == "contentEn"){
-	document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
+	document.getElementById("phiLink").href = "/main/phi/enDark/phi";
 	}};
 
 	//theme switcher doesnt work properly. if the theme is light then it changes the theme to dark due to the way
@@ -33,28 +33,28 @@ phiInvertedHrefSwitch = function() {
 var modeVariable = localStorage.getItem("data-theme")??'light'; //we fetch it again, for some reason. i should use let and the other thingy instead of var
 var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg';
 	if (modeVariable == "dark" &&  storedLocalContent == "contentEn"){
-		document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
+		document.getElementById("phiLink").href = "/main/phi/enLight/phi";
 
 	} else if (modeVariable == "dark" &&  storedLocalContent == "contentEs"){
-		document.getElementById("phiLink").href = "/main/phi/esLight/phi.html";
+		document.getElementById("phiLink").href = "/main/phi/esLight/phi";
 
 	} else if (modeVariable == "dark" &&  storedLocalContent == "contentOg"){
-		document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
+		document.getElementById("phiLink").href = "/main/phi/enLight/phi";
 
 	} else if(modeVariable == "dark" &&  storedLocalContent == "contentSpy"){
-		document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
+		document.getElementById("phiLink").href = "/main/phi/enLight/phi";
 
 	} else if (modeVariable == "light" &&  storedLocalContent == "contentEs"){
-		document.getElementById("phiLink").href = "/main/phi/esDark/phi.html";
+		document.getElementById("phiLink").href = "/main/phi/esDark/phi";
 
 	} else if(modeVariable == "light" &&  storedLocalContent == "contentOg"){
-		document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
+		document.getElementById("phiLink").href = "/main/phi/enDark/phi";
 
 	} else if(modeVariable == "light" &&  storedLocalContent == "contentSpy"){
-		document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
+		document.getElementById("phiLink").href = "/main/phi/enDark/phi";
 
 	} else if(modeVariable == "light" &&  storedLocalContent == "contentEn"){
-	document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
+	document.getElementById("phiLink").href = "/main/phi/enDark/phi";
 	}};
 	//holy shit this code is bad
 	
