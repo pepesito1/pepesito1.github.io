@@ -11,7 +11,7 @@ inner body only changes the entire text content background */
   --header-background: rgb(95, 96, 133);
   --inner-body: white;
   --text-color: black;
-  --linkColor: rgb(69, 133, 129);
+  --linkColor: rgb(41, 82, 79);
   --visitedLinkColor: rgb(50, 79, 77);
   --indexBg: rgb(235, 181, 131);
   --indexLetterColor: black;

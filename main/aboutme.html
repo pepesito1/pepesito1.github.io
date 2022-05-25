@@ -18,6 +18,15 @@
 	p {
 	text-indent: 0px /*nullifies the text indent in style.css . i realize i should be using <p> and </p> for every line but oh well*/
 	}
+	#mycanvasdiv{
+		text-align: center;
+	}
+	#canvas{ /* this is so god damn perfect. sets the width to 100% of the page but not TOO big, in case the user is using something like a computer. great- */
+		width: 100%;
+		max-width: 480px;
+		height: auto;
+	}
+	
 	</style>
 	
 	<body>
@@ -47,8 +56,10 @@
 		
 		<div id="index"></div>
 		<div id="mainBodyContent"></div>
+		<div id="mycanvasdiv">
 		<canvas id="mycanvas"></canvas> 
 		<p>fishies y pescaditos :)</p>
+		</div>
 		<hr class="solid">
 		
 		<a id="footer" href="/index">return to homepage</a>
@@ -206,7 +217,7 @@
 		var sketchProc = function(processingInstance) {
 			with (processingInstance) {
 				size(400, 400); 
-				frameRate(30);
+				frameRate(60); //i changed the framerate from 30 to 60
 		
 				// ProgramCodeGoesHere
 				//I FINALLY FINISHED THIS PROJECT
