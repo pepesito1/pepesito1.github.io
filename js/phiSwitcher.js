@@ -25,7 +25,8 @@ var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg';
 
 	} else if(modeVariable == "dark" &&  storedLocalContent == "contentEn"){
 	document.getElementById("phiLink").href = "/main/phi/phi_en_dark";
-	}};
+	}
+};
 
 	//theme switcher doesnt work properly. if the theme is light then it changes the theme to dark due to the way
 	//the functions are ran, this is my fix:
@@ -55,9 +56,10 @@ var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg';
 
 	} else if(modeVariable == "light" &&  storedLocalContent == "contentEn"){
 	document.getElementById("phiLink").href = "/main/phi/phi_en_light";
-	}};
+	}
+};
 	//holy shit this code is bad
 	
 langSwitcher.addEventListener("click", phiHrefSwitch);
-themeSwitcher.addEventListener("click", phiInvertedHrefSwitch);
+// themeSwitcher.addEventListener("click", phiInvertedHrefSwitch);
 phiHrefSwitch();
