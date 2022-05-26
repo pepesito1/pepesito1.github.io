@@ -175,18 +175,19 @@
             }
             
             if (victoryChecksq === true){ //sets the victory screen. i sincerely do not know why you cant create new squared by clicking on the canvas, but it works. i think its because by clicking, you are however not only breaking the colorCheck function(i think you create new blue squares every time), you also run the victoryCheck function every single time. which means whatever (redundant) blue squares you draw get erased by the victory screen inmediately.
-						background(0, 55, 255);
-						fill(255, 255, 255);
-						textSize(50);
-						text("you win :)", 100, 220);
+				background(0, 55, 255);
+				fill(255, 255, 255);
+				textSize(50);
+				text("you win :)", 100, 220);
 						
-						// Switch the theme to "secret"
-						var switchToTheme = "secret"
-						//store in the localStorage whatever the data-theme's value is ("secret")		
-						localStorage.setItem("data-theme", switchToTheme);
-						// Set our current theme to the new one
-						document.documentElement.setAttribute("data-theme", switchToTheme);
-					}
+				// Switch the theme to "secret"
+				var switchToTheme = "secret"
+				//store in the localStorage whatever the data-theme's value is ("secret")		
+				localStorage.setItem("data-theme", switchToTheme);
+				// Set our current theme to the new one
+				document.documentElement.setAttribute("data-theme", switchToTheme);
+				document.getElementById("mycanvasdiv").innerHTML = "pepesito1.github.io/wepagetest/testingwepage"
+			}
         };
         //}
         

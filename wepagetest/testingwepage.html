@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta charset="UTF-8">
+	<title>dont let it get to you</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link href="/css-styles/style.css" rel="stylesheet">
+	
+	<style>
+	.drebberdiv{
+		text-align: center;
+	}
+	.drebber{ /* this is so god damn perfect. sets the width to 100% of the page but not TOO big, in case the user is using something like a computer. great- */
+		max-width: 70%;
+		height: auto;
+		align:middle;
+	}
+	figcaption {
+		text-align: center;
+	}
+	th, td {
+	  border: 1px solid black;
+	  padding: 5px;
+	  color: black;
+	}
+	#t1 {
+	  background-color: rgb(219, 219, 219);
+	}
+	p {
+	text-indent: 0px /*nullifies the text indent in style.css . i realize i should be using <p> and </p> for every line but oh well*/
+	}
+	/* background color changes the entire background, page-wide
+	inner body only changes the entire text content background */
+
+	@font-face {
+	  font-family: secretFont;
+	  src: url(/fonts/secretfont.ttf);
+	}
+
+	:root {
+	  --background-color: rgb(47, 79, 79);
+	  --header-background: rgb(95, 96, 133);
+	  --inner-body: white;
+	  --text-color: black;
+	  --linkColor: rgb(69, 133, 129);
+	  --visitedLinkColor: rgb(50, 79, 77);
+	  --indexBg: rgb(235, 181, 131);
+	  --indexLetterColor: black;
+	}
+
+	[data-theme="dark"] {
+	  --background-color: rgb(47, 79, 79);
+	  --header-background: rgb(95, 96, 133);
+	  --inner-body: rgb(64, 64, 64);
+	  --text-color: white;
+	  --linkColor: #C8FFF4;
+	  --visitedLinkColor: rgb(255, 255, 255);
+	  --indexBg: rgb(138, 70, 29);
+	  --indexLetterColor: white;
+	}
+
+	a:link {
+	  color: var(--linkColor);
+	}
+
+	a:visited {
+	  color: var(--visitedLinkColor);
+	}
+
+	a:hover {
+	  color: hotpink;
+	}
+
+	a:active {
+	  color: blue;
+	}
+
+	#index {
+	  margin: 2%;
+	  padding: 1%;
+	  padding-right: 3%;
+	  background-color: var(--indexBg);
+	  color: var(--indexLetterColor);
+	  width: fit-content;
+	}
+
+
+	#header {
+	  margin-bottom: 2%;
+	  padding: 2%;
+	  background-color: var(--header-background);
+	  font-size: 0.75em;
+	}
+
+	.onlyHeader {
+	  margin: 1%;
+	}
+
+	#footer {
+	  margin: 1%;
+	  padding: 2%;
+	}
+
+	body {
+	  background-color: var(--background-color);
+	  margin: 2%;
+	  padding: 2%;
+	}
+
+	#mainBodyContent {
+	  margin: 1%;
+	}
+
+	.entireBody {
+	  margin: 5%;
+	  padding: 2%;
+	  background-color: var(--inner-body);
+	  color: var(--text-color);
+	}
+
+	.solid {
+	  background-color: rgb(146, 127, 191);
+	  margin: 1.5%;
+	}
+
+	#languageLabel {
+	  margin-top: 1.5%;
+	  margin-bottom: 0.8%;
+	}
+
+	#boilerKeeper {
+	  position: fixed;
+	  right: 5%;
+	  bottom: 5%;
+	  width: 50px;
+	}
+
+	p {
+		line-height: 1.6;
+		text-indent: 30px
+}
+	</style>
+	
+	<body>
+	<img src="/media/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
+	
+	<div class="entireBody">
+		<div class="onlyHeader">
+			<div id="header">this is the header text it doesnt matter</div>
+			
+			<button id="theme-switcher">night night</button>
+			<br>
+				
+			<div id="languageLabel"><label>language/idioma:
+				<select id="lang">
+					<option></option>
+					<option value="original">original</option>
+					<option value="es">spanish</option>
+					<option value="en">english</option>
+					<option value="secret">club penguin PSA/EPF code</option>
+				</select>
+			</label></div>
+				
+			<button id="languageSwitcher">Switch language!/cambiar idioma :)</button>
+		</div>
+			
+		<hr class="solid">
+		
+		<div id="index">
+			<ul>
+				<li><a href="/index.html">homepage</a></li>
+				<li><a href="/main/aboutme.html">about me</a></li>
+				<li><a href="" id="phiLink">gaming</a><br></li>
+				<li>blogposts?</li>
+					<ol>
+						<li><a href="/main/blogposts/life29time04spot2022.html">spot of a lifetime</a></li>
+					</ol>
+				<li><a href="/main/music.html">music</a><br></li>
+				<li><a href="/main/images.html">images</a><br></li>
+				<li><a href="/main/qualia.html">qualia</a><br></li>
+			</ul>
+		</div>
+		
+		<div id="mainBodyContent">
+			<p>i wanna say this is a result of merely pondering. name it menimemoism. or pepesitoism. it dont matter.</p>
+			<div class="drebberdiv"><img src="TakingNotes.webp" class="drebber"></div>
+			<br>
+			<p>its not about trying to be deep alright. its just basic results, logical conclusions i arrived to in my own life.</p>
+			<div class="drebberdiv"><img src="random.gif" class="drebber"></div>
+			<figcaption>ah, si pudiera, habria hecho que esta animacion corriera en tiempo real, en la pagina, con javascript. alas, 'tis be too complex for me, for i dont know what kind of maths go behind the redirecting of the balls when they overlap.</figcaption>
+			<p>um, el <a href=https://en.wikipedia.org/wiki/Determinism>determinismo</a> es una forma de entender el mundo. tal vez algun dia mis habilidades seran lo suficientemente buenas para poder drawear en un canvas la animacion de arriba con processingjs pero eso es otra cosa. el punto es, sabemos que el mundo es predecible. el movimiento de los astros es predecible. el resultado de un experimento bien documentado es predecible. el movimiento molecular a nivel individual de un cuerpo de gas es, en teoria, predecible.</p>
+			<p>por que es el movimiento de las moleculas de un gas unicamente predecible "en teoria"? es porque, a ese nivel, cuando estas hablando de trillones de colisiones entre moleculas, es humanamente y realisticamente imposible predecir la posicion final de una molecula en un tiempo cualquiera.</p>
+			<p>ahora, el gif de arriba. a esto voy con que, la posicion de cualquiera de las bolas rojas seria predecible si tuvieras todos los valores relevantes. se esta moviendo, superficialmente, al azar, ya todas de las bolas rojas chocan con las azules sin ningun patron visible.</p>
+			<p>los datos que necesitariamos para determinar la posicion de cualquiera de las bolas en el gif son muchos, pero, estrictamente hablando, es posible predecirlo.</p>
+			<p>a esto voy con que; las bolas no se estan moviendo realmente al azar. su posicion estuvo determinada desde un inicio. really, these are just extremely simple thoughts any one of us could come up with. not a biggie.</p>
+			<p>si avientas un dado, (asumiendo que hay una probabilidad de exactamente 1/6 de que cualquiera de las caras queden boca arriba), pues, el resultado sera al azar, aparentemente. probabilidad de 1/6 de que el dado quede en un 1, otra de 1/6 de que quede en un 2, etc. muy simple</p>
+			<p>el determinismo es el creer que, si replicaras EXACTAMENTE todas las condiciones que utilizaste para lanzar el dado, el resultado siempre sera exactamente el mismo</p>
+			<p>(al menos creo que eso es el determinismo lol. por simplicidad lo llamaré de ahora en adelante "menimemoismo", porque no estoy haciendo demasiada investigacion sobre esto, estoy hablando sobre lo que yo mismo se)</p>
+			<p>uh-uh. si avientas un dado, pero siempre lo lanzaras exactamente con la misma fuerza, al mismo angulo, y todas las moleculas de aire en la habitacion fueran las mismas, y hasta DONDE SABEMOS en la fisica, el resultado siempre seria el mismo. porque el verdadero azar en el mundo probablemente no existe. aunque no quiero adentrarme mucho en esto porque empezariamos a hablar de fisica cuantica y la teoria del todo y uh yeah no thats boring</p>
+			<br>
+			<div class="drebberdiv"><img src="shulk.jpg" class="drebber"></div>
+			<figcaption>take a shot for every time you hear some sort of variation of "the future is ours to decide" in xenoblade chronicles</figcaption>
+			<p>once again, todo esto es basico. cualquiera, y literalmente cualquier persona podria come-ear up con todas estas cosas por su misma cuenta. es sencillo.</p>
+			<p>y la siguiente pregunta es simple: por que nosotros, como humanos, impulsados por la misma fisica que el resto del universo, deberiamos de ser capaces de alterar el movimiento de las moleculas dentro de nuestro cerebro? que hay en nosotros, si algo siquiera, que puede hacernos tomar decisiones?</p>
+			<p>nuevamente, la respuesta es simple: no hay nada. no hay nada que nos impulse. hasta donde sabemos, no hay alma, no hay espiritu, no hay nada dentro de nosotros que no haya en el resto del universo.</p>
+			<p>well, thats simple to digest, right?</p>
+			<p>si le pides a una persona que elija (eliga? del verbo "elegir" nose) un numero al azar del 1 al 10</p>
+			<p>you know, si hay algun lector leyendo esto, hazlo. elige un numero al azar del 1 al 10</p>
+			<p>porque te aseguro que muy probablemente tu respuesta fue: la suma de 3 mas 4. o la resta de 8 menos 1. o la mitad de 14. lo escribo de esta forma para de ninguna forma influenciar tu cerebro con tu vision periferica a la hora de leer el texto de las lineas de arriba</p>
+			<p>o la pregunta de elegir una herramienta de un color. si le pides a alguien que eliga (elija?) una herramienta cualquiera de cualquier color, muy probablemente te eligiran un martillo rojo. o un desatornillador azul.</p>
+			<p>es porque los humanos somos predecibles. IGNORANDO TODO ESTO:</p>
+			<p>en una habitacion pon a una persona. y hazla decidir algo. supongamos que eligen cosa X.</p>
+			<p>si recrearas la situacion; pusieras a la persona en exactamente las mismas condiciones, sin recuerdos de que ya habian tomado esta decision antes, y les pusieras a decidir exactamente la misma cosa de nuevo, es objetivamente muy seguro de que eligiran la misma cosa de nuevo. y asi infinitamente.</p>
+			<p>por que eligirian otra cosa? por que tomarias otra decision si las condiciones son SIEMPRE las mismas?</p>
+			<p>eso, es el menimemoismo. o el determinismo pero no estoy completamente seguro tbh. la voluntad libre no existe, y nadie tiene la capacidad de decidir sobre sus vidas, porque todo estuvo decidido en el momento en que el universo nacio.</p>
+			<p>nay, antes de eso, porque el nacimiento del universo es predecible. nuestros destinos, y en particular mi destino, lleva una eternidad (infinidad negativa, cronologicamente hablando, if you will) decidido. yo no decidi escribir todo esto sobre el menimemoismo hoy. ni cualquier lector que este leyendo esto realmente tuvo la decision de leer esto el dia que sea. nay, todo esto estuvo preescrito. mis acciones y nuestras acciones son unicamente resultados naturales del universo hasta ahora.</p>
+			<br>
+			<p>well, thats part one of menimemoism. cual es la segunda parte del pepesitoismo? repito, menimemoismo y pepesitoismo con la misma cosa idc.</p>
+			<p>um, nuestro mundo, nuestra forma de vivir, nuestra sociedad a nivel internacional. todo esta impulsado por irracionalidad.</p>
+			<p>indeed, si todos pensaramos de forma objetiva, veriamos que unicamente analizando lo irreputable, el mundo seria un lugar mucho mejor.</p>
+			<p>si todos fueramos menimemoistas, si todos siguieramos la corriente filosofica del pepesitoismo... no lo se. el mundo seria tirano?</p>
+			<p>cual es el punto de mantener a alguien en una prision por 60 años de su vida hasta que se muera? todos esos recursos en haberlo mantenido vivo para que fueron?</p>
+			<p>alas, analizando unicamente los hechos, la pena de muerte es un escape rapido para las personas que no tienen alternativa. es, desde un punto de vista, un desperdicio de recursos mantener a alguien que nunca escaparia de una prision, vivo. alas, a mi, pepesito1, no me gustaria vivir en un mundo asi. por que no? no lo se. a cuantas personas estoy dispuesto a matar hasta que valga la pena dejar de "gastar recursos manteniendolas vivas"?</p>
+			<p>esto, es el menimemoismo.</p>
+			<p>por que vivimos aun en una cultura (principalmente occidental, que supongo que es de donde las pocas personas que estan leyendo esto son de, de estados unidos u latinoamerica) en donde la iglesia no esta separada del estado? por que aun conservamos una cultura en donde una mujer no puede decidir sobre su propio cuerpo, y leyes impulsadas por la irracionalidad y subjetividad, prohiben que una mujer pueda prevenir un nacimiento?</p>
+			<p>(uh, dicho de forma mas simplona, por que vivimos en una sociedad en donde cosas como el aborto son ilegales, cuando la cantidad de argumentos <strong>irreputables</strong> que existen en CONTRA del aborto es MINIMA?)</p>
+			<p>esto, es el pepesitoismo.</p>
+			<p>por que no es el estandar cuestionarse lo que uno mismo cree? por que no es el estandar cuestionar lo que uno lee y ve? activamente estoy cuestionando lo que estoy escribiendo ahora mismo, pero estoy seguro, unicamente impulsado por logica, de que ahora mismo estoy escribiendo la verdad objetiva.</p>
+			<p>esto es ser menimemoista.</p>
+			<p>indeed, si todos siguieramos una corriente determinista y estoicista, el sufrimiento en el mundo seria minimo.</p>
+			<p>tambien, con corrientes filosoficas como el pepesitoismo, se llegan a conclusiones peligrosas. de que me sirve ayudar a alguien mas, si a mi ningun bien me da? por que gastaria mis recursos en hacer algo que a mi no me beneficia?</p>
+			<p>el menimemoismo no ofrece ninguna respuesta a esta pregunta. indeed, esto esta decidido por el compás moral de cada uno.</p>
+			<br>
+			<div class="drebberdiv"><img src="wrighto.webp" class="drebber"></div>
+			<p>proposito en la vida? ninguno. existimos para reproducirnos y sobrevivir, esparcir nuestros genes. esta es la unica respuesta intuitiva de acuerdo al menimemoismo.</p>
+			<p>solo es divertirse. disfrutar de la vida. por la razon que sea, disfrutamos de la musica, de las bellas artes, del sonido de las voces de otras personas y de obtener conocimiento.</p>
+			<p>the least you can do is completely waste your time alive, while you have a consciousness.</p>
+			<p>this, is what menimemoism says.</p>
+		</div>
+
+		<hr class="solid">
+		
+		<a id="footer" href="/index.html">return to homepage</a>
+	</div>
+	
+	<script>
+	// Get our button switcher
+	var themeSwitcher = document.getElementById("theme-switcher");
+
+	// Wait for document to load
+	document.addEventListener("DOMContentLoaded", function(event) {
+		//store in a variable whatever the data-theme is in the localStorage, if it doesnt exist, then it gets set to "light"
+		var modeVariable = localStorage.getItem("data-theme")??'light';
+
+		//sets the page attribute to be either dark or light
+		document.documentElement.setAttribute("data-theme", modeVariable);
+		
+			// When our button gets clicked
+			themeSwitcher.onclick = function() {
+				// Get the current selected theme, on the first run  it should be `light`
+				var currentTheme = document.documentElement.getAttribute("data-theme");
+						
+				// Switch between `dark` and `light`
+				var switchToTheme = currentTheme === "dark" ? "light" : "dark";
+						
+				//store in the localStorage whatever the data-theme's value is (the currentTheme)			
+				localStorage.setItem("data-theme", switchToTheme);
+				// Set our current theme to the new one
+				document.documentElement.setAttribute("data-theme", switchToTheme);
+			}
+	});
+</script>
+<script>
+	 //puffle keeper script
+	var storedGif = document.getElementById("boilerKeeper"); //we grab the gif and store it in storedboilerKeeper
+	var onGifClick = function() {
+	  if (document.getElementById("boilerKeeper").src.includes("/media/greenKeeper.gif")) {
+		document.getElementById("boilerKeeper").src = "/media/blueKeeper.gif";
+
+	  } else if (document.getElementById("boilerKeeper").src.includes("/media/blueKeeper.gif")) {
+		document.getElementById("boilerKeeper").src = "/media/yellowKeeper.gif";
+
+	  } else if (document.getElementById("boilerKeeper").src.includes("/media/yellowKeeper.gif")) {
+		document.getElementById("boilerKeeper").src = "/media/redKeeper.gif";
+
+	  } else if (document.getElementById("boilerKeeper").src.includes("/media/redKeeper.gif")) {
+		document.getElementById("boilerKeeper").src = "/media/greenKeeper.gif";
+	  }
+	}
+	storedGif.addEventListener("click", onGifClick);
+</script>
+<script>
+	var headerContentEn	= `
+		<h1>about me</h1>
+		<h2>text content is = english</h2>
+		`;
+		var contentEn = `
+		<table>
+			<tr>
+			<td colspan="2">some quick info about me :)</td>
+			</tr>
+			<tr id="t1">
+				<td>name:</td>
+				<td>pepesito1</td>
+			</tr>
+			<tr id="t1">
+				<td>age:</td>
+				<td>>18</td>
+			</tr>
+			<tr id="t1">
+				<td>pronouns:</td>
+				<td>he/him</td>
+			</tr>
+			<tr id="t1">
+				<td>from:</td>
+				<td>mexico</td>
+			</tr>
+			<tr id="t1">
+				<td colspan="2"><strong>greatly introverted</strong></td>
+			</tr>
+			<tr id="t1">
+				<td>tw:</td>
+				<td>@peps4inkie</td>
+			</tr>
+			<tr id="t1">
+				<td>discord:</td>
+				<td>pepesito1#0553</td>
+			</tr>
+		</table>
+		
+		<p>i am way more introverted than what i would like to admit<br>
+		like, no-social-skills level of introverted<br>
+		im an enormous fan of certain franchises<br>
+		monster hunter and ace attorney stand out<br>
+		<br>
+		i used to be really, really insecure about myself<br>
+		sometimes i reach certain realizations<br>
+		but im just a dude trying to get by<br>
+		trying to not lose his mind at the world</p>
+		`;
+	</script>
+	<script>
+	var langSwitcher = document.getElementById("languageSwitcher"); //fetches the button, stores it on langSwitcher
+	var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg'; //grabs localContentLang, if it doesnt exist its set to contentOg, stores it in storedLocalContent
+		
+	//storedLocalContent is set to a string, so i turn that string back into the javascript variable defined in the main html
+	if (storedLocalContent === "contentEn"){
+		document.getElementById("mainBodyContent").innerHTML = contentEn
+		document.getElementById("header").innerHTML = headerContentEn;
+		fontSizey = "100";
+		fontFont = "Times New Roman";
+		letterSpacey = "normal"
+	}else if (storedLocalContent === "contentEs"){
+		document.getElementById("mainBodyContent").innerHTML = contentEs;
+		document.getElementById("header").innerHTML = headerContentEs;
+		fontSizey= "100";
+		fontFont = "Times New Roman";
+		letterSpacey = "normal"
+	}else if (storedLocalContent === "contentOg"){
+		document.getElementById("mainBodyContent").innerHTML = contentOg;
+		document.getElementById("header").innerHTML = headerContentOg;
+		fontSizey= "100";
+		fontFont = "Times New Roman";;
+		letterSpacey = "normal"
+	}else if (storedLocalContent === "contentSpy"){
+		document.getElementById("mainBodyContent").innerHTML = contentOg;
+		document.getElementById("header").innerHTML = headerContentOg;
+		fontSizey = "180";
+		fontFont = "secretFont";
+		letterSpacey = "3px";
+	}
+	document.getElementById("mainBodyContent").style.fontFamily = fontFont; //sets font
+	document.getElementById("mainBodyContent").style.fontSize = parseInt(fontSizey) + "%"; //makes the fontSizey an integer, adds a %
+	document.getElementById("mainBodyContent").style.letterSpacing = letterSpacey; //changes letters spacing
+	document.getElementById("header").style.fontFamily = fontFont; //sets font
+	document.getElementById("header").style.fontSize = parseInt(fontSizey) + "%"; //makes the fontSizey an integer, adds a %
+	document.getElementById("header").style.letterSpacing = letterSpacey; //changes letters spacing
+		
+	var onLangSwitch = function() {
+		var lang = document.getElementById("lang").value; //lang is equal to the label button, here the languages change freely after the page is loaded and user selects things
+		var fontFont;
+		if (lang === "original") {
+			document.getElementById("mainBodyContent").innerHTML = contentOg; //contentOg is defined in the html
+			document.getElementById("header").innerHTML = headerContentOg; //grabs the header, headerContent is defined in the html
+			fontSizey = "100";
+			fontFont = "Times New Roman";
+			letterSpacey = "normal"
+			localStorage.setItem("localContentLang", "contentOg"); //sets to localContentLang the contentOg
+		} else if (lang === "es") {
+			document.getElementById("mainBodyContent").innerHTML = contentEs; //contentEs is defined on the html
+			document.getElementById("header").innerHTML = headerContentEs; //grabs the header, headerContent is defined in the html
+			fontSizey= "100";
+			fontFont = "Times New Roman";
+			letterSpacey = "normal"
+			localStorage.setItem("localContentLang", "contentEs"); //sets to localContentLang the contentEs
+		} else if (lang === "en") {
+			document.getElementById("mainBodyContent").innerHTML = contentEn; //content En is defined on the html
+			document.getElementById("header").innerHTML = headerContentEn; //grabs the header, headerContent is defined in the html
+			fontSizey = "100";
+			fontFont = "Times New Roman";
+			letterSpacey = "normal"
+			localStorage.setItem("localContentLang", "contentEn"); //sets to localContentLang the contentEn
+		} else if (lang ==="secret"){
+			document.getElementById("mainBodyContent").innerHTML = contentOg;
+			document.getElementById("header").innerHTML = headerContentOg;
+			fontSizey = "180";
+			fontFont = "secretFont";
+			letterSpacey = "3px";
+			localStorage.setItem("localContentLang", "contentSpy"); //sets to localContentLang the contentSpy
+		}
+		document.getElementById("mainBodyContent").style.fontFamily = fontFont; //sets font
+		document.getElementById("mainBodyContent").style.fontSize = parseInt(fontSizey) + "%"; //makes the fontSizey an integer, adds a %
+		document.getElementById("mainBodyContent").style.letterSpacing = letterSpacey; //changes letters spacing
+		document.getElementById("header").style.fontFamily = fontFont; //sets font
+		document.getElementById("header").style.fontSize = parseInt(fontSizey) + "%"; //makes the fontSizey an integer, adds a %
+		document.getElementById("header").style.letterSpacing = letterSpacey; //changes letters spacing
+	};
+	langSwitcher.addEventListener("click", onLangSwitch); //runs function when button is clicked">
+	</script>
+	<script>
+	 // modeVariable is either light or dark for the theme, and the storedLocalContent is either contentEn,Es,Og or contentSpyZ
+phiHrefSwitch = function() {
+var modeVariable = localStorage.getItem("data-theme")??'light'; //we fetch it again, for some reason. i should use let and the other thingy instead of var
+var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg';
+	if (modeVariable == "light" &&  storedLocalContent == "contentEn"){
+		document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
+
+	} else if (modeVariable == "light" &&  storedLocalContent == "contentEs"){
+		document.getElementById("phiLink").href = "/main/phi/esLight/phi.html";
+
+	} else if (modeVariable == "light" &&  storedLocalContent == "contentOg"){
+		document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
+
+	} else if(modeVariable == "light" &&  storedLocalContent == "contentSpy"){
+		document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
+
+	} else if (modeVariable == "dark" &&  storedLocalContent == "contentEs"){
+		document.getElementById("phiLink").href = "/main/phi/esDark/phi.html";
+
+	} else if(modeVariable == "dark" &&  storedLocalContent == "contentOg"){
+		document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
+
+	} else if(modeVariable == "dark" &&  storedLocalContent == "contentSpy"){
+		document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
+
+	} else if(modeVariable == "dark" &&  storedLocalContent == "contentEn"){
+	document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
+	}};
+
+	//theme switcher doesnt work properly. if the theme is light then it changes the theme to dark due to the way
+	//the functions are ran, this is my fix:
+	phiInvertedHrefSwitch = function() {
+	var modeVariable = localStorage.getItem("data-theme")??'light'; //we fetch it again, for some reason. i should use let and the other thingy instead of var
+	var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg';
+		if (modeVariable == "dark" &&  storedLocalContent == "contentEn"){
+			document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
+
+		} else if (modeVariable == "dark" &&  storedLocalContent == "contentEs"){
+			document.getElementById("phiLink").href = "/main/phi/esLight/phi.html";
+
+		} else if (modeVariable == "dark" &&  storedLocalContent == "contentOg"){
+			document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
+
+		} else if(modeVariable == "dark" &&  storedLocalContent == "contentSpy"){
+			document.getElementById("phiLink").href = "/main/phi/enLight/phi.html";
+
+		} else if (modeVariable == "light" &&  storedLocalContent == "contentEs"){
+			document.getElementById("phiLink").href = "/main/phi/esDark/phi.html";
+
+		} else if(modeVariable == "light" &&  storedLocalContent == "contentOg"){
+			document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
+
+		} else if(modeVariable == "light" &&  storedLocalContent == "contentSpy"){
+			document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
+
+		} else if(modeVariable == "light" &&  storedLocalContent == "contentEn"){
+		document.getElementById("phiLink").href = "/main/phi/enDark/phi.html";
+		}};
+		//holy shit this code is bad
+		
+	langSwitcher.addEventListener("click", phiHrefSwitch);
+	themeSwitcher.addEventListener("click", phiInvertedHrefSwitch);
+	phiHrefSwitch();
+	</script>
+	</body>
+</html>
