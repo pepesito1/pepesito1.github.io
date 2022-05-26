@@ -60,6 +60,7 @@ var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg';
 };
 	//holy shit this code is bad
 	
-langSwitcher.addEventListener("click", phiHrefSwitch);
+langSwitcher.addEventListener("click", phiHrefSwitch); //switches the link when the language is switched
 langSwitcher.addEventListener("click", phiInvertedHrefSwitch);
+themeSwitcher.addEventListener("click", phiHrefSwitch); //switches the link when the theme is switched
 phiHrefSwitch();
