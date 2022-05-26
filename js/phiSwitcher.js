@@ -61,6 +61,6 @@ phiInvertedHrefSwitch = function() {
 };
 	//holy shit this code is bad
 
-langSwitcher.addEventListener("click", phiHrefSwitch); //the link has to be inverted so we invert it
-themeSwitcher.addEventListener("click", phiInvertedHrefSwitch); //the link has to be inverted so we invert it
+langSwitcher.addEventListener("click", phiInvertedHrefSwitch); //the link has to be inverted so we invert it. i dont know why.
+themeSwitcher.addEventListener("click", phiInvertedHrefSwitch); //the link has to be inverted so we invert it. i dont know why.
 phiHrefSwitch();
