@@ -61,6 +61,7 @@ var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg';
 	//holy shit this code is bad
 	
 langSwitcher.addEventListener("click", phiHrefSwitch); //switches the link when the language is switched
-langSwitcher.addEventListener("click", phiInvertedHrefSwitch);
+langSwitcher.addEventListener("click", phiInvertedHrefSwitch); //the link has to be inverted so we invert it
 themeSwitcher.addEventListener("click", phiHrefSwitch); //switches the link when the theme is switched
+langSwitcher.addEventListener("click", phiInvertedHrefSwitch); //the link has to be inverted so we invert it
 phiHrefSwitch();
