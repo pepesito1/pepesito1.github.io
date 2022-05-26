@@ -1,6 +1,6 @@
 var indexContent = `
 	<ul>
-		<li><a href="/index">homepage</a></li>
+		<li><a href="/">homepage</a></li>
 		<li><a href="/main/aboutme">about me</a></li>
 		<li><a href="" id="phiLink">gaming</a><br></li>
 		<li>blogposts?</li>
