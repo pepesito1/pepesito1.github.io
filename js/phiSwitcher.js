@@ -1,4 +1,5 @@
-	 // modeVariable is either light or dark for the theme, and the storedLocalContent is either contentEn,Es,Og or contentSpyZ
+var themeSwitcher = document.getElementById("theme-switcher"); //this is for the phiswitcher function. this has no reason to be on this .js file specifically.
+
 phiHrefSwitch = function() {
 var modeVariable = localStorage.getItem("data-theme")??'light'; //we fetch it again, for some reason. i should use let and the other thingy instead of var
 var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg';
@@ -60,6 +61,6 @@ phiInvertedHrefSwitch = function() {
 };
 	//holy shit this code is bad
 
-langSwitcher.addEventListener("click", phiHrefSwitch); //the link has to be inverted so we invert it
-themeSwitcher.addEventListener("click", phiHrefSwitch); //the link has to be inverted so we invert it
+langSwitcher.addEventListener("click", phiInvertedHrefSwitch); //the link has to be inverted so we invert it
+themeSwitcher.addEventListener("click", phiInvertedHrefSwitch); //the link has to be inverted so we invert it
 phiHrefSwitch();
