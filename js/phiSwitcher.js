@@ -62,5 +62,4 @@ var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg';
 	
 langSwitcher.addEventListener("click", phiHrefSwitch);
 langSwitcher.addEventListener("click", phiInvertedHrefSwitch);
-themeSwitcher.addEventListener("click", phiInvertedHrefSwitch);
 phiHrefSwitch();
