@@ -61,5 +61,6 @@ var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg';
 	//holy shit this code is bad
 	
 langSwitcher.addEventListener("click", phiHrefSwitch);
-// themeSwitcher.addEventListener("click", phiInvertedHrefSwitch);
+langSwitcher.addEventListener("click", phiInvertedHrefSwitch);
+themeSwitcher.addEventListener("click", phiInvertedHrefSwitch);
 phiHrefSwitch();
