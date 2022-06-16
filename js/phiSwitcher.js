@@ -60,7 +60,7 @@ phiInvertedHrefSwitch = function() {
 	}
 };
 	//holy shit this code is bad
-
+var langSwitcher = document.getElementById("languageSwitcher"); //fetches the button, stores it on langSwitcher
 langSwitcher.addEventListener("click", phiHrefSwitch); //the link has to be inverted so we invert it. i dont know why.
 themeSwitcher.addEventListener("click", phiInvertedHrefSwitch); //the link has to be inverted so we invert it. i dont know why.
 phiHrefSwitch();
