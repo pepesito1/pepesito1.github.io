@@ -89,15 +89,15 @@
 			
 			var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg';
 			//wrote the code directly above and below this copying from langswitcher.js i pray it works
-			if (storedLocalContent === contentOg){
+			if (storedLocalContent === "contentOg"){
 				var og = true;
 				var en = false;
 				var es = false;
-			} else if (storedLocalContent === contentEn) {
+			} else if (storedLocalContent === "contentEn") {
 				var og = false;
 				var en = true;
 				var es = false;
-			} else if (storedLocalContent === contentEs){
+			} else if (storedLocalContent === "contentEs"){
 				var og = false;
 				var en = false;
 				var es = true;
