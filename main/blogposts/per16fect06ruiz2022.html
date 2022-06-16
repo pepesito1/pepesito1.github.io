@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 	<html lang="en">
 	<meta charset="UTF-8">
-	<title>buy me some cup noodles</title>
+	<title>rain rain bow iris</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 	<link href="/css-styles/style.css" rel="stylesheet">
@@ -26,7 +26,6 @@
 		max-width: 100%;
 		height: auto;
 	}
-	
 	</style>
 	
 	<body>
@@ -85,7 +84,7 @@
 	    var sketchProc = function(processingInstance) {
 		 with (processingInstance) {
 			size(400, 400); 
-			frameRate(30);
+			frameRate(60);
 			
 			// ProgramCodeGoesHere
 			//if you come from my webpage, welcome! the code in it changes a bit, because im implementing stuff like localvariables from javascript in it, something i dont do here because this isnt an html project. but the code is mainly the same so enjoy.
@@ -236,6 +235,7 @@
 				}
 			};
 			var opacity2 = 0;
+			var opacity3 = 0;
 			var drawAQuad = function(){
 				var x1 = -80;
 				var y1 = 0;
@@ -257,9 +257,13 @@
 					x4 += 80;
 				
 				if (opacity2 < 170){ //if opacity is <128 (0) then add 4 until its that
-						opacity2 +=0.2;
+					opacity2 +=0.2;
 				} else if (opacity2 >= 170){ //if the rainbows are are its max opacity then:
-					fill(0, 0, 0, 30);
+					if (opacity3 < 100){
+						opacity3 +=0.2;
+						println(opacity3);
+					}
+					fill(0, 0, 0, opacity3);
 					textSize(10);
 					text("why wont the thorns in my heart go away", rectXLeftCorner + 10, rectYLeftCorner + 30, rectWidth -10, rectHeight);
 				}

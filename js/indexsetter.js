@@ -7,6 +7,7 @@ var indexContent = `
 			<ol>
 				<li><a href="/main/blogposts/life29time04spot2022">spot of a lifetime</a></li>
 				<li><a href="/main/blogposts/happ25iest05girl2022">pepesito for inkie</a></li>
+				<li><a href="/main/blogposts/per16fect06ruiz2022">cloudy day sunny day</a></li>
 			</ol>
 		<li><a href="/main/music">music</a><br></li>
 		<li><a href="/main/images">images</a><br></li>
