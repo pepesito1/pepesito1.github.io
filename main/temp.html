@@ -86,21 +86,23 @@
 			//si vienes de mi pagina, sup! el codigo en ella cambia un poco, porque ahi estoy implementando cosas como variables locales de javascript, algo que no uso aqui porque esto no es un proyecto de html, pero el codigo es casi el mismo asi que disfruta.
 
 			background(212, 212, 212); //makes the background a light greyish
-			
+			var og;
+			var en;
+			var es;
 			var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg';
 			//wrote the code directly above and below this copying from langswitcher.js i pray it works
 			if (storedLocalContent === "contentOg"){
-				var og = true;
-				var en = false;
-				var es = false;
+				og = true;
+				en = false;
+				es = false;
 			} else if (storedLocalContent === "contentEn") {
-				var og = false;
-				var en = true;
-				var es = false;
+				og = false;
+				en = true;
+				es = false;
 			} else if (storedLocalContent === "contentEs"){
-				var og = false;
-				var en = false;
-				var es = true;
+				og = false;
+				en = false;
+				es = true;
 			}
 			console.log(og, en, es);
 			//text box variables {
