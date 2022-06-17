@@ -3,7 +3,7 @@ var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg'; 
 	
 //storedLocalContent is set to a string, so i turn that string back into the javascript variable defined in the main html
 if (storedLocalContent === "contentEn"){
-	document.getElementById("mainBodyContent").innerHTML = contentEn
+	document.getElementById("mainBodyContent").innerHTML = contentEn;
 	document.getElementById("header").innerHTML = headerContentEn;
 	fontSizey = "100";
 	fontFont = "Times New Roman";
