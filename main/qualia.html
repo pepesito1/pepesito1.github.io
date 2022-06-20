@@ -22,9 +22,6 @@
 		text-align: center;
 	}
 	#mycanvas{ /* this is so god damn perfect. sets the width to 100% of the page but not TOO big, in case the user is using something like a computer. great- */
-		width: 400px;
-		max-width: 100%;
-		height: auto;
 	}
 	
 	</style>
@@ -89,12 +86,18 @@
 	<script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
 	<script> //grabbed directly from khan academy :) this and the line above runs the canvas
 		var sketchProc = function(processingInstance) {
-			     with (processingInstance) {
-        size(400, 400); 
-        frameRate(30);
-        
+			    with (processingInstance) {
+				var pageWidth = window.innerWidth; //grab the page width
+				var canvasSize; //define variable to make it global
+				if (pageWidth > 720){ //if the width is bigh enough, ej. if its on a computer then
+					var canvasSize = pageWidth/3; //make it a third of the page width
+				} else if (pageWidth < 720){
+					var canvasSize = pageWidth * .90; //make it 90% of the width if its small enough
+				};
+				size(canvasSize, canvasSize); 
+				frameRate(30);
         // ProgramCodeGoesHere
-        //{
+        //{ ignore this god awful indentation if qualia.html
         /*
         this is a very simple lights out minigame!
         at the beginning there are turned on "lights", ej. the white squares.
@@ -104,7 +107,7 @@
         
         you can on the code inmediately below this change the color of the turned off and on lights, along with the grid size! try beating the game when the grids size is 10x10!
         */
-        
+
         var gridSize = 3; //feel free to change this value! it works. 
         var color1 = color(138, 138, 138); //grey color by default. you can change this around!
         var color2 = color(222, 222, 222); //white color by default
@@ -127,7 +130,6 @@
             
         var fraction = width/gridSize; //this divides the width of the canvas by the grid size. this allows us to put squares in each fraction (ej. if the gridsize is 5, then the fraction will divide the width of the canvas by 5, then with this we can draw a square in the first fifth of the canvas, second fifth of the canvas, etc. by multiplying the fraction by 1, 2, 3, 4, etc.)
         //}
-        
         //creating the grid{
         fill(color1); //makes the og grid black (color1)
         for (var e = 0; e < gridSize; e++){ //i cant believe this works
@@ -213,6 +215,7 @@
             drawAColoredSquare(squareOnTopOfMouseX, squareOnTopOfMouseY + fraction); //draws a rectangle 1 down
             drawAColoredSquare(squareOnTopOfMouseX, squareOnTopOfMouseY - fraction); //draws a rectangle 1 up
             victoryCheck(); //check for if all the squares are black (ej. color1)
+			console.log(mouseX,squareOnTopOfMouseX)
         };
         //}
         

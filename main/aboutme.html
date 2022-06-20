@@ -21,10 +21,7 @@
 	#mycanvasdiv{
 		text-align: center;
 	}
-	#mycanvas{ /* this is so god damn perfect. sets the width to 100% of the page but not TOO big, in case the user is using something like a computer. great- */
-		width: 400px;
-		max-width: 100%;
-		height: auto;
+	#mycanvas{
 	}
 	
 	</style>
@@ -220,7 +217,16 @@
 	<script> //grabbed directly from khan academy :) this and the line above runs the canvas
 		var sketchProc = function(processingInstance) {
 			with (processingInstance) {
-				size(400, 400); 
+				
+				var pageWidth = window.innerWidth; //grab the page width
+				var canvasSize; //define variable to make it global
+				if (pageWidth > 720){ //if the width is bigh enough, ej. if its on a computer then
+					var canvasSize = pageWidth/3; //make it a third of the page width
+				} else if (pageWidth < 720){
+					var canvasSize = pageWidth * .90; //make it 90% of the width if its small enough
+				};
+				
+				size(canvasSize, canvasSize); 
 				frameRate(60); //i changed the framerate from 30 to 60
 		
 				// ProgramCodeGoesHere
