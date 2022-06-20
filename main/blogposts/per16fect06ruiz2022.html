@@ -22,9 +22,6 @@
 		text-align: center;
 	}
 	#mycanvas{ /* this is so god damn perfect. sets the width to 100% of the page but not TOO big, in case the user is using something like a computer. great- */
-		width: 400px;
-		max-width: 100%;
-		height: auto;
 	}
 	</style>
 	
@@ -84,7 +81,9 @@
 	<script> //grabbed directly from khan academy :) this and the line above runs the canvas
 	    var sketchProc = function(processingInstance) {
 		 with (processingInstance) {
-			size(400, 400); 
+			var pageWidth = window.innerWidth; //grab the page width
+			var canvasSize = pageWidth/3;
+			size(canvasSize, canvasSize);  //canvas is a third of the width
 			frameRate(60);
 			
 			// ProgramCodeGoesHere
@@ -116,11 +115,11 @@
 			var opacity = 0; //set the initial opacity to 0
 			var exeFade = true; //the way i wrote this is, the text box is always checking to see if it can render (its in a draw function) and this is done with the exeFade variable. when clicking, this gets set to true and the opacity gets reset to 0 in case it had increased in some other function. this allows the text box to only render when this variable gets set to true.
 
-			var rectWidth = 370;
-			var rectHeight = 80;
-			var rectXLeftCorner = 15;
+			var rectWidth = 0.925 * canvasSize; // 370 is 0.925 of 400, over 3 cuz its the canvas width, same for all
+			var rectHeight = 0.2 * canvasSize; //80 is 0.2 of 400
+			var rectXLeftCorner = 0.0375 * canvasSize; //15 is 0.0375 of 400
 			var rectXRightCorner = rectWidth + rectXLeftCorner;
-			var rectYLeftCorner = 200;
+			var rectYLeftCorner = pageWidth/6; //half of the canvas, then over 3 cuz thats the canvas size, thats a sixth
 			var rectYRightCorner = rectHeight + rectYLeftCorner;
 
 			var textArrayEn=[
@@ -238,24 +237,24 @@
 			var opacity2 = 0;
 			var opacity3 = 0;
 			var drawAQuad = function(){
-				var x1 = -80;
+				var x1 = -0.2 * canvasSize; //just ignore these coordinates. its the coordinates of 0 to 400, and their negative counterparts, but universalized for all canvas sizes. canvasSize is just the canvas size
 				var y1 = 0;
-				var x2 = -160;
+				var x2 = -0.4 * canvasSize;
 				var y2 = 0;
-				var x3 = -80;
-				var y3 = 400;
+				var x3 = -0.2 * canvasSize;
+				var y3 = canvasSize;
 				var x4 = 0;
-				var y4 = 400;
+				var y4 = canvasSize;
 
 				for (var i = 0; i < 7; i++){
 					noStroke();
 					quad(x1, y1, x2, y2, x3, y3, x4, y4);  //draw a quad
 				
 					//these is modifying its coords jjust dont worry about it
-					x1 += 80;
-					x2 += 80;
-					x3 += 80;
-					x4 += 80;
+					x1 += 0.2* canvasSize;
+					x2 += 0.2* canvasSize;
+					x3 += 0.2* canvasSize;
+					x4 += 0.2* canvasSize;
 				
 				if (opacity2 < 170){ //if opacity is <128 (0) then add 4 until its that
 					opacity2 +=0.2;
