@@ -80,12 +80,19 @@
 	<script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
 	<script> //grabbed directly from khan academy :) this and the line above runs the canvas
 	    var sketchProc = function(processingInstance) {
-		 with (processingInstance) {
-			var pageWidth = window.innerWidth; //grab the page width
-			var canvasSize = pageWidth/3; //canvasSize is a third of the pageWidth
-			size(canvasSize, canvasSize);  //canvas is a third of the width
-			frameRate(60);
+			with (processingInstance) {
+				
+				var pageWidth = window.innerWidth; //grab the page width
+				var canvasSize; //define variable to make it global
+				if (pageWidth > 720){ //if the width is bigh enough, ej. if its on a computer then
+					var canvasSize = pageWidth/3; //make it a third of the page width
+				} else if (pageWidth < 720){
+					var canvasSize = pageWidth * .90; //make it 90% of the width if its small enough
+				};
 			
+			size(canvasSize, canvasSize); 
+			frameRate(60); //i changed the framerate from 30 to 60
+
 			// ProgramCodeGoesHere
 			//if you come from my webpage, welcome! the code in it changes a bit, because im implementing stuff like localvariables from javascript in it, something i dont do here because this isnt an html project. but the code is mainly the same so enjoy.
 
