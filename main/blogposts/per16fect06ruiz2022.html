@@ -81,12 +81,14 @@
 	<script> //grabbed directly from khan academy :) this and the line above runs the canvas
 	    var sketchProc = function(processingInstance) {
 			with (processingInstance) {
+				var rectHeightMultiplier = 0.2; //set the green rects height
 				
 				var pageWidth = window.innerWidth; //grab the page width
 				var canvasSize; //define variable to make it global
 				if (pageWidth > 720){ //if the width is bigh enough, ej. if its on a computer then
 					var canvasSize = pageWidth/3; //make it a third of the page width
 				} else if (pageWidth < 720){
+					rectHeightMultiplier = 0.4; //make it bigger if screen is small enough
 					var canvasSize = pageWidth * .70; //make it 90% of the width if its small enough
 				};
 			
@@ -123,7 +125,7 @@
 			var exeFade = true; //the way i wrote this is, the text box is always checking to see if it can render (its in a draw function) and this is done with the exeFade variable. when clicking, this gets set to true and the opacity gets reset to 0 in case it had increased in some other function. this allows the text box to only render when this variable gets set to true.
 
 			var rectWidth = 0.925 * canvasSize; // 370 is 0.925 of 400, over 3 cuz its the canvas width, same for all
-			var rectHeight = 0.2 * canvasSize; //80 is 0.2 of 400
+			var rectHeight = rectHeightMultiplier * canvasSize; //80 is 0.2 of 400. its multiplied by 0.2 if the canvas is big enough (screen res is bigger than 720). otherwise its set to 0.4
 			var rectXLeftCorner = 0.0375 * canvasSize; //15 is 0.0375 of 400
 			var rectXRightCorner = rectWidth + rectXLeftCorner;
 			var rectYLeftCorner = pageWidth/6; //half of the canvas, then over 3 cuz thats the canvas size, thats a sixth
