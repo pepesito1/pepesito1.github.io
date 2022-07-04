@@ -26,6 +26,13 @@
     overflow-y: auto;
     background-color: rgb(255, 255, 255);
     }
+	[data-theme="dark"] {
+	  --text-color: white;
+	}
+
+	:root {
+	  --text-color: black; //set the color to BLACK always. else it gets weird when datatheme is black. instead of becoming invisible it becomes visible cuz the text is white lol.
+	}
 	</style>
 	
 	<body>
