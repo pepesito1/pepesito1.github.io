@@ -59,7 +59,41 @@
 		</div>
 			
 		<hr class="solid">
-		
+		<div>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				persona4-heartbeatHeartbreak-iSincerelyApologizeThisIsMerelyAnMp3AndNotAFlacOrSmthn
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/heartbeat.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				dafsdddh somnium isai
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/isai.flac" type="audio/flac">
+					<source src="/media/mp3/isai.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				analogue- innocence (for all i care about this figcaptions)
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/analogue.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure
+		</div>
 		<div id="index"></div>
 		<div id="ipsumId"></div>
 		<div id="2ndId"></div>
@@ -236,6 +270,16 @@
 		
 	}
 	var timer = setInterval(mainFunction, 16);
-	</script> 
+	</script>
+	<script>//grabbed from the internet, this should stop multiple audios from playing?
+	document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+		}
+	}
+	}, true);
+	</script>
 	</body>
 </html>
