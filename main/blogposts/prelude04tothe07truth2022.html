@@ -7,27 +7,30 @@
 	<link href="/css-styles/style.css" rel="stylesheet">
 	
 	<style>
-	th, td {
-	  border: 1px solid black;
-	  padding: 5px;
-	  color: black;
+	textSquare {
+		padding: 2%;
 	}
-	#t1{
-	  background-color: rgb(219, 219, 219);
+	th, td {
+		border: 1px solid black;
+		padding: 5px;
+		color: black;
+	}
+	#t1	{
+		background-color: rgb(219, 219, 219);
 	}
 	p {
-	text-indent: 0px;	/*nullifies the text indent in style.css . i realize i should be using <p> and </p> for every line but oh well*/
+		text-indent: 0px;	/*nullifies the text indent in style.css . i realize i should be using <p> and </p> for every line but oh well*/
 	}
 	#ipsumId {
-    margin: auto;
-    margin-bottom: 10%;
-    width: 50%;
-    height: 300px;
-    overflow-y: auto;
-    background-color: rgb(255, 255, 255);
+		margin: auto;
+		margin-bottom: 10%;
+		width: 50%;
+		height: 300px;
+		overflow-y: auto;
+		background-color: rgb(255, 255, 255);
     }
 	[data-theme="dark"] {
-	  --text-color: white;
+		--text-color: white;
 	}
 
 	:root {
@@ -110,7 +113,7 @@
 	<script>
 		var headerContentOg = `<h1>fade to black</h1>`;
 		var contentOg = `
-		<p>remember how i said i didnt wanna just ramble on these things?</p>
+		<div id="textSquare"><p>remember how i said i didnt wanna just ramble on these things?</p>
         <p>what i meant was like, psychotic, mindless rambling about the depths of my mind</p>
         <p>um</p>
         <p>i think its the second or third blogpost. think its the third. which is just really lame and blank and dumb. i'll delete it idk what to put in its place</p>
@@ -149,7 +152,7 @@
 		<p>mi nombre es pepesito1 en todos lados por alguna razon. desde que tengo memoria lo es. literalmente lo es en casi todos los juegos en linea que juego. jamas me he puesto un nombre random que sea ese. transformice es el unico juego en el que puedo pensar en el que pepesito1 no fue mi nombre principal. el unico de mil.</p>
 		<p>es porque asi la gente me puede reconocer, y me pueden buscar, y yo no puedo desaparecer. la gente en linea siempre tendria como encontrarme y hablarme. evidencia de que estoy vivo</p>
         <p>i also dont talk to them 2. not anymore. 04/07/2022</p>
-        <p>can you notice im trying to inflate this with mindless rambling</p>`;
+        <p>can you notice im trying to inflate this with mindless rambling</p> </div>`;
 		
 		var headerContentEs = `<h1>fade to black</h1>`;
 		var contentEs = `
