@@ -61,6 +61,8 @@ a:active {
   background-color: var(--indexBg);
   color: var(--indexLetterColor);
   width: fit-content;
+  max-width: 90%;
+  overflow-wrap: break-word;
 }
 
 
