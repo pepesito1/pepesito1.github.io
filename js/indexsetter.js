@@ -10,6 +10,7 @@ var indexContent = `
 				<li><a href="/main/blogposts/per16fect06ruiz2022">cloudy day sunny day</a></li>
 				<li><a href="/main/blogposts/prelude04tothe07truth2022">white fatalis mask</a></li>
 				<li><a href="/main/blogposts/santa26claus07hat2022">ImThinkingAboutYouEvenThoughWeLastMetLike9YearsAgo</a></li>
+				<li><a href="/main/blogposts/none09for08all2022">i could do this for money. i dont. but i could.</a></li>
 			</ol>
 		<li><a href="/main/music">music</a><br></li>
 		<li><a href="/main/images">images</a><br></li>
