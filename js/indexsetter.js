@@ -11,6 +11,7 @@ var indexContent = `
 				<li><a href="/main/blogposts/prelude04tothe07truth2022">white fatalis mask</a></li>
 				<li><a href="/main/blogposts/santa26claus07hat2022">ImThinkingAboutYouEvenThoughWeLastMetLike9YearsAgo</a></li>
 				<li><a href="/main/blogposts/none09for08all2022">i could do this for money. i dont. but i could.</a></li>
+				<li><a href="/main/blogposts/punch17yourlights09out2022">hows this for a plan?</a></li>
 			</ol>
 		<li><a href="/main/music">music</a><br></li>
 		<li><a href="/main/images">images</a><br></li>
