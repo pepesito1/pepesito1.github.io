@@ -17,6 +17,7 @@ var indexContent = `
 		<li><a href="/main/music">music</a><br></li>
 		<li><a href="/main/images">images</a><br></li>
 		<li><a href="/main/qualia">qualia</a><br></li>
+		<li><a href="/main/hog">wasser</a><br></li>
 	</ul>`;
 	
 document.getElementById("index").innerHTML = indexContent;
