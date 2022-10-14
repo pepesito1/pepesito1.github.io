@@ -3,28 +3,28 @@ var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg'; 
 	
 //storedLocalContent is set to a string, so i turn that string back into the javascript variable defined in the main html
 if (storedLocalContent === "contentEn"){
-	var currentLangSayer = "the current language is: English"
+	var currentLangSayer = "<h2>the current language is: English</h2>"
 	document.getElementById("mainBodyContent").innerHTML = contentEn;
 	document.getElementById("header").innerHTML = headerContentEn + "<br>" + currentLangSayer;
 	fontSizey = "100";
 	fontFont = "Times New Roman";
 	letterSpacey = "normal"
 }else if (storedLocalContent === "contentEs"){
-	var currentLangSayer = "el idioma actual es: Español"
+	var currentLangSayer = "<h2>el idioma actual es: Español</h2>"
 	document.getElementById("mainBodyContent").innerHTML = contentEs;
 	document.getElementById("header").innerHTML = headerContentEs + "<br>" + currentLangSayer;
 	fontSizey= "100";
 	fontFont = "Times New Roman";
 	letterSpacey = "normal"
 }else if (storedLocalContent === "contentOg"){
-	var currentLangSayer = "current lang is: original"
+	var currentLangSayer = "<h2>current lang is: original</h2>"
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
 	document.getElementById("header").innerHTML = headerContentOg + "<br>" + currentLangSayer;
 	fontSizey= "100";
 	fontFont = "Times New Roman";;
 	letterSpacey = "normal"
 }else if (storedLocalContent === "contentSpy"){
-	var currentLangSayer = "current lang is: original"
+	var currentLangSayer = "<h2>current lang is: original</h2>"
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
 	document.getElementById("header").innerHTML = headerContentOg + "<br>" + currentLangSayer;
 	fontSizey = "180";
@@ -43,7 +43,7 @@ var onLangSwitch = function() {
 	var lang = document.getElementById("lang").value; //lang is equal to the label button, here the languages change freely after the page is loaded and user selects things
 	var fontFont;
 	if (lang === "original") {
-		var currentLangSayer = "current lang is: original"
+		var currentLangSayer = "<h2>current lang is: original</h2>"
 		document.getElementById("mainBodyContent").innerHTML = contentOg; //contentOg is defined in the html
 		document.getElementById("header").innerHTML = headerContentOg + "<br>" + currentLangSayer; //grabs the header, headerContent is defined in the html
 		fontSizey = "100";
@@ -51,7 +51,7 @@ var onLangSwitch = function() {
 		letterSpacey = "normal"
 		localStorage.setItem("localContentLang", "contentOg"); //sets to localContentLang the contentOg
 	} else if (lang === "es") {
-		var currentLangSayer = "el idioma actual es: Español"
+		var currentLangSayer = "<h2>el idioma actual es: Español</h2>"
 		document.getElementById("mainBodyContent").innerHTML = contentEs; //contentEs is defined on the html
 		document.getElementById("header").innerHTML = headerContentEs + "<br>" + currentLangSayer; //grabs the header, headerContent is defined in the html
 		fontSizey= "100";
@@ -59,7 +59,7 @@ var onLangSwitch = function() {
 		letterSpacey = "normal"
 		localStorage.setItem("localContentLang", "contentEs"); //sets to localContentLang the contentEs
 	} else if (lang === "en") {
-		var currentLangSayer = "the current language is: English"
+		var currentLangSayer = "<h2>the current language is: English</h2>"
 		document.getElementById("mainBodyContent").innerHTML = contentEn; //content En is defined on the html
 		document.getElementById("header").innerHTML = headerContentEn + "<br>" + currentLangSayer; //grabs the header, headerContent is defined in the html
 		fontSizey = "100";
@@ -67,7 +67,7 @@ var onLangSwitch = function() {
 		letterSpacey = "normal"
 		localStorage.setItem("localContentLang", "contentEn"); //sets to localContentLang the contentEn
 	} else if (lang ==="secret"){
-		var currentLangSayer = "current lang is: original"
+		var currentLangSayer = "<h2>current lang is: original</h2>"
 		document.getElementById("mainBodyContent").innerHTML = contentOg;
 		document.getElementById("header").innerHTML = headerContentOg + "<br>" + currentLangSayer;
 		fontSizey = "140";
