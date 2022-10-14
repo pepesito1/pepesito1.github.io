@@ -53,7 +53,6 @@ var onLangSwitch = function() {
 	} else if (lang === "es") {
 		var currentLangSayer = "el idioma actual es: Español"
 		document.getElementById("mainBodyContent").innerHTML = contentEs; //contentEs is defined on the html
-		document.getElementById("mainBodyContent").innerHTML = contentEs; //contentEs is defined on the html
 		document.getElementById("header").innerHTML = headerContentEs + "<br>" + currentLangSayer; //grabs the header, headerContent is defined in the html
 		fontSizey= "100";
 		fontFont = "Times New Roman";
