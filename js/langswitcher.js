@@ -3,26 +3,30 @@ var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg'; 
 	
 //storedLocalContent is set to a string, so i turn that string back into the javascript variable defined in the main html
 if (storedLocalContent === "contentEn"){
+	var currentLangSayer = "the current language is: English"
 	document.getElementById("mainBodyContent").innerHTML = contentEn;
-	document.getElementById("header").innerHTML = headerContentEn;
+	document.getElementById("header").innerHTML = headerContentEn + "<br>" + currentLangSayer;
 	fontSizey = "100";
 	fontFont = "Times New Roman";
 	letterSpacey = "normal"
 }else if (storedLocalContent === "contentEs"){
+	var currentLangSayer = "el idioma actual es: Español"
 	document.getElementById("mainBodyContent").innerHTML = contentEs;
-	document.getElementById("header").innerHTML = headerContentEs;
+	document.getElementById("header").innerHTML = headerContentEs + "<br>" + currentLangSayer;
 	fontSizey= "100";
 	fontFont = "Times New Roman";
 	letterSpacey = "normal"
 }else if (storedLocalContent === "contentOg"){
+	var currentLangSayer = "current lang is: original"
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
-	document.getElementById("header").innerHTML = headerContentOg;
+	document.getElementById("header").innerHTML = headerContentOg + "<br>" + currentLangSayer;
 	fontSizey= "100";
 	fontFont = "Times New Roman";;
 	letterSpacey = "normal"
 }else if (storedLocalContent === "contentSpy"){
+	var currentLangSayer = "current lang is: original"
 	document.getElementById("mainBodyContent").innerHTML = contentOg;
-	document.getElementById("header").innerHTML = headerContentOg;
+	document.getElementById("header").innerHTML = headerContentOg + "<br>" + currentLangSayer;
 	fontSizey = "180";
 	fontFont = "secretFont";
 	letterSpacey = "3px";
@@ -39,29 +43,34 @@ var onLangSwitch = function() {
 	var lang = document.getElementById("lang").value; //lang is equal to the label button, here the languages change freely after the page is loaded and user selects things
 	var fontFont;
 	if (lang === "original") {
+		var currentLangSayer = "current lang is: original"
 		document.getElementById("mainBodyContent").innerHTML = contentOg; //contentOg is defined in the html
-		document.getElementById("header").innerHTML = headerContentOg; //grabs the header, headerContent is defined in the html
+		document.getElementById("header").innerHTML = headerContentOg + "<br>" + currentLangSayer; //grabs the header, headerContent is defined in the html
 		fontSizey = "100";
 		fontFont = "Times New Roman";
 		letterSpacey = "normal"
 		localStorage.setItem("localContentLang", "contentOg"); //sets to localContentLang the contentOg
 	} else if (lang === "es") {
+		var currentLangSayer = "el idioma actual es: Español"
 		document.getElementById("mainBodyContent").innerHTML = contentEs; //contentEs is defined on the html
-		document.getElementById("header").innerHTML = headerContentEs; //grabs the header, headerContent is defined in the html
+		document.getElementById("mainBodyContent").innerHTML = contentEs; //contentEs is defined on the html
+		document.getElementById("header").innerHTML = headerContentEs + "<br>" + currentLangSayer; //grabs the header, headerContent is defined in the html
 		fontSizey= "100";
 		fontFont = "Times New Roman";
 		letterSpacey = "normal"
 		localStorage.setItem("localContentLang", "contentEs"); //sets to localContentLang the contentEs
 	} else if (lang === "en") {
+		var currentLangSayer = "the current language is: English"
 		document.getElementById("mainBodyContent").innerHTML = contentEn; //content En is defined on the html
-		document.getElementById("header").innerHTML = headerContentEn; //grabs the header, headerContent is defined in the html
+		document.getElementById("header").innerHTML = headerContentEn + "<br>" + currentLangSayer; //grabs the header, headerContent is defined in the html
 		fontSizey = "100";
 		fontFont = "Times New Roman";
 		letterSpacey = "normal"
 		localStorage.setItem("localContentLang", "contentEn"); //sets to localContentLang the contentEn
 	} else if (lang ==="secret"){
+		var currentLangSayer = "current lang is: original"
 		document.getElementById("mainBodyContent").innerHTML = contentOg;
-		document.getElementById("header").innerHTML = headerContentOg;
+		document.getElementById("header").innerHTML = headerContentOg + "<br>" + currentLangSayer;
 		fontSizey = "140";
 		fontFont = "secretFont";
 		letterSpacey = "3px";
