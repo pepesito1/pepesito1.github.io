@@ -16,7 +16,7 @@ var indexContent = `
 				<ol>
 					<li><a href="/main/blogposts/allidid16idid10foryou2022">Relaxed Alcoholic Party</a></li>
 				</ol>
-				<li><a href="main/blogposts/iapologize22forprettymuch11everything2022"> TítuloQueCambiaréDespuésConJs</a></li>
+				<li><a href="/main/blogposts/iapologize22forprettymuch11everything2022">TítuloQueCambiaréDespuésConJs</a></li>
 			</ol>
 		<li><a href="/main/music">music</a><br></li>
 		<li><a href="/main/images">images</a><br></li>
