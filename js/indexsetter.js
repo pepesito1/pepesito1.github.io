@@ -50,11 +50,11 @@ document.getElementById("index").innerHTML = indexContent;
 
 //ALL OF THE FOLLOWING MESS IS FOR THE RAINBOW COLORS. TOOK ME 2 HOURS TO CODE		
 var colorsArray = [ //the colors have to be strings
-    'de1016', //red
-    'c2850c', //orange/yellow
-    '229606', //green
-    '262691', //blue
-    'ff0080', //purple
+    'ff0000', //red
+    'ffc200', //orange/yellow
+    '00ff00', //green
+    '0000ff', //blue
+    'ff00ff', //purple
 ];
 var gay ='wow, im a nice guy'; //set string, in this case for the text thatll have the href thing
 var lengthForText = gay.length; //grab the length, for the for loop
