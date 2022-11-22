@@ -51,9 +51,9 @@ document.getElementById("index").innerHTML = indexContent;
 //ALL OF THE FOLLOWING MESS IS FOR THE RAINBOW COLORS. TOOK ME 2 HOURS TO CODE		
 var colorsArray = [ //the colors have to be strings
     'ff0000', //red
-    'ffc200', //orange/yellow
+    'ff8000', //orange/yellow
     '00ff00', //green
-    '0000ff', //blue
+    '63c6f7', //blue
     'ff00ff', //purple
 ];
 var gay ='wow, im a nice guy'; //set string, in this case for the text thatll have the href thing
