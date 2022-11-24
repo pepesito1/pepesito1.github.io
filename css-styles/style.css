@@ -86,6 +86,7 @@ body {
   background-color: var(--background-color);
   margin: 2%;
   padding: 2%;
+  overflow-wrap: break-word;
 }
 
 #mainBodyContent {
