@@ -17,7 +17,7 @@ var indexContent = `
 					<li><a href="/main/blogposts/allidid16idid10foryou2022">Relaxed Alcoholic Party</a></li>
 				</ol>
 				<li id="forRainbowText"></li>
-				<ol>
+				<ol>	
 					<li><a href="/main/blogposts/stop24the11wheel2022">quien pudiera apaciguar esta angustia, esta locura?</a></li>
 				</ol>
 			</ol>
@@ -38,18 +38,16 @@ var colorsArray = [ //the colors have to be strings
 var gay ='wow, im a nice guy'; //set string, in this case for the text thatll have the href thing
 var lengthForText = gay.length; //grab the length, for the for loop
 var e = 0; //variable to loop through the array
-var appendedText = [
-]; //we'll store the rainbowified text into this array, so i can access it globally later on
 
-for (var i = 0; i <= lengthForText; i++){ //this entire for loop is to change the color of each letter 1 by 1
+for (var i = 0; i <= lengthForText; i++){
     var substr = gay.substr(i,1); //split the text, letter by letter
     var result = substr.fontcolor(colorsArray[e]); //change the colors of the splitted letters
-    appendedText.push(result); //add the letters one by one
+    document.getElementById("index").innerHTML += result; //add the letters one by one
     if (e === colorsArray.length - 1){ //this means that if the loop for the colors reached its end, then itll start again
         e = 0;
     } else {
         e++;
     }
-}
-const joinedRainbowText = appendedText.join(''); //this is so i can grab the array as a string, without commas
-document.getElementById("forRainbowText").innerHTML += "<a href='/main/blogposts/iapologize22forprettymuch11everything2022'>" + joinedRainbowText + "</a>"; //append the god damn rainbow text finally
+ };
+	
+document.getElementById("index").innerHTML = indexContent;
