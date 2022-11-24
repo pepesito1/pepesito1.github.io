@@ -26,7 +26,9 @@ var indexContent = `
 		<li><a href="/main/qualia">qualia</a><br></li>
 		<li><a href="/main/hog">wasser</a><br></li>
 	</ul>`;
-	
+
+document.getElementById("index").innerHTML = indexContent;
+
 //ALL OF THE FOLLOWING MESS IS FOR THE RAINBOW COLORS. TOOK ME 2 HOURS TO CODE		
 var colorsArray = [ //the colors have to be strings
     'ff0000', //red
