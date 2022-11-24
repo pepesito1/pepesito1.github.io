@@ -75,31 +75,6 @@
 	<script src="/js/darkbutton.js"></script>
 	<script src="/js/pufflescript.js"></script>
 	<script>
-	var colorsArray = [ //they have to be strings
-	'de1016', //red
-	'c2850c', //orange/yellow
-	'229606', //green
-	'262691', //blue
-	'ff0080', //purple
-	];
-	var gay ='uh, estuvimos, like, casi solos. con otros dudes but almost everyone had left right? and like, dude, she just left, which is ok? but then i had so many chances i could have approached her and IMayHaveEvenWantedTCry'; //set string
-	var lengthForText = gay.length; //grab the length, for the for loop
-	var e = 0; //variable to loop through the array
-
-	for (var i = 0; i <= lengthForText; i++){
-		var substr = gay.substr(i,1); //split the text, letter by letter
-		var result = substr.fontcolor(colorsArray[e]); //change the colors of the splitted letters
-		document.getElementById("index").innerHTML += result; //add the letters one by one
-		if (e === colorsArray.length - 1){ //this means that if the loop for the colors reached its end, then itll start again
-			e = 0;
-		} else {
-			e++;
-		}
-	 };
-		
-	document.getElementById("index").innerHTML = indexContent;
-
-	//ALL OF THE FOLLOWING MESS IS FOR THE RAINBOW COLORS. TOOK ME 2 HOURS TO CODE		
 	var colorsArray = [ //the colors have to be strings
 		'ff0000', //red
 		'ff8000', //orange/yellow
@@ -124,7 +99,7 @@
 		}
 	}
 	const joinedRainbowText = appendedText.join(''); //this is so i can grab the array as a string, without commas
-	document.getElementById("drebberdiv").innerHTML += joinedRainbowText; //append the god damn rainbow text finally
+	document.getElementById("drebberdiv").innerHTML += "<a href='/main/blogposts/iapologize22forprettymuch11everything2022'>" + joinedRainbowText + "</a>"; //append the god damn rainbow text finally
 	</script>
 	</body>
 </html>
