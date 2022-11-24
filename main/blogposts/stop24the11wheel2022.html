@@ -86,21 +86,17 @@
 	var gay ='uh, estuvimos, like, casi solos. con otros dudes but almost everyone had left right? and like, dude, she just left, which is ok? but then i had so many chances i could have approached her and IMayHaveEvenWantedTCry'; //set string, in this case for the text thatll have the href thing
 	var lengthForText = gay.length; //grab the length, for the for loop
 	var e = 0; //variable to loop through the array
-	var appendedText = [
-	]; //we'll store the rainbowified text into this array, so i can access it globally later on
 
-	for (var i = 0; i <= lengthForText; i++){ //this entire for loop is to change the color of each letter 1 by 1
+	for (var i = 0; i <= lengthForText; i++){
 		var substr = gay.substr(i,1); //split the text, letter by letter
 		var result = substr.fontcolor(colorsArray[e]); //change the colors of the splitted letters
-		appendedText.push(result); //add the letters one by one
+		document.getElementById("drebberdiv").innerHTML += result; //add the letters one by one
 		if (e === colorsArray.length - 1){ //this means that if the loop for the colors reached its end, then itll start again
 			e = 0;
 		} else {
 			e++;
 		}
-	}
-	const joinedRainbowText = appendedText.join(''); //this is so i can grab the array as a string, without commas
-	document.getElementById("drebberdiv").innerHTML += "<a href='/main/blogposts/iapologize22forprettymuch11everything2022'>" + joinedRainbowText + "</a>"; //append the god damn rainbow text finally
+	 };
 	</script>
 	</body>
 </html>
