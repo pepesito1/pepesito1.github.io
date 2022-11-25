@@ -44,7 +44,7 @@ var e = 0; //variable to loop through the array
 for (var i = 0; i <= lengthForText; i++){
     var substr = gay.substr(i,1); //split the text, letter by letter
     var result = substr.fontcolor(colorsArray[e]); //change the colors of the splitted letters
-    document.getElementById("forRainbowText").innerHTML += "<a href='/main/blogposts/iapologize22forprettymuch11everything2022'>" + joinedRainbowText + "</a>"; //add the letters one by one
+    document.getElementById("forRainbowText").innerHTML += "<a href='/main/blogposts/iapologize22forprettymuch11everything2022'>" + result + "</a>"; //add the letters one by one
     if (e === colorsArray.length - 1){ //this means that if the loop for the colors reached its end, then itll start again
         e = 0;
     } else {
