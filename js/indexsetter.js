@@ -27,7 +27,7 @@ var indexContent = `
 		<li><a href="/main/hog">wasser</a><br></li>
 	</ul>`;
 
-document.getElementById("index").innerHTML = "<a href='/main/blogposts/iapologize22forprettymuch11everything2022'>" + joinedRainbowText + "</a>";
+document.getElementById("forRainbowText").innerHTML = "<a href='/main/blogposts/iapologize22forprettymuch11everything2022'>" + joinedRainbowText + "</a>";
 
 //ALL OF THE FOLLOWING MESS IS FOR THE RAINBOW COLORS. TOOK ME 2 HOURS TO CODE		
 var colorsArray = [ //the colors have to be strings
