@@ -83,7 +83,7 @@
 				Will Power
 				</figcaption>
 				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
-					<source src="/media/mp3/wp.mp3" type="audio/mp3">
+					<source src="/media/mp3/WP.mp3" type="audio/mp3">
 						Your browser does not support the
 						<code>audio</code> element.
 				</audio>
@@ -152,7 +152,7 @@
 				Will Power
 				</figcaption>
 				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
-					<source src="/media/mp3/wp.mp3" type="audio/mp3">
+					<source src="/media/mp3/WP.mp3" type="audio/mp3">
 						Your browser does not support the
 						<code>audio</code> element.
 				</audio>
@@ -222,7 +222,7 @@
 				Will Power
 				</figcaption>
 				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
-					<source src="/media/mp3/wp.mp3" type="audio/mp3">
+					<source src="/media/mp3/WP.mp3" type="audio/mp3">
 						Your browser does not support the
 						<code>audio</code> element.
 				</audio>
@@ -265,5 +265,15 @@
 	</script>
 	<script src="/js/langswitcher.js"></script>
 	<script src="/js/phiSwitcher.js"></script>
+		<script>//grabbed from the internet, this should stop multiple audios from playing?
+	document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+		}
+	}
+	}, true);
+	</script>
 	</body>
 </html>
