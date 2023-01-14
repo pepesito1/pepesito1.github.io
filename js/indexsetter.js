@@ -22,7 +22,7 @@ var indexContent = `
 					<li><a href="/main/blogposts/stop24the11wheel2022">quien pudiera apaciguar esta angustia, esta locura?</a></li>
 				</ol>
 				<p>--2023--</p>
-				<li><a href="/main/blogposts/heyy13youuu01ASD2023"><img src="/media/yoshi1.webm" alt="first blogpost23">Out of kindness<img src="/media/yoshi2.webm" alt="first blogpost23"></a></li>
+				<li><a href="/main/blogposts/heyy13youuu01ASD2023"><img src="/media/yoshi1.webp" alt="first blogpost23"><img src="/media/yoshi2.webp" alt="first blogpost23"></a></li>
 			</ol>
 		<li><a href="/main/music">music</a><br></li>
 		<li><a href="/main/images">images</a><br></li>
