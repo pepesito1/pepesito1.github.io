@@ -5,6 +5,7 @@ var indexContent = `
 		<li><a href="" id="phiLink">gaming</a><br></li>
 		<li>blogposts?</li>
 			<ol>
+				<p>--2022--</p>
 				<li><a href="/main/blogposts/life29time04spot2022">spot of a lifetime</a></li>
 				<li><a href="/main/blogposts/happ25iest05girl2022">pepesito for inkie</a></li>
 				<li><a href="/main/blogposts/per16fect06ruiz2022">cloudy day sunny day</a></li>
@@ -20,6 +21,8 @@ var indexContent = `
 				<ol>	
 					<li><a href="/main/blogposts/stop24the11wheel2022">quien pudiera apaciguar esta angustia, esta locura?</a></li>
 				</ol>
+				<p>--2023--</p>
+				<li><a href="/main/blogposts/heyy13youuu01ASD2023"><img src="/media/yoshi1.webm" alt="first blogpost23">Out of kindness<img src="/media/yoshi2.webm" alt="first blogpost23"></a></li>
 			</ol>
 		<li><a href="/main/music">music</a><br></li>
 		<li><a href="/main/images">images</a><br></li>

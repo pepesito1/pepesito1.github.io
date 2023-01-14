@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta charset="UTF-8">
+	<title>uhhhh Wisconsin</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link href="/css-styles/style.css" rel="stylesheet">
+	
+	<style>
+	#drebberdiv{
+		text-align: center;
+	}
+	#drebber{ /* this is so god damn perfect. sets the width to 100% of the page but not TOO big, in case the user is using something like a computer. great- */
+		width: 480px;
+		max-width: 100%;
+		height: auto;
+	}
+	</style>
+	
+	<body>
+	<img src="/media/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
+	
+	<div class="entireBody">
+		<div class="onlyHeader">
+			<div id="header"></div>
+			
+			<button id="theme-switcher">night night</button>
+			<br>
+				
+			<div id="languageLabel"><label>language/idioma:
+				<select id="lang">
+					<option></option>
+					<option value="original">original</option>
+					<option value="es">spanish</option>
+					<option value="en">english</option>
+					<option value="secret">club penguin PSA/EPF code</option>
+				</select>
+			</label></div>
+				
+			<button id="languageSwitcher">Switch language!/cambiar idioma :)</button>
+		</div>
+			
+		<hr class="solid">
+		
+		<div id="index"></div>
+		
+		<div id="mainBodyContent"></div>
+
+		<hr class="solid">
+		
+		<a id="footer" href="/index.html">return to homepage</a>
+	</div>
+	
+	<script src="/js/darkbutton.js"></script>
+	<script src="/js/pufflescript.js"></script>
+	<script src="/js/indexsetter.js"></script>
+	<script>
+		var headerContentOg	= `
+		<h1>'I Don't Know What My Death Will Be Like, But I Know It Will Be Called A Suicide' by Lucas Papadopoulos</h1>
+		`;
+		var contentOg = `
+		<p>habia, acabado el 3er ace attorney, hace un mes, y queria como, volver a escribir, sobre eso</p>
+		<p>desce hace como 1.2 años que llevo diciendo que finalmente  llegue a la etapa de mi vida en la que jugue todo lo que habia por jugar, y era hora de rejugar cosas. y ah a mediados del año pasado rejugue xenoblade x, que es la mejor cosa jamas hecha, y um ace attorney, ahorita mismo estoy con apollo justice y jugando el remake de 999 en gamepass lol</p>
+		<p>um, yeah, ace a es... exactamente igual de bueno que lo recuerdo. which is saying, you know, so much. that my liking of it didnt go down, or something. and uh 999 is like, still awesome, i fucking love the narration of it. pero si para mi antes era un 9/10 ahora es un 8.99999999/10</p>
+		<p>yeah, una historia de edgey, feenie, mia, godot. jake marshall es su uh mirror sorta thingy, didnt even know that. luke atmey es igual de bueno a como lo recuerdo, y otros. a veces es rarisimo cuz simplemente de la nada, en el fondo de mi mente, subconscientemente, recuerdo cosas. just weird bro</p>
+		<p>y ah, acabé persona 5, you know, despues de jugar el 3 hace 2 años y el 4 hace 1 año, increíble. amo persona 4 y 3. y justo hoy mate a 2 o 3 safi jivas por primera vez, despues de grindear tanto fatalis evil eye con mi gato por 2 dias seguidos y los mantles del alatreon. 2 horas seguidas de farmear el celestial wyverian prints huh</p>
+		<p>i'll just, get down to it, and append the things i just loved the most about it, p5 i mean</p>
+
+		<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				Rivers in the Desert
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/RitD.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+		<br>
+		<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				Will Power
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/wp.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+		<br>
+		<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				Life Will Change
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/LWC.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+		<br>
+		<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				Blooming Villain
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/BV.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+		<br>
+		<br>
+		<p>para este ni voy a subir las imagenes a mi server whatever de github dunno, directamente de donde son lol not even mine #shameless linkrot incoming</p>
+		<p>um, shido es, muy bueno.</p>
+		<img src="https://cdn.vox-cdn.com/thumbor/ci5Od1oPF0b0vGMoL0EAqXVE9C8=/0x0:1920x1080/920x0/filters:focal(0x0:1920x1080):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/8510883/November_Screenshot_2017_05_08_23_55_15.jpg">
+		<img src="https://cdn.vox-cdn.com/thumbor/_JOCzsFeHNHtVBGdawnqnbUVWaQ=/0x0:1920x1080/920x0/filters:focal(0x0:1920x1080):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/8510887/November_Screenshot_2017_05_08_23_58_40.jpg">
+		<img src="https://cdn.vox-cdn.com/thumbor/iIIncZVN7fcsieF7ihIc6GZSggA=/0x0:1920x1080/920x0/filters:focal(0x0:1920x1080):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/8510981/November_Screenshot_2017_05_09_00_25_19.jpg">
+		<br>
+		<br>
+		<br>
+		<p>is there also like</p>
+		<p>just one big ass sign on my back that says... something i cant read? that everyone else can see?</p>
+		`;
+
+		var headerContentEn	= `
+		<h1>'I Don't Know What My Death Will Be Like, But I Know It Will Be Called A Suicide' by Lucas Papadopoulos</h1>
+		`;
+		var contentEn = `
+	<p>habia, acabado el 3er ace attorney, hace un mes, y queria como, volver a escribir, sobre eso</p>
+		<p>desce hace como 1.2 años que llevo diciendo que finalmente  llegue a la etapa de mi vida en la que jugue todo lo que habia por jugar, y era hora de rejugar cosas. y ah a mediados del año pasado rejugue xenoblade x, que es la mejor cosa jamas hecha, y um ace attorney, ahorita mismo estoy con apollo justice y jugando el remake de 999 en gamepass lol</p>
+		<p>um, yeah, ace a es... exactamente igual de bueno que lo recuerdo. which is saying, you know, so much. that my liking of it didnt go down, or something. and uh 999 is like, still awesome, i fucking love the narration of it. pero si para mi antes era un 9/10 ahora es un 8.99999999/10</p>
+		<p>yeah, una historia de edgey, feenie, mia, godot. jake marshall es su uh mirror sorta thingy, didnt even know that. luke atmey es igual de bueno a como lo recuerdo, y otros. a veces es rarisimo cuz simplemente de la nada, en el fondo de mi mente, subconscientemente, recuerdo cosas. just weird bro</p>
+		<p>y ah, acabé persona 5, you know, despues de jugar el 3 hace 2 años y el 4 hace 1 año, increíble. amo persona 4 y 3. y justo hoy mate a 2 o 3 safi jivas por primera vez, despues de grindear tanto fatalis evil eye con mi gato por 2 dias seguidos y los mantles del alatreon. 2 horas seguidas de farmear el celestial wyverian prints huh</p>
+		<p>i'll just, get down to it, and append the things i just loved the most about it, p5 i mean</p>
+
+		<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				Rivers in the Desert
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/RitD.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+		<br>
+		<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				Will Power
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/wp.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+		<br>
+		<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				Life Will Change
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/LWC.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+		<br>
+		<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				Blooming Villain
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/BV.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+		<br>
+		<br>
+		<p>para este ni voy a subir las imagenes a mi server whatever de github dunno, directamente de donde son lol not even mine #shameless linkrot incoming</p>
+		<p>um, shido es, muy bueno.</p>
+		<img src="https://cdn.vox-cdn.com/thumbor/ci5Od1oPF0b0vGMoL0EAqXVE9C8=/0x0:1920x1080/920x0/filters:focal(0x0:1920x1080):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/8510883/November_Screenshot_2017_05_08_23_55_15.jpg">
+		<img src="https://cdn.vox-cdn.com/thumbor/_JOCzsFeHNHtVBGdawnqnbUVWaQ=/0x0:1920x1080/920x0/filters:focal(0x0:1920x1080):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/8510887/November_Screenshot_2017_05_08_23_58_40.jpg">
+		<img src="https://cdn.vox-cdn.com/thumbor/iIIncZVN7fcsieF7ihIc6GZSggA=/0x0:1920x1080/920x0/filters:focal(0x0:1920x1080):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/8510981/November_Screenshot_2017_05_09_00_25_19.jpg">
+		<br>
+		<br>
+		<br>
+		<p>is there also like</p>
+		<p>just one big ass sign on my back that says... something i cant read? that everyone else can see?</p>
+		`;
+			
+		var headerContentEs	= `
+		<h1>'No Sé Cómo Será Mi Muerte, Pero Sé Que Le Llamará Un Suicidio' por Lucas Papadopoulos</h1>
+		`;
+		var contentEs = `
+		<h1>NO VOY A MENTIR ME DA TANTA FLOJERA AHORA MISMO TRADUCIR TODO QUE LO DEJARÉ A MEDIAS. esta 50% ene spañol de todos modos no deberia haber problemas come on</h1>
+		<p>habia, acabado el 3er ace attorney, hace un mes, y queria como, volver a escribir, sobre eso</p>
+		<p>desce hace como 1.2 años que llevo diciendo que finalmente  llegue a la etapa de mi vida en la que jugue todo lo que habia por jugar, y era hora de rejugar cosas. y ah a mediados del año pasado rejugue xenoblade x, que es la mejor cosa jamas hecha, y um ace attorney, ahorita mismo estoy con apollo justice y jugando el remake de 999 en gamepass lol</p>
+		<p>um, yeah, ace a es... exactamente igual de bueno que lo recuerdo. which is saying, you know, so much. that my liking of it didnt go down, or something. and uh 999 is like, still awesome, i fucking love the narration of it. pero si para mi antes era un 9/10 ahora es un 8.99999999/10</p>
+		<p>yeah, una historia de edgey, feenie, mia, godot. jake marshall es su uh mirror sorta thingy, didnt even know that. luke atmey es igual de bueno a como lo recuerdo, y otros. a veces es rarisimo cuz simplemente de la nada, en el fondo de mi mente, subconscientemente, recuerdo cosas. just weird bro</p>
+		<p>y ah, acabé persona 5, you know, despues de jugar el 3 hace 2 años y el 4 hace 1 año, increíble. amo persona 4 y 3. y justo hoy mate a 2 o 3 safi jivas por primera vez, despues de grindear tanto fatalis evil eye con mi gato por 2 dias seguidos y los mantles del alatreon. 2 horas seguidas de farmear el celestial wyverian prints huh</p>
+		<p>i'll just, get down to it, and append the things i just loved the most about it, p5 i mean</p>
+
+		<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				Rivers in the Desert
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/RitD.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+		<br>
+		<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				Will Power
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/wp.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+		<br>
+		<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				Life Will Change
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/LWC.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+		<br>
+		<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				Blooming Villain
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/BV.mp3" type="audio/mp3">
+						Your browser does not support the
+						<code>audio</code> element.
+				</audio>
+			</figure>
+		<br>
+		<br>
+		<p>para este ni voy a subir las imagenes a mi server whatever de github dunno, directamente de donde son lol not even mine #shameless linkrot incoming</p>
+		<p>um, shido es, muy bueno.</p>
+		<img src="https://cdn.vox-cdn.com/thumbor/ci5Od1oPF0b0vGMoL0EAqXVE9C8=/0x0:1920x1080/920x0/filters:focal(0x0:1920x1080):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/8510883/November_Screenshot_2017_05_08_23_55_15.jpg">
+		<img src="https://cdn.vox-cdn.com/thumbor/_JOCzsFeHNHtVBGdawnqnbUVWaQ=/0x0:1920x1080/920x0/filters:focal(0x0:1920x1080):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/8510887/November_Screenshot_2017_05_08_23_58_40.jpg">
+		<img src="https://cdn.vox-cdn.com/thumbor/iIIncZVN7fcsieF7ihIc6GZSggA=/0x0:1920x1080/920x0/filters:focal(0x0:1920x1080):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/8510981/November_Screenshot_2017_05_09_00_25_19.jpg">
+		<br>
+		<br>
+		<br>
+		<p>is there also like</p>
+		<p>just one big ass sign on my back that says... something i cant read? that everyone else can see?</p>
+		`;
+	</script>
+	<script src="/js/langswitcher.js"></script>
+	<script src="/js/phiSwitcher.js"></script>
+	</body>
+</html>
