@@ -22,7 +22,14 @@ var indexContent = `
 					<li><a href="/main/blogposts/stop24the11wheel2022">quien pudiera apaciguar esta angustia, esta locura?</a></li>
 				</ol>
 				<p>--2023--</p>
-				<li><a href="/main/blogposts/heyy13youuu01ASD2023"><img src="/media/yoshi1.webp" alt="first blogpost23"><img src="/media/yoshi2.webp" alt="first blogpost23"></a></li>
+				<li>
+					<a href="/main/blogposts/heyy13youuu01ASD2023">
+						<div class="ignoreCSS">
+							<img src="/media/yoshi1.webp" alt="first blogpost23"><img src="/media/yoshi2.webp" alt="first blogpost23">
+						</div>
+					</a>
+				</li>
+					<li><a href="/main/blogposts/free22the01soul2023">to the very ends with you, in another lifetime</a></li>
 			</ol>
 		<li><a href="/main/music">music</a><br></li>
 		<li><a href="/main/images">images</a><br></li>
