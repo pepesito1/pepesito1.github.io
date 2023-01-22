@@ -126,6 +126,3 @@ p {
 	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; /**dunno what this does but it makes it look beautiful. outline.**/
 	font-weight: bold;
 }
-.ignore-css{
-    all:unset;
-}
