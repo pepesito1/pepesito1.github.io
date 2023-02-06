@@ -30,6 +30,7 @@ var indexContent = `
 			</ol>
 		<li><a href="/main/music">music</a><br></li>
 		<li><a href="/main/images">images</a><br></li>
+		<li><a href="https://drive.google.com/drive/folders/1sMv4B3EMVO4MVUFqsiIwzHgkO3SZWOg1?usp=sharing">"To The Person I Loved The Most" por Lester</a><br></li>
 		<li><a href="/main/qualia">qualia</a><br></li>
 		<li><a href="/main/hog">wasser</a><br></li>
 	</ul>`;
