@@ -27,6 +27,7 @@ var indexContent = `
 				<ol>
 					<li><a href="/main/blogposts/libera02el02alma2023">Hasta Las Últimas Profundidades Contigo (otra versión)</a></li>
 					<li><a href="/main/blogposts/dont28make02me2023">to the heavens y de vuelta (versión alternativa)</a></li>
+					<li><a href="/main/blogposts/always09ill09omen2023">the scars they leave</a></li>
 				</ol>
 			</ol>
 		<li><a href="/main/music">music</a><br></li>
