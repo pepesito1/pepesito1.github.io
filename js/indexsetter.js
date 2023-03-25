@@ -29,6 +29,7 @@ var indexContent = `
 					<li><a href="/main/blogposts/dont28make02me2023">to the heavens y de vuelta (versión alternativa)</a></li>
 				</ol>
 				<li><a href="/main/blogposts/always09ill03omen2023">the scars they leave</a></li>
+				<li><a href="/main/blogposts/kinda25outta03ideas2023">Primer Post Legítimo De Pepesito1 En 2023⁉️⁉️ [Within Reason]</a></li>
 			</ol>
 		<li><a href="/main/music">music</a><br></li>
 		<li><a href="/main/images">images</a><br></li>
