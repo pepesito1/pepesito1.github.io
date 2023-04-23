@@ -53,7 +53,6 @@
 		
 		<div id="index"></div>
 		<div id="mainBodyContent"></div>
-		var contentEn = `
 		<br>
 			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
 				<figcaption>
@@ -203,6 +202,16 @@
 				var canvas = document.getElementById("lupa"); 
 				// Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
 				var processingInstance = new Processing(canvas, sketchProc);
+	</script>
+	<script>//grabbed from the internet, this should stop multiple audios from playing?
+	document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+		}
+	}
+	}, true);
 	</script>
 	</body>
 </html>
