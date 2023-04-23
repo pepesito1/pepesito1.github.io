@@ -30,6 +30,7 @@ var indexContent = `
 				</ol>
 				<li><a href="/main/blogposts/always09ill03omen2023">the scars they leave</a></li>
 				<li><a href="/main/blogposts/kinda25outta03ideas2023">Primer Post Legítimo De Pepesito1 En 2023⁉️⁉️ [Within Reason]</a></li>
+				<li><a href="/main/blogposts/sun22always04comesback2023">By Some Divine Prank</a></li>
 			</ol>
 		<li><a href="/main/music">music</a><br></li>
 		<li><a href="/main/images">images</a><br></li>

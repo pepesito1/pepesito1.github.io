@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta charset="UTF-8">
+	<title>dont let it get to you</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link href="/css-styles/style.css" rel="stylesheet">
+	
+	<style>
+	th, td {
+	  border: 1px solid black;
+	  padding: 5px;
+	  color: black;
+	}
+	#t1{
+	  background-color: rgb(219, 219, 219);
+	}
+	p {
+	text-indent: 0px /*nullifies the text indent in style.css . i realize i should be using <p> and </p> for every line but oh well*/
+	}
+	#mycanvasdiv{
+		text-align: center;
+	}
+	#mycanvas{
+	}
+	
+	</style>
+	
+	<body>
+	<img src="/media/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
+	
+	<div class="entireBody">
+		<div class="onlyHeader">
+			<div id="header"></div>
+			
+			<button id="theme-switcher">night night</button>
+			<br>
+				
+			<div id="languageLabel"><label>language/idioma:
+				<select id="lang">
+					<option></option>
+					<option value="original">original</option>
+					<option value="es">spanish</option>
+					<option value="en">english</option>
+					<option value="secret">club penguin PSA/EPF code</option>
+				</select>
+			</label></div>
+				
+			<button id="languageSwitcher">Switch language!/cambiar idioma :)</button>
+		</div>
+			
+		<hr class="solid">
+		
+		<div id="index"></div>
+		<div id="mainBodyContent"></div>
+		
+		<div id="mycanvasdiv">
+			<canvas id="weirdflashylights"></canvas> 
+		</div>
+		
+		<hr class="solid">
+		
+		<a id="footer" href="/">return to homepage</a>
+	</div>
+	
+	<script src="/js/darkbutton.js"></script>
+	<script src="/js/pufflescript.js"></script>
+	<script src="/js/indexsetter.js"></script>
+	<script>
+		var headerContentOg	= `
+		`;
+		var contentOg = `
+		`;
+
+		var headerContentEn	= `
+		
+		`;
+		var contentEn = `
+		<
+		`;
+			
+		var headerContentEs	= `
+		
+		`;
+		var contentEs = `
+		
+		`;
+		
+	</script>
+	<script src="/js/langswitcher.js"></script>
+	<script src="/js/phiSwitcher.js"></script>
+	
+	<script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+	<script> //grabbed directly from khan academy :) this and the line above runs the canvas
+		var sketchProc = function(processingInstance) {
+			with (processingInstance) {
+				
+				var pageWidth = window.innerWidth; //grab the page width
+				var canvasSize; //define variable to make it global
+				if (pageWidth > 720){ //if the width is bigh enough, ej. if its on a computer then
+					var canvasSize = pageWidth/3; //make it a third of the page width
+				} else if (pageWidth < 720){
+					var canvasSize = pageWidth * .70; //make it 90% of the width if its small enough
+				};
+				
+				size(canvasSize, canvasSize); 
+				frameRate(60); //i changed the framerate from 30 to 60
+		
+				// ProgramCodeGoesHere
+				fill(255,255,255);
+				background (0, 0, 0);
+				draw = function() {
+					fill(255, 255, 255);
+					stroke (255, 255, 255);
+					mouseDragged = function(){
+						ellipse(mouseX, mouseY, 50, 50);
+						fill(0, 0, 0); //for some reason this causes the uh last circle to be colored black or something. its some sorta glitch. dont ask me
+						noStroke();
+					};
+				};
+				
+				};
+			}
+		};
+
+		// Get the canvas that Processing-js will use
+		var canvas = document.getElementById("weirdflashylights"); 
+		// Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+		var processingInstance = new Processing(canvas, sketchProc);
+	</script>
+	</body>
+</html>
