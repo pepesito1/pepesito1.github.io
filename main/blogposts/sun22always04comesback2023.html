@@ -56,6 +56,8 @@
 		
 		<div id="mycanvasdiv">
 			<canvas id="weirdflashylights"></canvas> 
+			<br>
+			<canvas id="lupa"></canvas>
 		</div>
 		
 		<hr class="solid">
@@ -127,6 +129,47 @@
 		var canvas = document.getElementById("weirdflashylights"); 
 		// Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
 		var processingInstance = new Processing(canvas, sketchProc);
+	</script>
+	<script> //grabbed directly from khan academy :) this and the line above runs the canvas
+		var sketchProc = function(processingInstance) {
+			with (processingInstance) {
+				
+				var pageWidth = window.innerWidth; //grab the page width
+				var canvasSize; //define variable to make it global
+				if (pageWidth > 720){ //if the width is bigh enough, ej. if its on a computer then
+					var canvasSize = pageWidth/3; //make it a third of the page width
+				} else if (pageWidth < 720){
+					var canvasSize = pageWidth * .70; //make it 90% of the width if its small enough
+				};
+				
+				size(canvasSize, canvasSize); 
+				frameRate(60); //i changed the framerate from 30 to 60
+		
+				// ProgramCodeGoesHere
+				fill(0, 0, 0);
+		for (var i = 0; i<15; i++){
+			text("ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccvcc", -20+2*i, -20+2*i, 420, 420); //texto que se mostrará
+		}
+		var whiteSquareWidth = 80;
+		var whiteSquareHeight = 50;
+
+		draw = function() {
+			fill(255, 255, 255);
+			background(0, 0, 0); //redraw black background
+			rect(mouseX-whiteSquareWidth/2, mouseY-whiteSquareHeight/2, whiteSquareWidth, whiteSquareHeight); //texto que se mostrará
+			noStroke();
+			fill(0, 0, 0);//color text black
+			text("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 100, 100); //texto que se mostrará
+		};
+						
+						};
+					}
+				};
+
+				// Get the canvas that Processing-js will use
+				var canvas = document.getElementById("lupa"); 
+				// Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+				var processingInstance = new Processing(canvas, sketchProc);
 	</script>
 	</body>
 </html>
