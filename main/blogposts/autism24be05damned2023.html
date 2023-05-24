@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta charset="UTF-8">
+	<title>my boy can work a grill</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link href="/css-styles/style.css" rel="stylesheet">
+	
+	<style>
+	.drebberdiv{
+		text-align: center;
+	}
+	.drebber{ /* this is so god damn perfect. sets the width to 100% of the page but not TOO big, in case the user is using something like a computer. great- */
+		width: 70%;
+		max-width: 480px;
+		height: auto;
+	}
+	</style>
+	
+	<body>
+	<img src="/media/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
+	
+	<div class="entireBody">
+		<div class="onlyHeader">
+			<div id="header"></div>
+			
+			<button id="theme-switcher">night night</button>
+			<br>
+				
+			<div id="languageLabel"><label>language/idioma:
+				<select id="lang">
+					<option></option>
+					<option value="original">original</option>
+					<option value="es">spanish</option>
+					<option value="en">english</option>
+					<option value="secret">club penguin PSA/EPF code</option>
+				</select>
+			</label></div>
+				
+			<button id="languageSwitcher">Switch language!/cambiar idioma :)</button>
+		</div>
+			
+		<hr class="solid">
+		
+		<div id="index"></div>
+		
+		<div id="mainBodyContent"></div>
+
+		<hr class="solid">
+		
+		<a id="footer" href="/index.html">return to homepage</a>
+	</div>
+	
+	<script src="/js/darkbutton.js"></script>
+	<script src="/js/pufflescript.js"></script>
+	<script src="/js/indexsetter.js"></script>
+	<script>
+		var headerContentOg	= `
+		<h1>in the distance, the sun started to rise</h1>
+		`;
+		var contentOg = `
+		<p>ByASuddenBurstOfInspiration</p>
+		<p>hoy recogi 2 rathalos plates, como a 3 quests of each other, despues de unas 25 horas de intentar sin ninguna. se que fueron como 20-25 horas pq llevo como unos 40 episodios de apocalipsis minecraft 3 que "solia" ver en la primaria secundaria dont @ me</p>
+		<p>um, estoy escribiendo algo, en javascript, similar sobre las rathalos' plates, hace varios dias empece pero no le segui, if any of u see one day some rathalos plate thing in the orange index, yeah thats it</p>
+		<br>
+		<p>um, probablemente matare un fatalis mañana, y acabare el juego, estoy loquisimo con el botw 2, acabe ayer dual destinies, dissin of phoenix wright n all that</p>
+		<p>despues sigue spirit of justice, monster hunter g... y algo, algo mas, aun no se que, pero algo</p>
+		<p>uh, as i said, by a sudden burst of inspiration</p>
+		<p>i uh, used to have this... teacher, right? of like, the class where you read books n shit, like how in the usa you read to kill a mockingbird n all that biz? yeah, that but in mexico ig</p>
+		<p>really, really good, i once contacted her, like a year after changing schools, told her stuff i dunno, she told me algo de que "lloro y no lloro ni con bambi", parafraseando, claro. verdaderamente, un hermoso ser humano. elena.</p>
+		<br>
+		<br>
+		<p>creo que, cerca de aqui, o fue antes no lo se, tambien le hable a una maestra que se llamaba emma que tenia depresion y una vez lloro en frente de nosotros porque su psiquiatra cosa le habia dicho que nos agradeciera, y tambien a un profe de fisica que se llamaba rafa, que nos contaba su historia sobre que le decian "el diablo" algo increiblemente ridiculo pero bonito asi. tambien una vez tuve uno que me dio quimica como por unas semanas, y era muy muy noble, no tenia ni puta idea de que hacia, yo me reia mucho con mi amigo alex porque una vez nos dijo que nos iba a poner tache o sea quien dice la palabra "tache" en serio</p>
+		<p>um, y a otro en la prepa, un profe cool, de contabilidad, i dunno, estaba gracioso, estaba bajito y usaba sus headphones lol se veia pequeña su cabeza, tambien muy buena gente. yeah i told them thanks n shit i dunno man this was like 4 years ago aunque a este de contab no tanto</p>
+		<p>um, en schoology de forma bien simple puedes meterte a ver los grupos mas o menos "privados" de profesores lol y ahi puedo (podia?) ver lo que compartian, veo las fotos de perfil de los maestros mas feos que tuve, brujas, habia una con un nombre feisimo que no escribire que nos decia que personas como benito juarez permenecian a una seccta de los illuminati?????????????????????? nos lo decia con toda la seriedad del mundo???????? y que otros personajes historicos tambien. dios. freemason. mason. masón con acento. lo google ahorita</p>
+		<br>
+		<br>
+		<p>well, i uh, it got me thinkin, about how im just</p>
+		<p>you know, different, and all that, i at one point of my life recently realised, i AM the weird kid</p>
+		<br>
+		<p>it explains a lot of things you know</p>
+		<br>
+		<br>
+		<p>uh, habia esta niña, llamemosla anna, como la de earthbound i dunno. she was um, you know, had some...</p>
+		<p>you know, estaba delgada, y guerita y de cara muy linda, y su uh, you know, proporciones, sabes? esta no es una cosa muy pepesito1 de mi parte, realmente no es algo que pepesito1 diria pero uh, you GET MY DRIFT yeah?</p>
+		<p>dunno man, i once told her i wanted to cry n shit and she came with me lol. uh and she once caressed my cheek and smiled to me. maybe somethin was goin on i shall never know this was like 4 years ago</p>
+		<p>aun reconozco y recuerdo los nombres de muchas personas, um.</p>
+		<br>
+		<br>
+		<p>all im sayin is, even though you never get used to people ignoring your messages, or to feeling incredibly uncomfortable when someone sits next to you in order to talk to SOMEONE else next to you (porque nunca se van a sentar a lado de ti [mi] para hablarte [hablarme] a ti [mi] especificamente)</p>
+		<br>
+		<p>...</p>
+		<p>la forma en la que duermo sabiendo que mi pepesitoismo/menimemoismo es perfecto y que no catcalleo mujeres:</p>
+		<div id="drebberdiv">
+			<img src="/media/sleep.jpg" id="drebber" alt="rainbows are pretty" title="se me olvido que es un title en una imagen en un html">
+		</div>
+		<p>verdaderamente rejugare persona 3 y 4 muchas veces en mi vida, es increible que tengo apenas 20 años y ahorita mismo me podrian otorgar vida eterna, y tendria con que entretenerme, sin falta, por otros 60 años. nunca me tendre que preocupar por no tener nada que hacer, como muchas personas retiradas, o algo. truly, wow, im a good guy.</p>
+		<p>le tengo recuerdos lindos a jessie de la prepa though :)</p>
+		`;
+
+		var headerContentEn	= `
+		<h1>in the distance, the sun started to rise</h1>
+		`;
+		var contentEn = `
+		<p>og language</p>
+		`;
+			
+		var headerContentEs	= `
+		<h1>en la distancia, el sol comenzo a salir</h1>
+		`;
+		var contentEs = `
+		<p>pon idioma og</p>
+		`;
+	</script>
+	<script src="/js/langswitcher.js"></script>
+	<script src="/js/phiSwitcher.js"></script>
+	<script>//grabbed from the internet, this should stop multiple audios from playing?
+	document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+		}
+	}
+	}, true);
+	</script>
+	</body>
+</html>
