@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta charset="UTF-8">
+	<title>AnyObjections,Lady?</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link href="/css-styles/style.css" rel="stylesheet">
+	
+	<style>
+	img {
+	 width: 80%;
+	 max-width: 380px;
+	}
+	th, td {
+	  border: 1px solid black;
+	  padding: 5px;
+	  color: black;
+	}
+	#t1{
+	  background-color: rgb(219, 219, 219);
+	}
+	p {
+	text-indent: 0px /*nullifies the text indent in style.css . i realize i should be using <p> and </p> for every line but oh well*/
+	}
+	#mycanvasdiv{
+		text-align: center;
+	}
+	#mycanvas{
+	}
+	
+	</style>
+	
+	<body>
+	<img src="/media/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
+	
+	<div class="entireBody">
+		<div class="onlyHeader">
+			<div id="header"></div>
+			
+			<button id="theme-switcher">night night</button>
+			<br>
+				
+			<div id="languageLabel"><label>language/idioma:
+				<select id="lang">
+					<option></option>
+					<option value="original">original</option>
+					<option value="es">spanish</option>
+					<option value="en">english</option>
+					<option value="secret">club penguin PSA/EPF code</option>
+				</select>
+			</label></div>
+				
+			<button id="languageSwitcher">Switch language!/cambiar idioma :)</button>
+		</div>
+			
+		<hr class="solid">
+		
+		<div id="index"></div>
+		<div id="mainBodyContent"></div>
+		<br>
+		<img src="/media/santa4osrs.png" alt="santa claus hat in osrs" title="I'm Not Gay Greg">
+		<p>el mas bonito de todos :)</p>
+		<hr class="solid">
+		
+		<a id="footer" href="/">return to homepage</a>
+	</div>
+	
+	<script src="/js/darkbutton.js"></script>
+	<script src="/js/pufflescript.js"></script>
+	<script src="/js/indexsetter.js"></script>
+	<script>
+		var headerContentOg	= `
+		<h1>absoultelyNoTitle</h1>
+		`;
+		var contentOg = `
+		<p>um, nothing, really</p>
+		<p>your average dumbass unironically enjoys commute and breathing the same air as other people</p>
+		<p>so im cursed with that fate</p>
+		<p>got many things. mainly, luigis mansion 3 and metroid dread. and some plushies. everything cost me an arm and a leg. i seriously will not be buying another game like that in like a year. holy crap.</p>
+		<p>i wanted to write about metroid dread. samus and her deviljho suit.</p>
+		<p>lo hizo un estudio español. tambien jugue samus returns (perdon por no usar acentos es pq la fuente del codigo de club penguin se rompe si los uso) como en 2020 yo creo. hace como 2 años. juegazo. i hate saying its a game so much. it downplays it. its so much more than that.</p>
+		<p>mencione en, el primer post, whatever. que consumo demasiadas cosas. y me olvido de cosas.</p>
+		<p>a pesar de que todos los metroids son, sin falta, buenisimos, me olvido facil de los bosses y la historia. por que es tan confusa la historia? iunno.</p>
+		<p>me olvido de los powerups, whatever. aeion en samus returns? yeah no fucking clue what that is in that game. i dont remember it</p>
+		<p>i remember the awful beeping that made my ears and head hurt of the radar thing</p>
+		<p>THE THING IS</p>
+		<p>okay, es un estudio, de españa, right? vosotros estareis whateverelse hablan como idiotas</p>
+		<p>excluyeron a muchos artistas de los creditos, porque tenian que trabajar en el juego por mas del 25% de la duracion de su desarrollo para poder ser nombrados. so stupid dude</p>
+		<br>
+		<p>yuck, i got nothing to say</p>
+		<p>i also got no ideas for this page, related to javascript</p>
+		<p>escritura de java, if you will</p>
+		<p>one of my favorite jokes, since a few years ago, with some friend-ish friends (?)</p>
+		<p>traduces todo como, de manera obscenamente directa. tonta. pepesito1? little petey one en inglés. whatever</p>
+		<p>i am NOT looking forward to my second year in college. it SUCKS.</p>
+		<br>
+		<h2>santa hats in videogames my beloved</h2>
+		<img src="/media/santa1tfm.png" alt="santa claus hat in tfm" title="NOT my main account bruh">
+		<p>ok. my main account got banned. an enormous playlist, probably like 1 month of my life in playtime, so many items and titles. me encantaba el de <<Snowy>></p>
+		<br><br>
+		<img src="/media/santa2rgn.png" alt="santa claus hat in ragnarok online" title="UnmatchableWasserVibes">
+		<p>SO many hours and in-game money for this hat. sheez. the red dots bubble means im muted. no fun allowed.</p>
+		<br><br>
+		<img src="/media/santa3prt.png" alt="santa claus hat in tfm" title="yarghh">
+		<p>this game would be awesome if it didnt crash every 3 seconds and didnt have the biggest count of fetch quests I've ever seen.</p>
+		<br><br>
+		<p>im missing club penguin and cp island screenshots :(</p>
+		<br>
+		`;
+
+		var headerContentEn	= `
+		<h1>narrower (whatever this is on notepad++)</h1>
+		`;
+		var contentEn = `
+		<p>um, nothing, really</p>
+		<p>your average dumbass unironically enjoys commute and breathing the same air as other people</p>
+		<p>so im cursed with that fate</p>
+		<p>got many things. mainly, luigis mansion 3 and metroid dread. and some plushies. everything cost me an arm and a leg. i seriously will not be buying another game like that in like a year. holy crap.</p>
+		<p>i wanted to write about metroid dread. samus and her deviljho suit.</p>
+		<p>a spanish studio made it. i also played samus returns prolly like around 2020. 2 years ago. what a game. i hate saying its a game so much. it downplays it. its so much more than that.</p>
+		<p>i mentioned in the first post, or whatever. that i just consume lots of things. and i forget things.</p>
+		<p>even though all of the metroid games are so god damn good, all of them, i easily forget things like the bosses and the story and such. why is it so confusing? i dunno.</p>
+		<p>i forget about the powerups, whatever. aeion in samus returns? yeah no fucking clue what that thing is in that game. i dont remember it</p>
+		<p>i remember the awful beeping that made my ears and head hurt of the radar thing</p>
+		<p>THE THING IS</p>
+		<p>so its a small studio in spain, right? doth mother know thou weareth her drapes? (makes sense if u know a bit about spanishidk)</p>
+		<p>they excluded a lot of the artists cuz they had to work on the game for over 25% of its development time in order to be able to be listed on the credits. imagine being that selfish and greedy.</p>
+		<br>
+		<p>yuck, i got nothing to say</p>
+		<p>i also got no ideas for this page, related to javascript</p>
+		<p>AnotherHispanicJokeYouMayOrMayNotGetHere</p>
+		<p>one of my favorite jokes, since a few years ago, with some friend-ish friends (?)</p>
+		<p>you translate everything in an extremely direct and stupid way. pepesito1? little petey one in english. whatever</p>
+		<p>i am NOT looking forward to my second year in college. it SUCKS.</p>
+		<br>
+		<h2>santa hats in videogames my beloved</h2>
+		<img src="/media/santa1tfm.png" alt="santa claus hat in tfm" title="NOT my main account bruh">
+		<p>ok. my main account got banned. an enormous playlist, probably like 1 month of my life in playtime, so many items and titles. i loved the <<Snowy>> title</p>
+		<br><br>
+		<img src="/media/santa2rgn.png" alt="santa claus hat in ragnarok online" title="UnmatchableWasserVibes">
+		<p>SO many hours and in-game money for this hat. sheez. the red dots bubble means im muted. no fun allowed.</p>
+		<br><br>
+		<img src="/media/santa3prt.png" alt="santa claus hat in tlopo" title="yarghh">
+		<p>this game would be awesome if it didnt crash every 3 seconds and didnt have the biggest count of fetch quests I've ever seen.</p>
+		<br><br>
+		<p>im missing club penguin and cp island screenshots :(</p>
+		<br>
+		`;
+			
+		var headerContentEs	= `
+		<h1>NadieLeeEsto</h1>
+		`;
+		var contentEs = `
+		<p>NADA. nada. solo, nada. me desagrada un poco escribir en español de esta forma. WHO CARES. i do. oops ese texto esta en ingles. so sue me.</p>
+		<p>tu idiota promedio de forma no ironica disfruta viajar de ida y vuelta físicamente a la escuela o a su trabajo y de respirar el mismo aire que otras personas</p>
+		<p>asi es la vida</p>
+		<p>consegui muchas cosas. principalmente luigis mansion 3 (secuela a uno de los mejores pedazos de entretenimiento en la historia) y metroid dread. primer metroid legal. yay. y unos peluches. y todo me costo un brazo y una pierna. no volvere a poder comprar cosas asi como en 1 año</p>
+		<p>queria escribir sobre metroid dread, y sobre su traje de deviljho.</p>
+		<p>lo hizo un estudio español. tambien jugue samus returns (perdon por no usar acentos es pq la fuente del codigo de club penguin se rompe si los uso) como en 2020 yo creo. hace como 2 años. juegazo. odio decir que es un juego, porque hace menos lo que verdaderamente es. es mucho mas que eso.</p>
+		<p>mencione en, el primer post, como sea. que consumo demasiadas cosas. y me olvido de cosas.</p>
+		<p>a pesar de que todos los metroids son, sin falta, buenisimos, me olvido facil de los bosses y la historia. por que es tan confusa la historia? no me preguntes a mi.</p>
+		<p>me olvido de los powerups, whatever. aeion en samus returns? yeah ni IDEA de que hace eso en ese juego</p>
+		<p>recuerdo los chirridos horribles que hacia el radar y me lastimaban los oidos & cabeza</p>
+		<p>LA COSA ES</p>
+		<p>okay, es un estudio, de españa, right? vosotros estareis ostia chaval hablan como idiotas</p>
+		<p>excluyeron a muchos artistas de los creditos, porque tenian que trabajar en el juego por mas del 25% de la duracion de su desarrollo para poder ser nombrados.</p>
+		<br>
+		<p>yuck, no tengo nada que decir</p>
+		<p>no tengo ideas sobre nada de javascript</p>
+		<p>escritura de java, si así lo quieres llamar. (um awful joke this doesnt work in contentEs)</p>
+		<p>una de mis bromas favoritas, desde hace muchos años, con mis lsaldsññ cómplices es,</p>
+		<p>traduces todo como, de manera obscenamente directa. tonta. pepesito1? little petey one en inglés. lo que sea</p>
+		<p>quien en su sano juicio estaria emocionado de forma no ironica por entrar a su segundo año de universidad de forma... fisica?</p>
+		<br>
+		<h2>gorritos de santa en juegos, mi amado</h2>
+		<img src="/media/santa1tfm.png" alt="santa claus hat in tfm" title="NOT my main account bruh">
+		<p>esta NO es mi cuenta principal. me la banearon. perdi 1 mes entero de playtime y mi inventario y mi lista de amigos y mi todo. me encantaba el titulo de <<Nevado>></p>
+		<br><br>
+		<img src="/media/santa2rgn.png" alt="santa claus hat in ragnarok online" title="UnmatchableWasserVibes">
+		<p>tantisimas horas para el maldito gorrito de santa. tantisimo dinero del juego. la nube de texto roja es de que estoy muteado por 2 semanas. lol.</p>
+		<br><br>
+		<img src="/media/santa3prt.png" alt="santa claus hat in tlopo" title="yarghh">
+		<p>este juego estaria mejor si no se crasheara cada 5 segundos y si no tuviera la mayor cantidad de fetch quests que jamas he visto en toda mi vida</p>
+		<br><br>
+		<p>me faltan fotitos de club penguin y de club penguin island :(</p>
+		<br>
+		`;
+	</script>
+	<script src="/js/langswitcher.js"></script>
+	<script src="/js/phiSwitcher.js"></script>
+	</body>
+</html>

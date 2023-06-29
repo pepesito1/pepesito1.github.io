@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta charset="UTF-8">
+	<title>you're gonna be alright (or was it "its"?)</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link href="/css-styles/style.css" rel="stylesheet">
+	
+	<style>
+	#drebberdiv{
+		text-align: center;
+	}
+	#drebber{ /* this is so god damn perfect. sets the width to 100% of the page but not TOO big, in case the user is using something like a computer. great- */
+		width: 480px;
+		max-width: 100%;
+		height: auto;
+	}
+	img {
+	 width: 80%;
+	 max-width: 380px;
+	}
+	</style>
+	
+	<body>
+	<img src="/media/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
+	
+	<div class="entireBody">
+		<div class="onlyHeader">
+			<div id="header"></div>
+			
+			<button id="theme-switcher">night night</button>
+			<br>
+				
+			<div id="languageLabel"><label>language/idioma:
+				<select id="lang">
+					<option></option>
+					<option value="original">original</option>
+					<option value="es">spanish</option>
+					<option value="en">english</option>
+					<option value="secret">club penguin PSA/EPF code</option>
+				</select>
+			</label></div>
+				
+			<button id="languageSwitcher">Switch language!/cambiar idioma :)</button>
+		</div>
+			
+		<hr class="solid">
+		
+		<div id="index"></div>
+		
+		<div id="mainBodyContent"></div>
+
+		<hr class="solid">
+		
+		<a id="footer" href="/index.html">return to homepage</a>
+	</div>
+	
+	<script src="/js/darkbutton.js"></script>
+	<script src="/js/pufflescript.js"></script>
+	<script src="/js/indexsetter.js"></script>
+	<script>
+		var headerContentOg	= `
+		<h1>hi partner</h1>
+		`;
+		var contentOg = `
+		<p>nuevamente un nuevo blogpostdespues de solo como 2 dias de haber escrito el ultimo</p>
+		<p>mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+		<p>antes de que se me olvide, solo queria escribir esto:</p>
+		<p>ahem:
+		skyrim: argonian, then on my new attempt at playing through it 2 weeks ago, a high elf <br>
+		morrowind: dark elf<br>
+		oblivion: imperial?<br>
+		legends (awful ugh): wood elf<br>
+		
+		4 ultimate: hammer, glaive, charge blade, sword and shield maybe?. attempted bow, dual blades... others<br>
+		generations: adept hammer, striker sns<br>
+		tri: hammer<br>
+		freedom unite: hammer, longsword<br>
+		generations ultimate: adept hammer, striker sns, guild charge blade, alchemy glaive, valor hbg (lol)<br>
+		rise & sunbreak: hammer, glaive, lbg, attempted charge blade but it sucks<br>
+		world: hammer, sns, glaive, attempted bow (EDIT DEL 02/02/2022: charge blade)</p>
+		<br>
+		<p>BIEN</p>
+		<p>well, you see, verily, i say</p>
+		<p>there is this so-called "prettiest girl ive ever seen" (irl stort of)</p>
+		<p>quick recap, you know im not writing this with her consent or whatever but oh well, its anon right?</p>
+		<p>she got like, the prettiest blonde hair ive ever seen. and so many things, so many, could write for 10,000 paragraphs about her</p>
+		<p>y a veecs, sabes, paso a lado de otras personas asi></p>
+		<p>first things first, ella una vez me dijo que se queria pintar el pelo  y una razon era que le molestaba que le preguntaban que con que se lo pintaba lol but she was all natural amazing</p>
+		<p>lmfao all i can think of when i see another blondie is if its natural or not. jeebezus this so-called prettiest girl ive ever seen has an incredible hairdo</p>
+		<p>yeah and i think just sorta</p>
+		<p>en alguna, otra vida. en otro momento.</p>
+		<p>in some other lifetime, i could have been her friend</p>
+		<p>in some other lifetime, i wouldnt be thinking about this girl that shares a name with [censored] from dont starve</p>
+		<p>in some other lifetime, it could have been me</p>
+		<p>Laurice Deauxnim</p>
+		`;
+
+		var headerContentEn	= `
+		<h1>hi partner</h1>
+		`;
+		var contentEn = `
+		<p>ngl last time i left the post without the 100% spanish translation so now the english one stays without an english translation. jesus translating is a pain in the ass. isnt even that much text.</p>
+		`;
+			
+		var headerContentEs	= `
+		<h1>hace 5 años creia que decir "me pica el codo" era el mejor chiste imaginable. increíble título.</h1>
+		`;
+		var contentEs = `
+		<p>nuevamente un nuevo blogpostdespues de solo como 2 dias de haber escrito el ultimo</p>
+		<p>mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+		<p>antes de que se me olvide, solo queria escribir esto:</p>
+		<p>ahem:
+		skyrim: argonian, y hace unas 1-2 semanas que lo quise rejugar, un high elf<br>
+		morrowind: dark elf<br>
+		oblivion: imperial?<br>
+		legends (awful ugh): wood elf<br>
+		4 ultimate: martillo, glaive, hacha cargada, creo que espada y escudo?. intente arco, espadas gemelas... others<br>
+		generations: martillo "sombra" (no recuerod que tuviera este nombre me lo acabo de agarrar de un website random, vandal. odio a los españoles), espada y escudo "ariete"
+		tri: martillo<br>
+		freedom unite: martillo, longsword<br>
+		generations ultimate: adept hammer, striker sns, guild charge blade, alchemy glaive, valor hbg (lol)<br>
+		rise & sunbreak: hammer, glaive, lbg, attempted charge blade but it sucks<br>
+		world: hammer, sns, glaive, attempted bow (EDIT DEL 02/02/2022: charge blade)</p>
+		<br>
+		<p>BIEN</p>
+		<p>hay esta, supuesta, denominada-por-mi-mismo niña que le llamé...</p>
+		<p>uh huh esto es muy ridiculo de escribir en español aun mas que en ingles but: la niña más bonita que jamás había visto</p>
+		<p>yeah dude como sea man, yo estaba mas chiquito cuando dije eso, y ahora se que ese tipo de cosas simplemente... no se, no se dicen? no se aprecian? como un "taboo"? en serio no lo se</p>
+		<p>esto no es con su consentimiento asi que, whatever, no dire nada, pero tenia como, un pelo, rubio, güero, como se llame, diga. se entiende la vibe yeah?</p>
+		<p>y a veces, sabes, paso a lado de otras personas asi</p>
+		<p>antes que nada, ella una vez me dijo que se queria pintar el pelo  y una razon era que le molestaba que le preguntaban que con que se lo pintaba lol pero ella era natural. ["Simplemente Perfecta", acaba cita.]</p>
+		<p>y ahora cada que veo a una persona asi, solo me puedo preguntar si es natural o no lol, esta tipa denominada-por-mi-mismo "guapisima" tenia un cabello muy lindo</p>
+		<p>y pienso que</p>
+		<p>en alguna, otra vida. en otro momento.</p>
+		<p>en alguna otra vida, yo pude haber sido su amigo</p>
+		<p>en alguna otra vida, yo no estaria pensando en esta tipa llamada igual que el fantasma de [censored] de dont starve</p>
+		<p>en alguna otra vida, pude haber sido yo</p>
+		<p>Laurice Deauxnim</p>
+		`;
+	</script>
+	<script src="/js/langswitcher.js"></script>
+	<script src="/js/phiSwitcher.js"></script>
+	</script>
+	</body>
+</html>

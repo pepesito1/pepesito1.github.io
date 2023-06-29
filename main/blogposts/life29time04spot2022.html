@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta charset="UTF-8">
+	<title>blogpost of... a lifetime?</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link href="/css-styles/style.css" rel="stylesheet">
+	
+	<style>
+	#drebberdiv{
+		text-align: center;
+	}
+	#drebber{ /* this is so god damn perfect. sets the width to 100% of the page but not TOO big, in case the user is using something like a computer. great- */
+		width: 100%;
+		max-width: 480px;
+		height: auto;
+	}
+	</style>
+	
+	<body>
+	<img src="/media/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
+	
+	<div class="entireBody">
+		<div class="onlyHeader">
+			<div id="header"></div>
+			
+			<button id="theme-switcher">night night</button>
+			<br>
+				
+			<div id="languageLabel"><label>language/idioma:
+				<select id="lang">
+					<option></option>
+					<option value="original">original</option>
+					<option value="es">spanish</option>
+					<option value="en">english</option>
+					<option value="secret">club penguin PSA/EPF code</option>
+				</select>
+			</label></div>
+				
+			<button id="languageSwitcher">Switch language!/cambiar idioma :)</button>
+		</div>
+			
+		<hr class="solid">
+		
+		<div id="index"></div>
+		
+		<div id="mainBodyContent"></div>
+		
+		<div id="drebberdiv">	
+			<img src="/media/drebber.webp"  id="drebber" alt="enoch drebber webp :)" title="drebber approves of this message">
+		</div>
+		
+		<hr class="solid">
+		
+		<a id="footer" href="/index.html">return to homepage</a>
+	</div>
+	
+	<script src="/js/darkbutton.js"></script>
+	<script src="/js/pufflescript.js"></script>
+	<script src="/js/indexsetter.js"></script>
+	<script>
+		var headerContentOg	= `
+		<h1>the spot of a lifetime</h1>
+		`;
+		var contentOg = `
+		<p>well, hoy es 29 de abril. 2022. aun estoy construyendo la pagina. no creo crear muchos blogposts porque no es exactamente la cosa mas facil y <em>pleasing</em> del mundo.</p>
+		<p>de acuerdo a lo que anote en mi ultima iteracion de mi spreadsheet, estos son los predecesores a esta pagina:</p>
+		<ul>
+			<li>1era iteracion: work of a lifetime, 11/05/2020</li>
+			<li>2da iteracion: renewal of a lifetime, 03/10/2021</li>
+			<li>3era y (en su entonces) mas reciente iteracion: conclusion of a lifetime, 15/02/2022</li>
+		</ul>
+		<p>bien, la primera pagina de 2020, inicios de pandemia, inicio porque yo ya sabia que a ese punto yo ya habia jugado demasiadas cosas.</p>
+		<p>im talking about, 3 different games per month.</p>
+		
+		<p>supuse que tenia que registrar los juegos que habia jugado. no necesariamente acabado. pero queria registrar todos los juegos que jamas habia jugado en mi vida entera. para eso me puse a ver mi historial de compras en consolas, etc. y los registre.</p>
+		
+		<p>eventualmente me puse a anotar otras cosas, y termine simplemente escribiendo sobre mi en una tab de la spreadsheet. como un miniblog. y fue evolucionando.</p>
+		
+		<p>siempre quise una pagina pero no supe como hasta ahora. es simple. solo escribes htmls y les das estilos con css. lo mas dificil es integrar javascript, que uso para hacer cosas como cambiar el puffle de color cuando le das click o cambiar el idioma/color de la pagina. esas 2 ultimas cosas me tomaron HORAS.</p>
+		
+		
+		<p>anyways, que queria escribir hoy?</p>
+		<p>well, today i finished the music page. <a href="/main/music.html">this one</a>. this one was my dream page yo. well, me puse a escuchar la musica de great ace attorney 2, again, solo para ver cual poner y cual quitar etc.</p>
+		
+		<p>una de las cosas que desde hace tiempo me dan miedo, es que me olvide de cosas. de tanto que hago.</p>
+		
+		<p>well, first, lets talk about why i have played so many god damn things alright? you can check this over at the phi/gaming webpage u can check out on the index above.</p>
+		
+		<p>i HATE wasting my time. i hate wasting it mindlessly on social media. i hate wasting it on tv. i hate wasting it on commute. i appreciate my time a LOT. and i use it to play things. different things. things with stories. sometimes tv shows or movies but not always.</p>
+		
+		<p>well, con eso out of the way, pensemos: por que me da miedo olvidarme de cosas? es porque juego muchas cosas.</p>
+		
+		<p>y pense: absolutamente no me quiero olvidar de ciertos juegos. ignora el hecho de que son juegos, son historias, escritas y hechas por humanos. (primordialmente japoneses y despues americanos tho).</p>
+		
+		<p>no me quiero olvidar jamas de la historia, musica y personajes de great ace attorney 2. ni de layton vs ace attorney.</p>
+		
+		<p>los personajes y el universo de xenoblade x y 1 son buenisimos. el 2 es mediocre lol. los rpgs de mario & luigi, en particular PARTNERS IN TIME, despues bowsers inside story y al final dream team, todos son buenos. hermosos. la historia, gameplay, originalidad y todo de como escriben su dialogo y humor. nunca jamas quiero olvidarlos.</p>
+		
+		<p>quiero decir algo como, si algun dia me da algo como alzheimers lol, si tuviera que elegir juegos que pudiera rejugar por primera vez, serian esos.</p>
+		
+		<p>tal vez tambien monster hunter 4u, los 2 mario galaxies son buenisimos, la franquicia entera de phoenix es medio bonita pero muy mala de momentos. breath of the wild y skyward sword son hiper bonitos.</p>
+		
+		<p>he jugado muchas cosas hermosas a las que les tengo un cariño que no puedo poner en palabras. en serio, great ace attorney 2 es lo mas hermoso que jamas he consumido, todos los personajes son tan agobiantemente bonitos. he tenido una vida muy privilegiada. notese que mas de la mitad de los juegos que jamas he jugado fueron jugados mediante backups *wink wink*.</p>
+		
+		<p>well, thats it for this blogspot. after this ill have to commit this in github (because i dont know for shit how to host this webpage locally, aunque puedo copiar y pegar todos mis scripts en editores de html css js online), then see if anything broke, fix styles and lines, then translate all of this.</p>
+		
+		<p>its the webpage of a lifetime, yo</p>
+		</p>`;
+
+		var headerContentEn	= `
+		<h1>the spot of a lifetime</h1>
+		`;
+		var contentEn = `
+		<p>well, today is the 29st of april, 2022. im still building the webpage. i dont think ill be creating many blogposts because this isnt exactly the easiest and most <em>pleasing</em> thing in the world.</p>
+		
+		<p>according to what i wrote in my latest iteration of my spreadsheet, these are the predecessors to this webpage:</p>
+		<ul>
+			<li>1st iteration: work of a lifetime, 11/05/2020</li>
+			<li>2nd iteration: renewal of a lifetime, 03/10/2021</li>
+			<li>3rd and (in its time) most recent iteration: conclusion of a lifetime, 15/02/2022</li>
+		</ul>
+		<p>well, the first page of 2020, when the pandemic had just begun, it began because by then i already knew i had already played many different things.</p>
+		
+		<p>im talking about, 3 different games per month.</p>
+		
+		<p>i supposed i had to register all the games i had played. not necessarily finished. but i wanted to register all the games i had ever played in my entire life. for that i began searching in my consoles' shop history, etc, and i registered them.</p>
+		
+		<p>eventually i began writing about other things, and i simply ended up writing about myself in one of the spreadsheets tabs. like a miniblog. and it kept evolving.</p>
+		
+		<p>i always wanted a webpage but i never learned how up until now. its simple. u just write htmls and give them styles with css. the hardest part is to integrate javascript, which i use for things like changing the puffles color when you click on it or changing the language/color of the page. these 2 last things took me HOURS.</p>
+		
+		
+		<p>anyways, what did i want to write about today?</p>
+		<p>well, today i finished the music page. <a href="/main/music.html">this one</a>. this one was my dream page yo. well, i began listening to great ace attorney 2s music, again, just to see which tracks to keep and delete etc.</p>
+		
+		<p>one of the things ive been afraid of for a while, is me forgetting things. out of how many things i do.</p>
+		
+		<p>well, first, lets talk about why i have played so many god damn things alright? you can check this over at the phi/gaming webpage u can check out on the index above.</p>
+		
+		<p>i HATE wasting my time. i hate wasting it mindlessly on social media. i hate wasting it on tv. i hate wasting it on commute. i appreciate my time a LOT. and i use it to play things. different things. things with stories. sometimes tv shows or movies but not always.</p>
+		
+		<p>well, with that out of the way, lets think: why am i scared of forgetting things? its because i play a lot of things.</p>
+		
+		<p>and i thought. i absolutely do not want to forget certain games. just forget about the fact that theyre games, theyre stories, written and made by humans. (mainly by japanese people and then americans tho).</p>
+		
+		<p>i dont want to ever forget about the story, music and characters of the great ace attorney 2, nor of layton vs ace attorney.</p>
+		
+		<p>the characters and universe of xenoblade x and 1 are so damn good. the second one is mediocre lol. the mario & luigi rpgs, particularly PARTNERS IN TIME, then bowsers inside story and finally dream team, all of them are good. beautiful. the story, gameplay, originality and everything about the way their dialogue and humor is written. i dont want to ever forget them.</p>
+		
+		<p>i mean something like, if some day i happened to have something like alzheimers lol, if i had to choose which games i could play for the first time again, it would be those.</p>
+		
+		<p>maybe also monster hunter 4u, both mario galaxies are so damn good, the entire phoenix wright franchise is hit-or-miss for me but its overall good. breath of the wild and skyward sword are hyper pretty.</p>
+		
+		<p>ive played so many beautiful things which i appreciate beyond words. seriously, the great ace attorney 2 is of the most beautiful things ive ever consumed, all of its characters are overwhelmingly pretty. ive had a pretty privileged life. do note more than half of the games ive ever played were played via backups *wink wink*.</p>
+		
+		<p>well, thats it for this blogspot. after this ill have to update github (because i dont know for shit how to host this webpage locally, although i can copy and paste all of my scripts in editors of html css and jss online), then see if anything broke, fix styles and lines, then translate all of this.</p>
+		
+		<p>its the webpage of a lifetime, yo</p>
+		</p>`;
+			
+		var headerContentEs	= `
+		<h1>the spot of a lifetime</h1>
+		<h3>(ok no puedo traducir esto. esto es intraducible)</h3>
+		`;
+		var contentEs = `
+		<p>bien, hoy es 29 de abril. 2022. aun estoy construyendo la pagina. no creo crear muchos blogposts porque no es exactamente la cosa mas facil y <em>bonita</em> del mundo.</p>
+		
+		<p>de acuerdo a lo que anote en mi ultima iteracion de mi spreadsheet, estos son los predecesores a esta pagina (son intraducibles lol):</p>
+		<ul>
+			<li>1era iteracion: work of a lifetime, 11/05/2020</li>
+			<li>2da iteracion: renewal of a lifetime, 03/10/2021</li>
+			<li>3era y (en su entonces) mas reciente iteracion: conclusion of a lifetime, 15/02/2022</li>
+		</ul>
+		<p>pues, la primera pagina de 2020, inicios de pandemia, inicio porque yo ya sabia que a ese punto yo ya habia jugado demasiadas cosas.</p>
+		
+		<p>estoy hablando de como, 3 distintos juegos por mes.</p>
+		
+		<p>supuse que tenia que registrar los juegos que habia jugado. no necesariamente acabado. pero queria registrar todos los juegos que jamas habia jugado en mi vida entera. para eso me puse a ver mi historial de compras en consolas, etc. y los registre.</p>
+		
+		<p>eventualmente me puse a anotar otras cosas, y termine simplemente escribiendo sobre mi en una hoja de la spreadsheet. como un miniblog. y fue evolucionando.</p>
+		
+		<p>siempre quise una pagina pero no supe como hasta ahora. es simple. solo escribes htmls y les das estilos con css. lo mas dificil es integrar javascript, que uso para hacer cosas como cambiar el puffle de color cuando le das click o cambiar el idioma/color de la pagina. esas 2 ultimas cosas me tomaron HORAS.</p>
+		
+		
+		<p>de todos modos, que queria escribir hoy?</p>
+		<p>pues, hoy acabe la pagina de musica. <a href="/main/music.html">esta mera</a>. pagina de mis sueños yo. pues, me puse a escuchar la musica de great ace attorney 2, again, solo para ver cual poner y cual quitar etc.</p>
+		
+		<p>una de las cosas que desde hace tiempo me dan miedo, es que me olvide de cosas. de tanto que hago.</p>
+		
+		<p>primero, hablemos de por que he jugado tantisimas cosas va? puedes checar esto en la pagina de phi/gaming en el indice del inicio.</p>
+		
+		<p>ODIO desperdiciar mi tiempo. odio desperdiciarlo en redes sociales. odio desperdiciarlo viendo television. odio gastarlo trasladandome a tonterias como la escuela. yo aprecio MUCHO mi tiempo. y lo uso para jugar cosas. cosas distintas. cosas con historias. a veces series o pelis pero no siempre.</p>
+		
+		<p>bien, con eso fuera del camino, pensemos: por que me da miedo olvidarme de cosas? es porque juego muchas cosas.</p>
+		
+		<p>y pensé: absolutamente no me quiero olvidar de ciertos juegos. ignora el hecho de que son juegos, son historias, escritas y hechas por humanos. (aunque son primordialmente personas japonesas y despues americanas).</p>
+		
+		<p>no me quiero olvidar jamas de la historia, musica y personajes de great ace attorney 2. ni de layton vs ace attorney.</p>
+		
+		<p>los personajes y el universo de xenoblade x y 1 son buenisimos. el 2 es mediocre lol. los rpgs de mario & luigi, en particular PARTNERS IN TIME, despues bowsers inside story y al final dream team, todos son buenos. hermosos. la historia, gameplay, originalidad y todo de como escriben su dialogo y humor. nunca jamas quiero olvidarlos.</p>
+		
+		<p>quiero decir algo como, si algun dia me da algo como alzheimers lol, si tuviera que elegir juegos que pudiera rejugar por primera vez, serian esos.</p>
+		
+		<p>tal vez tambien monster hunter 4u, los 2 mario galaxies son buenisimos, la franquicia entera de phoenix es medio bonita pero muy mala de momentos. breath of the wild y skyward sword son hiper bonitos.</p>
+		
+		<p>he jugado muchas cosas hermosas a las que les tengo un cariño que no puedo poner en palabras. en serio, great ace attorney 2 es lo mas hermoso que jamas he consumido, todos los personajes son tan agobiantemente bonitos. he tenido una vida muy privilegiada. notese que mas de la mitad de los juegos que jamas he jugado fueron jugados mediante respaldos *wink wink*.</p>
+		
+		<p>eso es todo para este mini blogspot. despues de esto tendre que actualizarlo en github (porque no se como se hostea esta pagina localmente, aunque puedo copiar y pegar todos mis scripts en editores de html css js online), despues ver si algo se rompio, arreglar estilos y lineas, despues traducir todo esto.</p>
+		
+		<p>its the webpage of a lifetime, yo</p>
+		</p>`;
+	</script>
+	<script src="/js/langswitcher.js"></script>
+	<script src="/js/phiSwitcher.js"></script>
+	</body>
+</html>
