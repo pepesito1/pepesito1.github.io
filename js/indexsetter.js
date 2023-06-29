@@ -3,36 +3,6 @@ var indexContent = `
 		<li><a href="/">homepage</a></li>
 		<li><a href="/main/aboutme">about me</a></li>
 		<li><a href="" id="phiLink">gaming</a><br></li>
-		<li>blogposts?</li>
-			<ol>
-			<p>--2022--</p>
-				<li><a href="/main/blogposts/life29time04spot2022">spot of a lifetime</a></li>
-				<li><a href="/main/blogposts/happ25iest05girl2022">pepesito for inkie</a></li>
-				<li><a href="/main/blogposts/per16fect06ruiz2022">cloudy day sunny day</a></li>
-				<li><a href="/main/blogposts/prelude04tothe07truth2022">white fatalis mask</a></li>
-				<li><a href="/main/blogposts/santa26claus07hat2022">ImThinkingAboutYouEvenThoughWeLastMetLike9YearsAgo</a></li>
-				<li><a href="/main/blogposts/none09for08all2022">i could do this for money. i dont. but i could.</a></li>
-				<li><a href="/main/blogposts/punch17yourlights09out2022">hows this for a plan?</a></li>
-				<li><a href="/main/blogposts/abigail13on10terraria2022">nice roar. but mines better.</a></li>
-				<ol>
-					<li><a href="/main/blogposts/allidid16idid10foryou2022">Relaxed Alcoholic Party</a></li>
-				</ol>
-				<li id="forRainbowText"></li>
-				<ol>	
-					<li><a href="/main/blogposts/stop24the11wheel2022">quien pudiera apaciguar esta angustia, esta locura?</a></li>
-				</ol>
-			<p>--2023--</p>
-				<li><a href="/main/blogposts/heyy13youuu01ASD2023"><img src="/media/yoshi1.webp" alt="first blogpost23"><img src="/media/yoshi2.webp" alt="first blogpost23"></a></li>
-				<li><a href="/main/blogposts/free22the01soul2023">to the very ends with you, in another lifetime</a></li>
-				<ol>
-					<li><a href="/main/blogposts/libera02el02alma2023">Hasta Las Últimas Profundidades Contigo (otra versión)</a></li>
-					<li><a href="/main/blogposts/dont28make02me2023">to the heavens y de vuelta (versión alternativa)</a></li>
-				</ol>
-				<li><a href="/main/blogposts/always09ill03omen2023">the scars they leave</a></li>
-				<li><a href="/main/blogposts/kinda25outta03ideas2023">Primer Post Legítimo De Pepesito1 En 2023⁉️⁉️ [Within Reason]</a></li>
-				<li><a href="/main/blogposts/sun22always04comesback2023">By Some Divine Prank</a></li>
-				<li><a href="/main/blogposts/autism24be05damned2023">"Un Rarito En Un Mundo De Normalitos" por Lester Papadopoulos</a></li>
-			</ol>
 		<li><a href="/main/music">music</a><br></li>
 		<li><a href="/main/images">images</a><br></li>
 		<li><a href="https://drive.google.com/drive/folders/1sMv4B3EMVO4MVUFqsiIwzHgkO3SZWOg1?usp=sharing">"To The Person I Loved The Most" por Lester</a><br></li>
