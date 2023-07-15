@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta charset="UTF-8">
+	<title>rain rain bow iris</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link href="/css-styles/style.css" rel="stylesheet">
+	
+	<style>
+	th, td {
+	  border: 1px solid black;
+	  padding: 5px;
+	  color: black;
+	}
+	#t1{
+	  background-color: rgb(219, 219, 219);
+	}
+	p {
+	text-indent: 0px;	/*nullifies the text indent in style.css . i realize i should be using <p> and </p> for every line but oh well*/
+	}
+	#mycanvasdiv{
+		text-align: center;
+	}
+	#mycanvas{ /* this is so god damn perfect. sets the width to 100% of the page but not TOO big, in case the user is using something like a computer. great- */
+	}
+	</style>
+	
+	<body>
+	<img src="/media/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
+	
+	<div class="entireBody">
+		<div class="onlyHeader">
+			<div id="header"></div>
+			
+			<button id="theme-switcher">night night</button>
+			<br>
+				
+			<div id="languageLabel"><label>language/idioma:
+				<select id="lang">
+					<option></option>
+					<option value="original">original</option>
+					<option value="es">spanish</option>
+					<option value="en">english</option>
+					<option value="secret">club penguin PSA/EPF code</option>
+				</select>
+			</label></div>
+				
+			<button id="languageSwitcher">Switch language!/cambiar idioma :)</button>
+		</div>
+			
+		<hr class="solid">
+		
+		<div id="index"></div>
+		<div id="mainBodyContent"></div>
+		
+		<div id="mycanvasdiv">
+			<canvas id="mycanvas"></canvas>
+			<p><h2><a href="https://www.khanacademy.org/computer-programming/opacitytesting/4866238170316800">quirky quirky not me</a></h2></p>
+		</div>
+		
+		<hr class="solid">
+		
+		<a id="footer" href="/index">return to homepage</a>
+	</div>
+	
+	<script src="/js/darkbutton.js"></script>
+	<script src="/js/pufflescript.js"></script>
+	<script src="/js/indexsetter.js"></script>
+	<script>
+		var headerContentOg = `<h1>Overwhelming Aqua Love</h1>`;
+		var contentOg = `
+		<p>lets keep one thing straight</p>
+		<p>the blogposts, everything i created, in javascript, is still there</p>
+		<p>the secret is in the qualia page</p>
+		<p>look at the source. or don't. message me anywhere. my discord account is pepesito1.</p>
+		<p>i got cute stuff in there. rainbow stuff. fading text. incredible code i am fascinated i managed to come up with</p>
+		<p>what i wrote at the time is simply incredibly cringy for me nowadays</p>
+		<p>message me, tell me you are interested in who i am, and i will tell you how to</p>
+		<p>look at it</p>`;
+		
+		var headerContentEs = `<h1>Amor Aqua Abrumador</h1>`;
+		var contentEs = `
+		<p>mantendré una cosa directa</p>
+		<p>lo que he escrito, mis posts, lo de javascript, sigue ahí</p>
+		<p>el secreto está en la página de qualia</p>
+		<p>mira al codigo fuente de la página. o no, si no puedes. háblame por donde sea. mi cuenta de discord es pepesito1. lo más comodo que puedo compartir creo></p>
+		<p>tengo cosas lindas tras el secreto de qualia. texto arcoiris. texto que se desvanece. cosas increíbles que no puedo creer que mi cerebro fue capaz de conjurar y escribir, tremendamente avanzado en mi opinión</p>
+		<p>lo que escribí en su tiempo simplemente me da vergüenza ahora. cuándo no lo ha hecho? es lo mismo que tengo escrito en la página de mp3s y flacs</p>
+		<p>dime que estás interesado en mí, en lo que escribí, y te diré como</p>
+		<p>acceder al secreto</p>
+		`;
+		
+		var headerContentEn = `<h1>Overwhelming Aqua Love</h1>`;
+		var contentEn = `
+		<p>lets keep one thing straight</p>
+		<p>the blogposts, everything i created, in javascript, is still there</p>
+		<p>the secret is in the qualia page</p>
+		<p>look at the source. or don't. message me anywhere. my discord account is pepesito1.</p>
+		<p>i got cute stuff in there. rainbow stuff. fading text. incredible code i am fascinated i managed to come up with</p>
+		<p>what i wrote at the time is simply incredibly cringy for me nowadays</p>
+		<p>message me, tell me you are interested in who i am, and i will tell you how to</p>
+		<p>look at it</p>
+		`;
+	</script>
+	<script src="/js/langswitcher.js"></script>
+	<script src="/js/phiSwitcher.js"></script>
+	</body>
+</html>
