@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta charset="UTF-8">
+	<title>My Eternal Regret</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link href="/css-styles/style.css" rel="stylesheet">
+	
+	<style>
+	th, td {
+	  border: 1px solid black;
+	  padding: 5px;
+	  color: black;
+	}
+	#t1{
+	  background-color: rgb(219, 219, 219);
+	}
+	p {
+	text-indent: 0px;	/*nullifies the text indent in style.css . i realize i should be using <p> and </p> for every line but oh well*/
+	}
+	#mycanvasdiv{
+		text-align: center;
+	}
+	#mycanvas{ /* this is so god damn perfect. sets the width to 100% of the page but not TOO big, in case the user is using something like a computer. great- */
+	}
+	</style>
+	
+	<body>
+	<img src="/media/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
+	
+	<div class="entireBody">
+		<div class="onlyHeader">
+			<div id="header"></div>
+			
+			<button id="theme-switcher">night night</button>
+			<br>
+				
+			<div id="languageLabel"><label>language/idioma:
+				<select id="lang">
+					<option></option>
+					<option value="original">original</option>
+					<option value="es">spanish</option>
+					<option value="en">english</option>
+					<option value="secret">club penguin PSA/EPF code</option>
+				</select>
+			</label></div>
+				
+			<button id="languageSwitcher">Switch language!/cambiar idioma :)</button>
+		</div>
+			
+		<hr class="solid">
+		
+		<div id="index"></div>
+		<div id="mainBodyContent"></div>
+		<p><a href="https://www.khanacademy.org/computer-programming/cardinal1/5487792447078400">una idea No Implementada</a></p>
+		<hr class="solid">
+		
+		<a id="footer" href="/index">return to homepage</a>
+	</div>
+	
+	<script src="/js/darkbutton.js"></script>
+	<script src="/js/pufflescript.js"></script>
+	<script src="/js/indexsetter.js"></script>
+	<script>
+		var headerContentOg = `<h1>Here lies Peps, he spoke badly and died a strander.</h1>`;
+		var contentOg = `
+		<p>my biggest regret</p>
+		<p>fue, es, y sera</p>
+		<p>el haber nacido asi</p>
+		<br>
+		<br>
+		<br>
+		<p>it had been, what, 3 weeks?</p>
+		<p>alone with... them</p>
+		<p>grupo de 5 personas, incluyendome</p>
+		<br>
+		<br>
+		<br>
+		<p>uno de ellos...</p>
+		<p>parecia haber tenido una mala vida</p>
+		<p>Jess</p>
+		<br>
+		<p>he was 15, and i was still just 18 years old</p>
+		<p>an abusive alcoholic father, bullied as a kid, self esteem issues, eating disorders, social issues, self identity issues.</p>
+		<p>he had it all</p>
+		<br>
+		<br>
+		<p>i, of course, felt nothing</p>
+		<p>nothing towards him. romantic, of course.</p>
+		<p>llevabamos 3 semanas aqui, los 5, tratando de escapar, de este lugar</p>
+		<p>"we really arent in danger, it seems" said one of us after the initial chaos turned down</p>
+		<br>
+		<br>
+		<br>
+		<p>recorded, watched at some times, not always. our families knew we were okay. all that. it was fine.</p>
+		<p>"an experiment which will be anaylized with cutting edge technology", is what the voice over the speakers said at one point</p>
+		<br>
+		<p>el, um, Jess...</p>
+		<p>he trusted me. mind you, he could speak, all fine, he just didnt really like people at all</p>
+		<p>but he really trusted me</p>
+		<br>
+		<br>
+		<br>
+		<p>and i, for once, felt like i had a purpose in life. i could help him. i could heal him. i could comfort him. i could be his safe spot. i could help him escape his past. i could make his world better. i could just smile and listen and this little guy would be fine.</p>
+		<br>
+		<p>i didnt really see myself in him. eramos diferentes, mi vida habia sido mucho mas privilegiada que la suya.</p>
+		<p>but this guy, i could be something, i could become something.</p>
+		<p>he trusted me, y yo podia...</p>
+		<p>no, yo IBA a hacer que su mundo</p>
+		<p>girara mejor</p>
+		<p>and for the first time</p>
+		<p>my eternal regret was gone</p>
+		`;
+		
+		var headerContentEs = `<h1>Here lies Peps, he spoke badly and died a strander.</h1>`;
+		var contentEs = `
+		<p>mi arrepentimiento mas fuerte</p>
+		<p>fue, es, y sera</p>
+		<p>el haber nacido asi</p>
+		<br>
+		<br>
+		<br>
+		<p>ya llevábamos... que, 3 semanas? así</p>
+		<p>aislado con... ellos</p>
+		<p>grupo de 5 personas, incluyendome</p>
+		<br>
+		<br>
+		<br>
+		<p>uno de ellos...</p>
+		<p>parecía haber tenido una mala vida</p>
+		<p>Jess</p>
+		<br>
+		<p>tenía 15, cuando yo todavía tenía 18 años</p>
+		<p>un padre alcohólico, bully-eado de pequeño, problemas de autoestima, desordenes alimenticios, problemas sociales, problemas de identidad.</p>
+		<p>el lo tenía todo</p>
+		<br>
+		<br>
+		<p>yo, claro está, no sentía nada</p>
+		<p>nada hacia el. romántico, por supuesto.</p>
+		<p>llevábamos 3 semanas aquí, los 5, tratando de escapar, de este lugar</p>
+		<p>"no estamos en peligro inmediato, de eso, estoy seguro" dijo uno de nosotros después de que el caos disminuyera</p>
+		<br>
+		<br>
+		<br>
+		<p>siendo filmados, eramos vistos de momentos, no siempre. nuestras familias sabían que estábamos bien, todo eso. todo normal.</p>
+		<p>"un experimento que procederá a ser analizado con la tecnología más exquisita", es lo que escuchamos sobre las bocinas en algún momento</p>
+		<br>
+		<p>pero él, um, Jess...</p>
+		<p>confiaba en mi. hay que tener en mente, que podía hablar, todo normal, simplemente no le agradaban demasiado las personas</p>
+		<p>pero realmente confiaba en mí</p>
+		<br>
+		<br>
+		<br>
+		<p>y yo, por una ocasión, sentí que tenía un propósito en la vida. podía ayudarlo. podía curarlo. podía ser su refugio. podía ayudarlo a escapar de su pasado. yo podía hacer su mundo mejor. yo podría simplemente sonreir y escucharlo y mi nuevo compi estaría bien.</p>
+		<br>
+		<p>yo difícilmente me veía en él. eramos diferentes, mi vida habia sido mucho mas privilegiada que la suya.</p>
+		<p>pero con este tipo, yo podía ser algo. podría convertirme en algo.</p>
+		<p>confiaba en mí, y yo podia...</p>
+		<p>no, yo IBA a hacer que su mundo</p>
+		<p>girara mejor</p>
+		<p>y por primera vez</p>
+		<p>mi arrepentimiento eterno desvaneció</p>
+		`;
+		
+		var headerContentEn = `<h1>Here lies Peps, he spoke badly and died a strander.</h1>`;
+		var contentEn = `
+		<p>my biggest regret</p>
+		<p>was, is, and will be</p>
+		<p>being born this way</p>
+		<br>
+		<br>
+		<br>
+		<p>it had been, what, 3 weeks?</p>
+		<p>alone with... them</p>
+		<p>a group of 5, including me</p>
+		<br>
+		<br>
+		<br>
+		<p>one of em...</p>
+		<p>looked like he had had a rough life</p>
+		<p>Jess</p>
+		<br>
+		<p>he was 15, and i was still just 18 years old</p>
+		<p>an abusive alcoholic father, bullied as a kid, self esteem issues, eating disorders, social issues, self identity issues.</p>
+		<p>he had it all</p>
+		<br>
+		<br>
+		<p>i, of course, felt nothing</p>
+		<p>nothing towards him. romantic, of course.</p>
+		<p>we'd been here for 3 weeks, the 5 of us, tryin to escape, from this place, of it all</p>
+		<p>"we really arent in danger, it seems" said one of us after the initial chaos turned down</p>
+		<br>
+		<br>
+		<br>
+		<p>recorded, watched at some times, not always. our families knew we were okay. all that. it was fine.</p>
+		<p>"an experiment which will be anaylized with cutting edge technology", is what the voice over the speakers said at one point</p>
+		<br>
+		<p>he, um, Jess...</p>
+		<p>he trusted me. mind you, he could speak, all fine, he just didnt really like people at all</p>
+		<p>but he really trusted me</p>
+		<br>
+		<br>
+		<br>
+		<p>and i, for once, felt like i had a purpose in life. i could help him. i could heal him. i could comfort him. i could be his safe spot. i could help him escape his past. i could make his world better. i could just smile and listen and this little guy would be fine.</p>
+		<br>
+		<p>i didnt really see myself in him. eramos diferentes, mi vida habia sido mucho mas privilegiada que la suya.</p>
+		<p>but this guy, i could be something, i could become something.</p>
+		<p>he trusted me, and i could...</p>
+		<p>nay, i was GONNA make his world</p>
+		<p>spin better</p>
+		<p>and for the first time</p>
+		<p>my eternal regret was gone</p>
+		`;
+	</script>
+	<script src="/js/langswitcher.js"></script>
+	<script src="/js/phiSwitcher.js"></script>
+	</body>
+</html>
