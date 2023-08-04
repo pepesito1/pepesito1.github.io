@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta charset="UTF-8">
+	<title>Rajah</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	
+	<style>
+	#drebberdiv{
+		text-align: center;
+	}
+	#drebber{ /* this is so god damn perfect. sets the width to 100% of the page but not TOO big, in case the user is using something like a computer. great- */
+		width: 480px;
+		max-width: 100%;
+		height: auto;
+	}
+	img {
+	 width: 80%;
+	 max-width: 380px;
+	}
+	/* background color changes the entire background, page-wide
+	inner body only changes the entire text content background */
+
+	@font-face {
+	  font-family: secretFont;
+	  src: url(/fonts/secretfont.ttf);
+	}
+
+	:root {
+	  --background-color: #60968a;
+	  --header-background: rgb(95, 96, 133);
+	  --inner-body: rgb(64, 64, 64);
+	  --text-color: black;
+	  --linkColor: #C8FFF4;
+	  --visitedLinkColor: rgb(255, 255, 255);
+	  --indexBg: rgb(138, 70, 29);
+	  --indexLetterColor: white;
+	}
+
+	[data-theme="dark"] {
+	  --background-color: #60968a;
+	  --header-background: rgb(95, 96, 133);
+	  --inner-body: rgb(64, 64, 64);
+	  --text-color: black;
+	  --linkColor: #C8FFF4;
+	  --visitedLinkColor: rgb(255, 255, 255);
+	  --indexBg: rgb(138, 70, 29);
+	  --indexLetterColor: white;
+	}
+
+	[data-theme="secret"] {
+	  --background-color: black;
+	  --header-background: gray;
+	  --inner-body: rgb(32, 32, 32);
+	  --text-color: white;
+	  --linkColor: #C8FFF4;
+	  --visitedLinkColor: rgb(255, 255, 255);
+	  --indexBg: rgb(158, 90, 49);
+	  --indexLetterColor: white;
+	}
+	a:link {
+	  color: var(--linkColor);
+	}
+
+	a:visited {
+	  color: var(--visitedLinkColor);
+	}
+
+	a:hover {
+	  color: hotpink;
+	}
+
+	a:active {
+	  color: blue;
+	}
+
+	#index {
+	  margin: 2%;
+	  padding: 1%;
+	  padding-right: 3%;
+	  background-color: var(--indexBg);
+	  color: var(--indexLetterColor);
+	  width: fit-content;
+	  max-width: 90%;
+	  overflow-wrap: break-word;
+	}
+
+
+	#header {
+	  margin-bottom: 2%;
+	  padding: 2%;
+	  background-color: var(--header-background);
+	  font-size: 0.75em;
+	}
+
+	.onlyHeader {
+	  margin: 1%;
+	}
+
+	#footer {
+	  margin: 1%;
+	  padding: 2%;
+	}
+
+	body {
+	  background-color: var(--background-color);
+	  margin: 2%;
+	  padding: 2%;
+	  overflow-wrap: break-word;
+	}
+
+	#mainBodyContent {
+	  margin: 1%;
+	}
+
+	.entireBody {
+	  margin: 5%;
+	  padding: 2%;
+	  background-color: #f79ef1;
+	  color: var(--text-color);
+	}
+
+	.solid {
+	  background-color: rgb(146, 127, 191);
+	  margin: 1.5%;
+	}
+
+	#languageLabel {
+	  margin-top: 1.5%;
+	  margin-bottom: 0.8%;
+	}
+
+	#boilerKeeper {
+	  position: fixed;
+	  right: 5%;
+	  bottom: 5%;
+	  width: 50px;
+	}
+
+	p {
+		line-height: 1.6;
+		text-indent: 30px
+	}
+	#forRainbowText{
+		padding: 3px;
+		text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; /**dunno what this does but it makes it look beautiful. outline.**/
+		font-weight: bold;
+	}
+	</style>
+	
+	<body>
+	<img src="/media/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
+	
+	<div class="entireBody">
+		<div class="onlyHeader">
+			<div id="header"></div>
+			
+			<button id="theme-switcher">night night</button>
+			<br>
+				
+			<div id="languageLabel"><label>language/idioma:
+				<select id="lang">
+					<option></option>
+					<option value="original">original</option>
+					<option value="es">spanish</option>
+					<option value="en">english</option>
+					<option value="secret">club penguin PSA/EPF code</option>
+				</select>
+			</label></div>
+				
+			<button id="languageSwitcher">Switch language!/cambiar idioma :)</button>
+		</div>
+			
+		<hr class="solid">
+		
+		<div id="index"></div>
+		<div id="mainBodyContent"></div>
+		<hr class="solid">
+		
+		<a id="footer" href="/index">return to homepage</a>
+	</div>
+	
+	<script src="/js/darkbutton.js"></script>
+	<script src="/js/pufflescript.js"></script>
+	<script src="/js/indexsetter.js"></script>
+	<script>
+		var headerContentOg = `<h1>It Wasnt Deliberate, I Tell You</h1>`;
+		var contentOg = `
+		<p>im just an uh lazy ahh coder</p>
+		<p>its not even that bad; just look at the code that <a href=/js/phiSwitcher.js>decides <i>which</i> version of phi</a> (named after phi from virtues last reward, i believe, to uh, show to you when you click on it</p>
+		<p>um, its great, but then for the spreadsheet itself</p>
+		<p>its um, very tiring. in each cell you can just reference to a father sheet, which i do. but it doesnt copy colors or formatting in google sheets. and i have to do that manually, 4 times, its not even that bad, just boring</p>
+		<p>so i dont do it lol</p>
+		<p>probablemente lo hare en algun punto pero de momento</p>
+		<p>esto, escrito el 03/08/2023</p>
+		<p>take the link to the spreadsheet which i personally update, latest, all that: https://docs.google.com/spreadsheets/d/1J05_a6aLHfbrccGiFqkAqog1ZRdSRjp00zYpzzTzYXk/edit?usp=sharing</p>
+		`;
+		
+		var headerContentEs = `<h1>It Wasnt Deliberate, I Tell You</h1>`;
+		var contentEs = `
+		<p>me gusta um, escribir javascript, creo que soy medio bueno para lo que es y hacer cosas estupidas en paginas web html etc blabla</p>
+		<p>ni siquiera es tan malo, mira el codigo que decide <a href=/js/phiSwitcher.js><i>qué</i> versión de phi</a> (nombrado tras phi de virtues last reward, creo. que versión te enseña cuando, ah, le das click</p>
+		<p>um, es bueno, pero después para la spreadsheet misma</p>
+		<p>es cansado y aburrido. lo que hice es simplemente en cada celda referenciar a una hoja principal que es la que actualizo. pero en google sheets hacer esto no te copia los colores, el formato del texto, eso lo tengo que hacer manual. a eso agrega el traducir las pequeñas notitas que facilmente se me pueden pasar de largo. y me aburre bro</p>
+		<p>así que de plano no lo hago lol</p>
+		<p>probablemente lo hare en algun punto pero de momento</p>
+		<p>esto, escrito el 03/08/2023</p>
+		<p>tomad vosotros el link a mi mismisima sheet que yo actualizo: https://docs.google.com/spreadsheets/d/1J05_a6aLHfbrccGiFqkAqog1ZRdSRjp00zYpzzTzYXk/edit?usp=sharing</p>
+		`;
+		
+		var headerContentEn = `<h1>It Wasnt Deliberate, I Tell You</h1>`;
+		var contentEn = `
+		<p>im just an uh lazy ahh coder</p>
+		<p>its not even that bad; just look at the code that <a href=/js/phiSwitcher.js>decides <i>which</i> version of phi</a> (named after phi from virtues last reward, i believe, to uh, show to you when you click on it</p>
+		<p>um, its great, but then for the spreadsheet itself</p>
+		<p>its um, very tiring. in each cell you can just reference to a father sheet, which i do. but it doesnt copy colors or formatting in google sheets. and i have to do that manually, 4 times, its not even that bad, just boring</p>
+		<p>so i dont do it lol</p>
+		<p>ill probably do it eventually but meanwhile</p>
+		<p>this very thing, written in/on/at (i forgor) 03/08/2023</p>
+		<p>take the link to the spreadsheet which i personally update, latest, all that: https://docs.google.com/spreadsheets/d/1J05_a6aLHfbrccGiFqkAqog1ZRdSRjp00zYpzzTzYXk/edit?usp=sharing</p>
+		`;
+	</script>
+	<script src="/js/langswitcher.js"></script>
+	<script src="/js/phiSwitcher.js"></script>
+	</body>
+</html>
