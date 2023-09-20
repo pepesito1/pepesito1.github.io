@@ -11,7 +11,7 @@ var indexContent = `
 		<li><a href="https://drive.google.com/drive/folders/1sMv4B3EMVO4MVUFqsiIwzHgkO3SZWOg1?usp=sharing">"To The Person I Loved The Most" por Lester Papadopoulos</a><br></li>
 		<li><a href="/main/kunai">"My Eternal Regret" by Lucas Fink</a><br></li>
 		<li><a href="/main/qualia">qualia</a><br></li>
-		<li><a href="/main/aqualove"><img src="/media/deathwish.png"></a>
+		<li><a href="/main/aqualove">"imagen Temporalmente Removida Mientras I Figure Out How To Do This One Thing</a>
 		<li><a href="/main/hog">wasser</a><br></li>
 	</ul>`;
 
