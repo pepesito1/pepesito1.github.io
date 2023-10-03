@@ -1,6 +1,9 @@
 var indexContent = `
 	<ul>
 		<li><a href="/media/kms.png">Un Mensaje Extremadamente Urgente de Pepesito1 el 29 de Septiembre del 2023 (Debido A Que Fuí Incapaz De Tener Algo Así En Abril De 2019)</a></li>
+		<ol>
+			<li><a href="/main/will.txt">A Not-So-Urgent Message From Pepesito1 (en el) October 2nd, 2023 (Due To The Very Lucky Fact I Was Able To Have This Post 2022)</a></li>
+		</ol>
 		<li><a href="/">homepage</a></li>
 		<li><a href="/main/aboutme">about me</a></li>
 		<li><a href="" id="phiLink">gaming</a><br></li>
