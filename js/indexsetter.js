@@ -16,7 +16,7 @@ var indexContent = `
 		<li><a href="/main/kunai">"My Eternal Regret" by Lucas Fink</a><br></li>
 		<li><a href="/main/lost23all09meaning2023">"A Line In The Sand" by... Pepesito1?!?!</a><br></li>
 		<ul>
-				<li><a href="main/blogposts/dedicado21a10max2023">winds of departure... or bewitching dance? i cant even choose what song title to choose anymore</div></li>
+				<li><a href="main/blogposts/dedicado21a10max2023">winds of departure... or bewitching dance? i cant even decide what song title to choose anymore</div></li>
 			</ul>
 		<li><a href="/main/qualia">qualia</a><br></li>
 		<li><a href="/main/aqualove">imagen Temporalmente Removida Mientras I Figure Out How To Do This One Thing</a>
