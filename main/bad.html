@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta charset="UTF-8">
+	<title>good before bad</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link href="/css-styles/style.css" rel="stylesheet">
+	
+	<style>
+	th, td {
+	  border: 1px solid black;
+	  padding: 5px;
+	  color: black;
+	}
+	#t1{
+	  background-color: rgb(219, 219, 219);
+	}
+	p {
+	text-indent: 0px /*nullifies the text indent in style.css . i realize i should be using <p> and </p> for every line but oh well*/
+	}
+	#mycanvasdiv{
+		text-align: center;
+	}
+	#mycanvas{
+	}
+	
+	</style>
+	
+	<body>
+	<img src="/media/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
+	
+	<div class="entireBody">
+		<div class="onlyHeader">
+			<div id="header"></div>
+			
+			<button id="theme-switcher">night night</button>
+			<br>
+				
+			<div id="languageLabel"><label>language/idioma:
+				<select id="lang">
+					<option></option>
+					<option value="original">original</option>
+					<option value="es">spanish</option>
+					<option value="en">english</option>
+					<option value="secret">club penguin PSA/EPF code</option>
+				</select>
+			</label></div>
+				
+			<button id="languageSwitcher">Switch language!/cambiar idioma :)</button>
+		</div>
+			
+		<hr class="solid">
+		
+		<div id="index"></div>
+		<div id="mainBodyContent"></div>
+		
+		<div id="mycanvasdiv">
+			<canvas id="mycanvas"></canvas> 
+			<p>fishies y pescaditos :)<br>
+			dale click o picale. click on it or tap on it.</p>
+			<h2><a href="https://www.khanacademy.org/computer-programming/fish-tank-with-functioning-bubbles/6578527607504896">fish tank with functioning bubbles!</a></h2></p>x
+		</div>
+		
+		<hr class="solid">
+		
+		<a id="footer" href="/">return to homepage</a>
+	</div>
+	
+	<script src="/js/darkbutton.js"></script>
+	<script src="/js/pufflescript.js"></script>
+	<script src="/js/indexsetter.js"></script>
+	<script>
+		var headerContentOg	= `
+		<h1>what hurts me</h1>
+		`;
+		var contentOg = `
+		<p>cosas que no me gustan, in No Particular Order</p>
+		<ul>
+		<li>las personas (en general...)</li>
+		<li>hablar de mi mismo</li>
+		<li>conocer a nuevas personas</li>
+		<li>no poder conocer a nuevas personas</li>
+		<li>absurdly mainstream tastes</li>
+		<li>pokemon</li>
+		<li>insects</li>
+		<li>thinking about embarrasing memories (i get one more embarrasing memory per day)</li>
+		<li>xenoblade chronicles 2</li>
+		<li>hablar con personas... (en general...)</li>
+		<li>i dislike not... having more... basic tastes. maybe my life would be way better if i found facebook watermarked memes funny... alas, i do not. this the life of an introverted white latinoamerican boy</li>
+		<li>being asked embarrasing questions</li>
+		<li>being asked what music i like...</li>
+		<li>being ignored</li>
+		<li>people not liking what i like...</li>
+		<li>wondering if i ever missed out on anything by not going out</li>
+		<li>beans</li>
+		<li>soda. like, bubbly gas soda.</li>
+		<li>meg from the trials of apollo</li>
+		</ul>
+		`;
+
+		var headerContentEn	= `
+		<h1>what hurts me</h1>
+		`;
+		var contentEn = `
+		<p>things i dislike, in No Particular Order</p>
+		<ul>
+		<li>people (overall...))</li>
+		<li>talking about myself</li>
+		<li>meeting new people</li>
+		<li>not being able to meet new people</li>
+		<li>absurdly mainstream tastes</li>
+		<li>pokemon</li>
+		<li>insects</li>
+		<li>thinking about embarrasing memories (i get one more embarrasing memory per day)</li>
+		<li>xenoblade chronicles 2</li>
+		<li>talking with people... (overall, again....))</li>
+		<li>i dislike not... having more... basic tastes. maybe my life would be way better if i found facebook watermarked memes funny... alas, i do not. this the life of an introverted white latinoamerican boy</li>
+		<li>being asked embarrasing questions</li>
+		<li>being asked what music i like...</li>
+		<li>being ignored</li>
+		<li>people not liking what i like...</li>
+		<li>wondering if i ever missed out on anything by not going out</li>
+		<li>beans</li>
+		<li>soda. like, bubbly gas soda.</li>
+		<li>meg from the trials of apollo</li>
+		</ul>
+		`;
+			
+		var headerContentEs	= `
+		<h1>mis espinas</h1>
+		`;
+		var contentEs = `
+		<p>cosas que no me gustan, en ningún orden en particular</p>
+		<ul>
+		<li>las personas (en general...)</li>
+		<li>hablar de mi mismo</li>
+		<li>conocer a nuevas personas</li>
+		<li>no poder conocer a nuevas personas</li>
+		<li>gustos terriblemente mainstream</li>
+		<li>pokemon</li>
+		<li>insectps</li>
+		<li>pensar en cosas que me dan pena de mi (una nueva memoria así por día...)</li>
+		<li>xenoblade chronicles 2</li>
+		<li>hablar con personas... (en general...)</li>
+		<li>no... tener gustos más... básicos. no me dan risa las, ah, imágenes que a tu... persona promedio le gustan (por qué es facebook tan mainstream en latam aún en 2023...?). tal vez mi vida sería mejor si disfrutara de memes con marcas de agua como los que la gente me llega a enseñar... <i>alas,</i> no lo hago.</li>
+		<li>que me pregunten cosas que me dan pena</li>
+		<li>que me pregunten qué música me gusta...</li>
+		<li>ser ignorado</li>
+		<li>que a la gente no le guste lo que me gusta...</li>
+		<li>preguntarme si me perdí de algo en la vida al no salir<li>
+		<li>frijoles</li>
+		<li>refresco, con gas.</li>
+		<li>meg de las pruebas de apollo</li>
+		</ul>
+		`;
+		
+	</script>
+	<script src="/js/langswitcher.js"></script>
+	<script src="/js/phiSwitcher.js"></script>
+	</body>
+</html>

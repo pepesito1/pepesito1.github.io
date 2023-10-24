@@ -6,6 +6,10 @@ var indexContent = `
 			<li><a href="/main/will.txt">A Not-So-Urgent Message From Pepesito1 (en el) October 2nd, 2023 (Due To The Very Lucky Fact I Was Able To Have This Post 2022)</a></li>
 		</ol>
 		<li><a href="/main/aboutme">about me</a></li>
+			<ul>
+			<li><a href="/main/good">What I Like</a><br></li>
+			<li><a href="/main/bad">What I Dislike</a><br></li>
+			</ul>
 		<li><a href="" id="phiLink">gaming</a><br></li>
 			<ul>
 				<li><div id="forRainbowText"></div></li>
