@@ -16,12 +16,16 @@ var indexContent = `
 			</ul>
 		<li><a href="/main/music">music</a><br></li>
 		<li><a href="/main/images">images</a><br></li>
-		<li><a href="https://drive.google.com/drive/folders/1sMv4B3EMVO4MVUFqsiIwzHgkO3SZWOg1?usp=sharing">"To The Person I Loved The Most" por Lester Papadopoulos</a><br></li>
-		<li><a href="/main/kunai">"My Eternal Regret" by Lucas Fink</a><br></li>
-		<li><a href="/main/lost23all09meaning2023">"A Line In The Sand" by... Pepesito1?!?!</a><br></li>
-		<ul>
+		<p>my Incredibly Stupid Embarrasing Pseudo Blogposts<p>
+		<ol>
+		
+			<li><a href="https://drive.google.com/drive/folders/1sMv4B3EMVO4MVUFqsiIwzHgkO3SZWOg1?usp=sharing">"To The Person I Loved The Most" por Lester Papadopoulos</a><br></li>
+			<li><a href="/main/kunai">"My Eternal Regret" by Lucas Fink</a><br></li>
+			<li><a href="/main/lost23all09meaning2023">"A Line In The Sand" by... Pepesito1?!?!</a><br></li>
+			<ul>
 				<li><a href="main/blogposts/dedicado21a10max2023">winds of departure... or bewitching dance? i cant even decide what song title to choose anymore</div></li>
 			</ul>
+			<li><a href="main/not13nuff11time2023">"I've Played 3 Million Videogames And My Backlog STILL Somehow Keeps Getting Larger" by Pep Esito (13/nov/2023 cuz date matters)</a></li>
 		<li><a href="/main/qualia">qualia</a><br></li>
 		<li><a href="/main/aqualove">imagen Temporalmente Removida Mientras I Figure Out How To Do This One Thing</a>
 		<li><a href="/main/hog">wasser</a><br></li>
