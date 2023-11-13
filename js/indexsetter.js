@@ -16,7 +16,7 @@ var indexContent = `
 			</ul>
 		<li><a href="/main/music">music</a><br></li>
 		<li><a href="/main/images">images</a><br></li>
-		<p>my Incredibly Stupid Embarrasing Pseudo Blogposts<p>
+		<li>my Incredibly Stupid Embarrasing Pseudo Blogposts</li>
 		<ol>
 			<li><a href="https://drive.google.com/drive/folders/1sMv4B3EMVO4MVUFqsiIwzHgkO3SZWOg1?usp=sharing">"To The Person I Loved The Most" por Lester Papadopoulos</a><br></li>
 			<li><a href="/main/kunai">"My Eternal Regret" by Lucas Fink</a><br></li>
