@@ -25,6 +25,7 @@ var indexContent = `
 				<li><a href="main/blogposts/dedicado21a10max2023">winds of departure... or bewitching dance? i cant even decide what song title to choose anymore</div></li>
 			</ul>
 			<li><a href="main/not13nuff11time2023">"I've Played 3 Million Videogames And My Backlog STILL Somehow Keeps Getting Larger" by Pep Esito (13/nov/2023 cuz date matters)</a></li>
+			<li><a href="main/not13nuff11time2023"><i>Un breve análisis del camino que yo tomo en mi vida</i></a></li>
 		</ol>
 		<li><a href="/main/qualia">qualia</a><br></li>
 		<li><a href="/main/aqualove">imagen Temporalmente Removida Mientras I Figure Out How To Do This One Thing</a>
