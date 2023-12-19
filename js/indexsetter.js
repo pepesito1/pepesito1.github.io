@@ -26,6 +26,9 @@ var indexContent = `
 			</ul>
 			<li><a href="/main/not13nuff11time2023">"I've Played 3 Million Videogames And My Backlog STILL Somehow Keeps Getting Larger" by Pep Esito (13/nov/2023 cuz date matters)</a></li>
 			<li><a href="/main/brief25story11oftime2023"><i>Un breve análisis del camino que yo tomo en mi vida</i></a></li>
+				<ul>
+				<li><a href="/main/of09a12lifetime2023">Un Camino Contradictorio</a><br></li>
+				</ul>
 		</ol>
 		<li><a href="/main/qualia">qualia</a><br></li>
 		<li><a href="/main/aqualove">imagen Temporalmente Removida Mientras I Figure Out How To Do This One Thing</a>
