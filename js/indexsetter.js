@@ -29,6 +29,7 @@ var indexContent = `
 				<ul>
 				<li><a href="/main/of09a12lifetime2023">Un Camino Contradictorio</a><br></li>
 				</ul>
+			<li><a href="/main/"><i>"Me gustaría<br>Poder escribir esto<br>Como si fuera<br>Un lindo haiku"<br></i>por Damián, el hijo teórico cuya existencia nunca pudo haber sido comprobada por pepesito1</a></li>
 		</ol>
 		<li><a href="/main/qualia">qualia</a><br></li>
 		<li><a href="/main/aqualove">imagen Temporalmente Removida Mientras I Figure Out How To Do This One Thing</a>
