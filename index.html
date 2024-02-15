@@ -1,1 +1,100 @@
-test
+<!DOCTYPE html>
+	<html lang="en">
+	<meta charset="UTF-8">
+	<title>webpage of a lifetime</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link href="/css-styles/style.css" rel="stylesheet">
+	
+	<style>
+	p {
+	text-indent: 0px /*nullifies the text indent in style.css . i realize i should be using <p> and </p> for every line but oh well*/
+	}
+	</style>
+	
+	<body>
+	<img src="/media/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
+	
+	<div class="entireBody">
+		<div class="onlyHeader">
+			<div id="header"></div>
+			
+			<button id="theme-switcher">night night</button>
+			<br>
+				
+			<div id="languageLabel"><label>language/idioma:
+				<select id="lang">
+					<option></option>
+					<option value="original">original</option>
+					<option value="es">spanish</option>
+					<option value="en">english</option>
+					<option value="secret">club penguin PSA/EPF code</option>
+				</select>
+			</label></div>
+				
+			<button id="languageSwitcher">Switch language!/cambiar idioma :)</button>
+		</div>
+			
+		<hr class="solid">
+		
+		<div id="index"></div>
+		
+		<div id="mainBodyContent"></div>
+	
+		<hr class="solid">
+		
+		<a id="footer" href="/index.html">return to homepage</a>
+	</div>
+	
+	<script src="/js/darkbutton.js"></script>
+	<script src="/js/pufflescript.js"></script>
+	<script src="/js/indexsetter.js"></script>
+	<script>
+		var headerContentOg	= `
+		<h1>this is my webpage :)</h1>
+		`;
+		var contentOg = `
+		<p>esto es un sitio web muy simple :) <br>
+		after 9 years in development, hopefully it has been worth the wait<br>
+		con los 2 botones de arriba puedes cambiar entre dark mode o light mode<br>
+		o cambiar entre los idiomas de la pagina<br><br>
+		<em>original language:</em> a mix between english and spanish, this is the one i write first, then i translate<br>
+		<em>english language:</em> translated straight into english<br>
+		<em>spanish language:</em> traducido directo al español<br>
+		<em>club penguin PSA/EPF code:</em> todo en codigo de agente secreto :p<br>
+		for example, try clicking the puffle!. on the index above u can just see random pages. i dont mind too much about not describing what they are. its just me things.
+		</p>`;
+
+		var headerContentEn	= `
+		<h1>this is my webpage</h1>
+		`;
+		var contentEn = `
+		<p>this is a very simple website :) <br>
+		after 9 years in development, hopefully it has been worth the wait<br>
+		with the 2 buttons above you can switch between dark mode or light mode<br>
+		or switch between the pages languages<br><br>
+		<em>original language:</em> a mix between english and spanish, this is the one i write first, then i translate<br>
+		<em>english language:</em> translated straight into english<br>
+		<em>spanish language:</em> translated straight into spanish<br>
+		<em>club penguin PSA/EPF code:</em> everything written in secret agent code :p<br>
+		for example, try clicking the puffle!. on the index above u can just see random pages. i dont mind too much about not describing what they are. its just me things.
+		</p>`;
+			
+		var headerContentEs	= `
+		<h1>esta es mi página</h1>
+		`;
+		var contentEs = `esto es un sitio web muy simple :) <br>
+		<p>tras una eternidad....<br>
+		con los 2 botones de arriba puedes cambiar entre modo blanco u oscuro<br>
+		o cambiar entre el idioma de la pagina<br><br>
+		<em>idioma original</em> mezcla entre ingles y español, este es el que escribo primero, despues traduzco<br>
+		<em>en ingles:</em> traducido directo al ingles<br>
+		<em>en español:</em> traducido directo al español<br>
+		<em>club penguin PSA/EPF code</em>: todo escrito en codigo de agente secreto :p<br>
+		por ejemplo, trata de darle click al puffle!. en el indice del inicio puedes ver paginas random. no me importa demasiado no describir que son. son solo cosas mias. 
+		</p>`;
+	</script>
+	<script src="/js/langswitcher.js"></script>
+	<script src="/js/phiSwitcher.js"></script>
+	</body>
+</html>
