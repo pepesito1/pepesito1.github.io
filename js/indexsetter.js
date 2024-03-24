@@ -13,6 +13,7 @@ var indexContent = `
 		<li><a href="" id="phiLink">gaming</a><br></li>
 			<ul>
 				<li><div id="forRainbowText"></div></li>
+				<li><a href="https://docs.google.com/spreadsheets/d/1NwINTIIBSaf_EEJwjrnr-V3ozfP2f1LvqZskqc_F6jQ/edit?usp=sharing">Pepesito1's Official (and kinda incomplete) Peak Media List</a><br></li>
 			</ul>
 		<li><a href="/main/music">music</a><br></li>
 		<li><a href="/main/images">images</a><br></li>
