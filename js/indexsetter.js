@@ -16,6 +16,9 @@ var indexContent = `
 				<li><a href="https://docs.google.com/spreadsheets/d/1NwINTIIBSaf_EEJwjrnr-V3ozfP2f1LvqZskqc_F6jQ/edit?usp=sharing">Pepesito1's Official (and kinda incomplete) Peak Media List</a><br></li>
 			</ul>
 		<li><a href="/main/music">music</a><br></li>
+		<ol>
+			<li><a href="/main/music2">music 2, 4-5 years later or such</a></li>
+		</ol>
 		<li><a href="/main/images">images</a><br></li>
 		<li>my Incredibly Stupid Embarrasing Pseudo Blogposts</li>
 		<ol>
