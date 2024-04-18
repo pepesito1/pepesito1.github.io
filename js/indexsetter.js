@@ -4,6 +4,7 @@ var indexContent = `
 		<li><a href="/media/kms.png">Un Mensaje Extremadamente Urgente de Pepesito1 el 29 de Septiembre del 2023 (Debido A Que Fuí Incapaz De Tener Algo Así En Abril De 2019)</a></li>
 		<ol>
 			<li><a href="/main/will.txt">A Not-So-Urgent Message From Pepesito1 (en el) October 2nd, 2023 (Due To The Very Lucky Fact I Was Able To Have This Post 2022)</a></li>
+			<li><a href="/main/slightly17dateless04thoughts2024.html">un sentimiento innombrable, debido al fascinante hecho de que fuí capaz de tener algo así el 17 de abril de 2024 y no en 2019</a></li>
 		</ol>
 		<li><a href="/main/aboutme">about me</a></li>
 			<ul>
