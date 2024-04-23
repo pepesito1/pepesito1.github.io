@@ -1,16 +1,7 @@
 var indexContent = `
 	<ul>
 		<li><a href="/">homepage</a></li>
-		<li><a href="/media/kms.png">Un Mensaje Extremadamente Urgente de Pepesito1 el 29 de Septiembre del 2023 (Debido A Que Fuí Incapaz De Tener Algo Así En Abril De 2019)</a></li>
-		<ol>
-			<li><a href="/main/will.txt">A Not-So-Urgent Message From Pepesito1 (en el) October 2nd, 2023 (Due To The Very Lucky Fact I Was Able To Have This Post 2022)</a></li>
-			<li><a href="/main/slightly17dateless04thoughts2024.html">un sentimiento innombrable, debido al fascinante hecho de que fuí capaz de tener algo así el 17 de abril de 2024 y no en 2019</a></li>
-		</ol>
-		<li><a href="/main/aboutme">about me</a></li>
-			<ul>
-			<li><a href="/main/good">What I Like</a><br></li>
-			<li><a href="/main/bad">What I Dislike</a><br></li>
-			</ul>
+		<li><a href="/main/hopefully22the04last2024.html">hacia nadie, hacia mi, hacia el universo, hacia un vacio, hacia ti</a></li>
 		<li><a href="" id="phiLink">gaming</a><br></li>
 			<ul>
 				<li><div id="forRainbowText"></div></li>
@@ -21,24 +12,7 @@ var indexContent = `
 			<li><a href="/main/music2">music 2, 4-5 years later or such</a></li>
 		</ol>
 		<li><a href="/main/images">images</a><br></li>
-		<li>my Incredibly Stupid Embarrasing Pseudo Blogposts</li>
-		<ol>
-			<li><a href="https://drive.google.com/drive/folders/1sMv4B3EMVO4MVUFqsiIwzHgkO3SZWOg1?usp=sharing">"To The Person I Loved The Most" por Lester Papadopoulos</a><br></li>
-			<li><a href="/main/kunai">"My Eternal Regret" by Lucas Fink</a><br></li>
-			<li><a href="/main/lost23all09meaning2023">"A Line In The Sand" by... Pepesito1?!?!</a><br></li>
-			<ul>
-				<li><a href="/main/blogposts/dedicado21a10max2023">winds of departure... or bewitching dance? i cant even decide what song title to choose anymore</div></li>
-			</ul>
-			<li><a href="/main/not13nuff11time2023">"I've Played 3 Million Videogames And My Backlog STILL Somehow Keeps Getting Larger" by Pep Esito (13/nov/2023 cuz date matters)</a></li>
-			<li><a href="/main/brief25story11oftime2023"><i>Un breve análisis del camino que yo tomo en mi vida</i></a></li>
-				<ul>
-				<li><a href="/main/of09a12lifetime2023">Un Camino Contradictorio</a><br></li>
-				</ul>
-			<li><a href="/main/an01hypothetical02husband2024"><i>"Me gustaría<br>Poder escribir esto<br>Como si fuera<br>Un lindo haiku"<br></i>por x, el x x cuya x nunca pudo ser comprobada por pepesito1</a></li>
-		</ol>
 		<li><a href="/main/qualia">qualia</a><br></li>
-		<li><a href="/main/aqualove">imagen Temporalmente Removida Mientras I Figure Out How To Do This One Thing</a>
-		<li><a href="/main/hog">wasser</a><br></li>
 	</ul>`;
 
 document.getElementById("index").innerHTML = indexContent;
