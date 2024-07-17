@@ -1,7 +1,7 @@
 var indexContent = `
 	<ul>
 		<li><a href="/">homepage</a></li>
-		<li><a href="/main/themis17meets07apollo2024.html"><em>el apoyo moral of a lifetime</em></a></li>
+		<li><a href="/main/themis17meets07apollo2024"><em>el apoyo moral of a lifetime</em></a></li>
 		<li><a href="" id="phiLink">gaming</a><br></li>
 			<ul>
 				<li><div id="forRainbowText"></div></li>
