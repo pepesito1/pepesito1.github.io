@@ -1,9 +1,7 @@
 var indexContent = `
 	<ul>
 		<li><a href="/">homepage</a></li>
-		<li><a href="/main/hopefully22the04last2024.html">hacia nadie, hacia mi, hacia el universo, hacia un vacio, hacia ti</a></li>
-		<li><a href="/main/mi08vida05cambiara2024.html">Lo Más Grande (In A Sense) Que Me Ha Ocurrido En 5 y 3 Años</a></li>
-		<li><a href="/main/hard19as05hell2024.html">que dentro de tu corazon, me puedas perdonar</a></li>
+		<li><a href="/main/themis17meets07apollo2024.html"><em>el apoyo moral of a lifetime</em></a></li>
 		<li><a href="" id="phiLink">gaming</a><br></li>
 			<ul>
 				<li><div id="forRainbowText"></div></li>
