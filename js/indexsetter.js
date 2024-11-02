@@ -3,6 +3,7 @@ var indexContent = `
 		<li><a href="/">homepage</a></li>
 		<li><a href="/main/un16dump10pepesitoista2024">pensamientos pepesitoistas de un hombre pepesitoista, escrito el 16 de octubre del 2024</a></li>
 		<li><a href="/main/corazon25de10melon2024">The Resolve of Pepesito One, escrito el 25 de octubre de dude does anyone even read my webpage? hoy es el aniversario de club penguin tmbn</a></li>
+		<li><a href="/main/the01answer11asd2024">"The Path of Pepesito One" escrito por un hombre muy aburrido en un viernes muy aburrido el 01 del 11 del 2024</a></li>
 		<li><a href="" id="phiLink">gaming</a><br></li>
 			<ul>
 				<li><div id="forRainbowText"></div></li>

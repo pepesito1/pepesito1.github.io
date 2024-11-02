@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta charset="UTF-8">
+	<title>dude my leg is itchy</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link href="/css-styles/style.css" rel="stylesheet">
+	
+	<style>
+	img {
+	width:500px;
+    height:auto;
+	max-width: 70%;
+	}
+	.imgdesc{
+	font-size: 0.75em;
+	}
+	.imgcentering{
+	text-align: center;
+	}
+	.drebberdiv{
+		text-align: center;
+	}
+	.drebber{ /* this is so god damn perfect. sets the width to 100% of the page but not TOO big, in case the user is using something like a computer. great- */
+		max-width: 70%;
+		height: auto;
+		align:middle;
+	}
+	</style>
+	
+	<body>
+	<img src="/media/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
+	
+	<div class="entireBody">
+		<div class="onlyHeader">
+			<div id="header"></div>
+			
+			<button id="theme-switcher">night night</button>
+			<br>
+				
+			<div id="languageLabel"><label>language/idioma:
+				<select id="lang">
+					<option></option>
+					<option value="original">original</option>
+					<option value="es">spanish</option>
+					<option value="en">english</option>
+					<option value="secret">club penguin PSA/EPF code</option>
+				</select>
+			</label></div>
+				
+			<button id="languageSwitcher">Switch language!/cambiar idioma :)</button>
+		</div>
+			
+		<hr class="solid">
+		
+		<div id="index"></div>
+		<br>
+		<div id="mainBodyContent"></div>
+		<hr class="solid">
+		
+		<a id="footer" href="/index">return to homepage</a>
+	</div>
+	
+	<script src="/js/darkbutton.js"></script>
+	<script src="/js/pufflescript.js"></script>
+	<script src="/js/indexsetter.js"></script>
+	<script>
+		var headerContentOg = `<h1>It Wasnt Deliberate, I Tell You</h1>`;
+		var contentOg = `
+		<p>something funny is that</p>
+		<p>every once in a while</p>
+		<p>I'm completely overriden by the need to listen to some song i last heard like 2 years ago for HOURS on loop</p>
+		<p>presentando mi nueva obsesion pepesitoista:</p>
+		<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				namielle
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="https://vgmsite.com/soundtracks/monster-hunter-world-iceborne-original-soundtrack/ikbotvjufo/2-09.%20Namielle.mp3" type="audio/mp3">
+				</audio>
+		</figure>
+		<br>
+		<p>all I wanted to say is that</p>
+		<p>im honestly a bit</p>
+		<p>...</p>
+		<p>lost, right now</p>
+		<p>sin direccion, sin rumbo, all that</p>
+		<p>im so... passionless about everything</p>
+		<p>sin pasion sobre mi vida, sobre mi universidad, sobre las personas que me rodean</p>
+		<p>me siento raro, desconectado de mi mismo, desconectado de, um, mi "alma", if you do so believe such a thing exists</p>
+		<p>(which I dont, clearly, ya que esa es la base del pepesitoismo que primero defini hace 2 años en esta pagina de hecho im quite proud about that)</p>
+		<p>es... todo tan... gris y neutral y aburrido, tan dispuesto a hacer de lado a cosas tan importantes</p>
+		<p>I probably should talk to a therapist about this</p>
+		<p>perdi mi respuesta a la vida</p>
+		`;
+		
+		var headerContentEs = `<h1>asd</h1>`;
+		var contentEs = `
+		<p>no tengo ganas de traducir</p>
+		>`;
+		
+		var headerContentEn = `<h1>asd</h1>`;
+		var contentEn = `
+		<p>i dont feel like translating</p>
+		`;
+	</script>
+	<script src="/js/langswitcher.js"></script>
+	<script src="/js/phiSwitcher.js"></script>
+	<script>//grabbed from the internet, this should stop multiple audios from playing?
+	document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+		}
+	}
+	}, true);
+	</script>
+	</body>
+</html>
