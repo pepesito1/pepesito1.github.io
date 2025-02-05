@@ -1,7 +1,7 @@
 var indexContent = `
 	<ul>
 		<li><a href="/">homepage</a></li>
-		<li><a href="/main/blogposts/OneMoreTime/blogpost_of_a_lifetime.html">un último post melancólico pepesitoista [26/01/2025, going gold at 01:08 AM]</a></li>
+		<li><a href="/main/blogposts/OneMoreTime/blogpost_of_a_lifetime.html">un último post melancólico pepesitoista [26/01/2025, going gold at 01:08 AM] [AMENDED TESTIMONY){04/02/2025, going dark at 1908}</a></li>
 		<li><a href="" id="phiLink">gaming</a><br></li>
 			<ul>
 				<li><div id="forRainbowText"></div></li>
