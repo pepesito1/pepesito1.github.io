@@ -13,10 +13,10 @@
 }
 
 :root {
-  --background-color: rgb(255, 255, 155);
+  --background-color: rgb(156, 217, 255);
   --header-background: rgb(255, 187, 77);
-  --inner-body: white;
-  --text-color: black;
+  --inner-body: rgb(32,28,28);
+  --text-color: white;
   --linkColor: rgb(41, 82, 79);
   --visitedLinkColor: rgb(50, 79, 77);
   --indexBg: rgb(235, 181, 131);
@@ -37,17 +37,6 @@ a:hover {
 
 a:active {
   color: blue;
-}
-
-#index {
-  margin: 2%;
-  padding: 1%;
-  padding-right: 3%;
-  background-color: var(--indexBg);
-  color: var(--indexLetterColor);
-  width: fit-content;
-  max-width: 90%;
-  overflow-wrap: break-word;
 }
 
 
@@ -133,7 +122,6 @@ p {
 	</style>
 	
 	<body>
-	<img src="/media/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
 	
 	<div class="entireBody">
 			
@@ -212,165 +200,6 @@ p {
 		
 		<a id="footer" href="/index">return to homepage</a>
 	</div>
-	
-	<script>
-	// Get our button switcher
-var themeSwitcher = document.getElementById("theme-switcher");
-
-// Wait for document to load
-document.addEventListener("DOMContentLoaded", function(event) {
-	//store in a variable whatever the data-theme is in the localStorage, if it doesnt exist, then it gets set to "light"
-	var modeVariable = localStorage.getItem("data-theme")??'light';
-
-	//sets the page attribute to be either dark or light
-	document.documentElement.setAttribute("data-theme", modeVariable);
-	
-		// When our button gets clicked
-		themeSwitcher.onclick = function() {
-			// Get the current selected theme, on the first run  it should be `light`
-			var currentTheme = document.documentElement.getAttribute("data-theme");
-					
-			// Switch between `dark` and `light`
-			var switchToTheme = currentTheme === "dark" ? "light" : "dark";
-					
-			//store in the localStorage whatever the data-theme's value is (the currentTheme)			
-			localStorage.setItem("data-theme", switchToTheme);
-			// Set our current theme to the new one
-			document.documentElement.setAttribute("data-theme", switchToTheme);
-		}
-});
-</script>
-	<script>
-	 //puffle keeper script
-	var storedGif = document.getElementById("boilerKeeper"); //we grab the gif and store it in storedboilerKeeper
-	var onGifClick = function() {
-	  if (document.getElementById("boilerKeeper").src.includes("/media/greenKeeper.gif")) {
-		document.getElementById("boilerKeeper").src = "/media/blueKeeper.gif";
-
-	  } else if (document.getElementById("boilerKeeper").src.includes("/media/blueKeeper.gif")) {
-		document.getElementById("boilerKeeper").src = "/media/yellowKeeper.gif";
-
-	  } else if (document.getElementById("boilerKeeper").src.includes("/media/yellowKeeper.gif")) {
-		document.getElementById("boilerKeeper").src = "/media/redKeeper.gif";
-
-	  } else if (document.getElementById("boilerKeeper").src.includes("/media/redKeeper.gif")) {
-		document.getElementById("boilerKeeper").src = "/media/greenKeeper.gif";
-	  }
-	}
-	storedGif.addEventListener("click", onGifClick);</script>
-	<script>
-	var indexContent = `
-	<ul>
-		<li><a href="/">homepage</a></li>
-		<li><a href="/main/un16dump10pepesitoista2024">pensamientos pepesitoistas de un hombre pepesitoista, escrito el 16 de octubre del 2024</a></li>
-		<li><a href="/main/corazon25de10melon2024">The Resolve of Pepesito One, escrito el 25 de octubre de dude does anyone even read my webpage? hoy es el aniversario de club penguin tmbn</a></li>
-		<li><a href="/main/the01answer11asd2024">"The Path of Pepesito One" escrito por un hombre muy aburrido en un viernes muy aburrido el 01 del 11 del 2024</a></li>
-		<li><a href="/main/my13breaking11point2024">a alguien de aqui le gusta Luis Fonsi? 13112024</a></li>
-		<li><a href="" id="phiLink">gaming</a><br></li>
-			<ul>
-				<li><div id="forRainbowText"></div></li>
-				<li><a href="https://docs.google.com/spreadsheets/d/1NwINTIIBSaf_EEJwjrnr-V3ozfP2f1LvqZskqc_F6jQ/edit?usp=sharing">Pepesito1's Official (and kinda incomplete) Peak Media List</a><br></li>
-			</ul>
-		<li><a href="/main/music">music</a><br></li>
-		<ol>
-			<li><a href="/main/music2">music 2, 4-5 years later or such</a></li>
-		</ol>
-		<li><a href="/main/images">images</a><br></li>
-		<li><a href="/main/qualia">qualia</a><br></li>
-	</ul>`;
-
-document.getElementById("index").innerHTML = indexContent;
-
-//ALL OF THE FOLLOWING MESS IS FOR THE RAINBOW COLORS. TOOK ME 2 HOURS TO CODE		
-var colorsArray = [ //the colors have to be strings
-    'ff0000', //red
-    'ff8000', //orange/yellow
-    '00ff00', //green
-    '63c6f7', //blue
-    'ff00ff', //purple
-];
-var gay ='A Quick Little Quirky Note About My Gaming List'; //set string, in this case for the text thatll have the href thing
-var lengthForText = gay.length; //grab the length, for the for loop
-var e = 0; //variable to loop through the array
-
-for (var i = 0; i <= lengthForText; i++){
-    var substr = gay.substr(i,1); //split the text, letter by letter
-    var result = substr.fontcolor(colorsArray[e]); //change the colors of the splitted letters
-    document.getElementById("forRainbowText").innerHTML += "<a href='/main/gamingAp'>" + result + "</a>"; //add the letters one by one
-    if (e === colorsArray.length - 1){ //this means that if the loop for the colors reached its end, then itll start again
-        e = 0;
-    } else {
-        e++;
-    }
- };</script>
-	<script>
-	var themeSwitcher = document.getElementById("theme-switcher"); //this is for the phiswitcher function. this has no reason to be on this .js file specifically.
-
-phiHrefSwitch = function() {
-var modeVariable = localStorage.getItem("data-theme")??'light'; //we fetch it again, for some reason. i should use let and the other thingy instead of var
-var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg';
-	if (modeVariable == "light" &&  storedLocalContent == "contentEn"){
-		document.getElementById("phiLink").href = "/main/phi/phi_en_light";
-
-	} else if (modeVariable == "light" &&  storedLocalContent == "contentEs"){
-		document.getElementById("phiLink").href = "/main/phi/phi_es_light";
-
-	} else if (modeVariable == "light" &&  storedLocalContent == "contentOg"){
-		document.getElementById("phiLink").href = "/main/phi/phi_en_light";
-
-	} else if(modeVariable == "light" &&  storedLocalContent == "contentSpy"){
-		document.getElementById("phiLink").href = "/main/phi/phi_en_light";
-
-	} else if (modeVariable == "dark" &&  storedLocalContent == "contentEs"){
-		document.getElementById("phiLink").href = "/main/phi/phi_es_dark";
-
-	} else if(modeVariable == "dark" &&  storedLocalContent == "contentOg"){
-		document.getElementById("phiLink").href = "/main/phi/phi_en_dark";
-
-	} else if(modeVariable == "dark" &&  storedLocalContent == "contentSpy"){
-		document.getElementById("phiLink").href = "/main/phi/phi_en_dark";
-
-	} else if(modeVariable == "dark" &&  storedLocalContent == "contentEn"){
-	document.getElementById("phiLink").href = "/main/phi/phi_en_dark";
-	}
-};
-
-	//theme switcher doesnt work properly. if the theme is light then it changes the theme to dark due to the way
-	//the functions are ran, this is my fix:
-phiInvertedHrefSwitch = function() {
-	var modeVariable = localStorage.getItem("data-theme")??'light'; //we fetch it again, for some reason. i should use let and the other thingy instead of var
-	var storedLocalContent = localStorage.getItem("localContentLang")??'contentOg';
-	if (modeVariable == "dark" &&  storedLocalContent == "contentEn"){
-		document.getElementById("phiLink").href = "/main/phi/phi_en_light";
-
-	} else if (modeVariable == "dark" &&  storedLocalContent == "contentEs"){
-		document.getElementById("phiLink").href = "/main/phi/phi_es_light";
-
-	} else if (modeVariable == "dark" &&  storedLocalContent == "contentOg"){
-		document.getElementById("phiLink").href = "/main/phi/phi_en_light";
-
-	} else if(modeVariable == "dark" &&  storedLocalContent == "contentSpy"){
-		document.getElementById("phiLink").href = "/main/phi/phi_en_light";
-
-	} else if (modeVariable == "light" &&  storedLocalContent == "contentEs"){
-		document.getElementById("phiLink").href = "/main/phi/phi_es_dark";
-
-	} else if(modeVariable == "light" &&  storedLocalContent == "contentOg"){
-		document.getElementById("phiLink").href = "/main/phi/phi_en_dark";
-
-	} else if(modeVariable == "light" &&  storedLocalContent == "contentSpy"){
-		document.getElementById("phiLink").href = "/main/phi/phi_en_dark";
-
-	} else if(modeVariable == "light" &&  storedLocalContent == "contentEn"){
-	document.getElementById("phiLink").href = "/main/phi/phi_en_dark";
-	}
-};
-	//holy shit this code is bad
-var langSwitcher = document.getElementById("languageSwitcher"); //fetches the button, stores it on langSwitcher
-langSwitcher.addEventListener("click", phiHrefSwitch); //the link has to be inverted so we invert it. i dont know why.
-themeSwitcher.addEventListener("click", phiInvertedHrefSwitch); //the link has to be inverted so we invert it. i dont know why.
-phiHrefSwitch();
-</script>
 	<script>//grabbed from the internet, this should stop multiple audios from playing?
 	document.addEventListener('play', function(e){
     var audios = document.getElementsByTagName('audio');
