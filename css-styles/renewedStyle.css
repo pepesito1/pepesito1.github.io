@@ -1,0 +1,128 @@
+/* background color changes the entire background, page-wide
+inner body only changes the entire text content background */
+
+@font-face {
+  font-family: secretFont;
+  src: url(/fonts/secretfont.ttf);
+}
+
+:root {
+  --background-color: rgb(47, 79, 79);
+  --header-background: rgb(95, 96, 133);
+  --inner-body: white;
+  --text-color: black;
+  --linkColor: rgb(41, 82, 79);
+  --visitedLinkColor: rgb(50, 79, 77);
+  --indexBg: rgb(235, 181, 131);
+  --indexLetterColor: black;
+}
+
+[data-theme="dark"] {
+  --background-color: rgb(47, 79, 79);
+  --header-background: rgb(95, 96, 133);
+  --inner-body: rgb(64, 64, 64);
+  --text-color: white;
+  --linkColor: #C8FFF4;
+  --visitedLinkColor: rgb(255, 255, 255);
+  --indexBg: rgb(138, 70, 29);
+  --indexLetterColor: white;
+}
+
+[data-theme="secret"] {
+  --background-color: black;
+  --header-background: gray;
+  --inner-body: rgb(32, 32, 32);
+  --text-color: white;
+  --linkColor: #C8FFF4;
+  --visitedLinkColor: rgb(255, 255, 255);
+  --indexBg: rgb(158, 90, 49);
+  --indexLetterColor: white;
+}
+a:link {
+  color: var(--linkColor);
+}
+
+a:visited {
+  color: var(--visitedLinkColor);
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a:active {
+  color: blue;
+}
+
+#index {
+  margin: 2%;
+  padding: 1%;
+  padding-right: 3%;
+  background-color: var(--indexBg);
+  color: var(--indexLetterColor);
+  width: fit-content;
+  max-width: 90%;
+  overflow-wrap: break-word;
+}
+
+
+#header {
+  margin-bottom: 2%;
+  padding: 2%;
+  background-color: var(--header-background);
+  font-size: 0.75em;
+}
+
+.onlyHeader {
+  margin: 1%;
+}
+
+#footer {
+  margin: 1%;
+  padding: 2%;
+}
+
+body {
+  background-color: var(--background-color);
+  margin: 2%;
+  padding: 2%;
+  overflow-wrap: break-word;
+}
+
+#mainBodyContent {
+  margin: 1%;
+}
+
+.entireBody {
+  margin: 1%;
+  padding: 2%;
+  background-color: var(--inner-body);
+  color: var(--text-color);
+}
+
+.solid {
+  background-color: rgb(146, 127, 191);
+  margin: 1.5%;
+}
+
+#languageLabel {
+  margin-top: 1.5%;
+  margin-bottom: 0.8%;
+}
+
+#boilerKeeper {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  width: 50px;
+}
+
+p {
+	line-height: 1.6;
+	text-indent: 30px
+}
+#forRainbowText{
+	padding: 3px;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; /**dunno what this does but it makes it look beautiful. outline.**/
+	font-weight: bold;
+}
