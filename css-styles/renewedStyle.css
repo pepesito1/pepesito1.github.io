@@ -54,6 +54,10 @@ a:active {
   color: blue;
 }
 
+tr {
+ color: var(--text-color);
+}
+
 #index {
   margin: 2%;
   padding: 1%;
