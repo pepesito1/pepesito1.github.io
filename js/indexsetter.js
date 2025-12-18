@@ -6,7 +6,6 @@ var indexContent = `
 		<ol>
 			<li><a href="/main/music2">music 2, 4-5 years later or such</a></li>
 		</ol>
-		<li><a href="/renewal/ramblings">the ramblings of a kid turned teen turned young man about videogames</a><br></li>
 		<li><a href="/main/images">images</a><br></li>
 		<li><a href="/main/qualia">qualia</a><br></li>
 	</ul>`;
