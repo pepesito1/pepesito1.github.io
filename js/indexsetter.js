@@ -2,6 +2,9 @@ var indexContent = `
 	<ul>
 		<li><a href="/">homepage</a></li>
 		<li><div id="forRainbowText"></div></li>
+		<ol>
+			<li><a href="/renewal/notes">compilation notes</a><li>
+		</ol>
 		<li><a href="/main/music">music</a><br></li>
 		<ol>
 			<li><a href="/main/music2">music 2, 4-5 years later or such</a></li>
