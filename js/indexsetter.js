@@ -3,7 +3,7 @@ var indexContent = `
 		<li><a href="/">homepage</a></li>
 		<li><div id="forRainbowText"></div></li>
 		<ol>
-			<li><a href="/renewal/notes">compilation notes</a></li>
+			<li><a href="/renewal/notes">compilation notes></a></li>
 		</ol>
 		<li><a href="/main/music">music</a><br></li>
 		<ol>
