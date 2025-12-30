@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta charset="UTF-8">
+	<title>kinda fun content?</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link href="/css-styles/style.css" rel="stylesheet">
+	
+	<style>
+	p {
+	text-indent: 0px; /*nullifies the text indent in style.css . i realize i should be using <p> and </p> for every line but oh well*/
+	}
+	img {
+	max-width: 70%;
+	}
+	</style>
+	
+	<body>
+	<img src="/media/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
+	
+	<div class="entireBody">
+		<div class="onlyHeader">
+			<div id="header"></div>
+			
+			<button id="theme-switcher">night night</button>
+			<br>
+				
+			<div id="languageLabel"><label>language/idioma:
+				<select id="lang">
+					<option></option>
+					<option value="original">original</option>
+					<option value="es">spanish</option>
+					<option value="en">english</option>
+					<option value="secret">club penguin PSA/EPF code</option>
+				</select>
+			</label></div>
+				
+			<button id="languageSwitcher">Switch language!/cambiar idioma :)</button>
+		</div>
+			
+		<hr class="solid">
+		
+		<div id="index"></div>
+		
+		<p>BEFORE STARTING i want to apologize for the wildly different sizes these images have lol. i set them so their width is 100% of the main body container. on phone it should look good-ish? on computer their sizes are wild. i will leave it like this because i will absolutely not go through the pain of downsizing them individually.</p>
+		<br>
+		<p>ANTES DE EMPEZAR quiero pedir perdon por los completamente distintos tamaños que estas imagenes tienen lol. le hice para que su ancho fuera el 100% del contenedor del cuerpo principal. en un celular se dberia ver medio bien?pero en computadora se ven feas. las dejare asi porque no voy a pasar por el horror de cambiarle el tamaño a cada una individualmente.</p>
+		<div id="mainBodyContent"></div>
+	
+		<hr class="solid">
+		
+		<a id="footer" href="/index">return to homepage</a>
+	</div>
+	
+	<script src="/js/darkbutton.js"></script>
+	<script src="/js/pufflescript.js"></script>
+	<script src="/js/indexsetter.js"></script>
+	<script>
+		var headerContentOg	= `
+		<h1>images</h1>
+		`;
+		var contentOg = `
+		<p>this is not a complete collection of every single image i have ever loved, or something like that. its just random. wahtever i had stored in my hard drive or my google drive. yet here it is:</p>
+		<br>
+		<img src="/media/further/dibujo-kermes-09-1.webp" alt="club penguin game screenshot from 2009, i am in there" title="i dont know what the puffles name was. im sorry.">
+		<p>oldest picture of me in the internet. foto tomada el 11 de septiembre del 2009. soy YO en 2009 en club penguin.<a href="https://staraptor98.wordpress.com/2009/09/11/club-penguin-kermes-2009/"> este es el link del blog</a></p>
+		<br>
+		<img src="/media/further/susnet.png" alt="penguin looking at the horizon" title="svg art is unrivaled">
+		<p>arte svg de club penguin. aint it just nice?</p>
+		<br>
+		<img src="/media/further/itsthemonkeyaug2017.jpg" alt="screenshot of toontown rewritten game. a monkey character is approaching. my character says -its the monkey-" title="meow, meow meow meow meow">
+		<p>screenshot de toontown rewritten con tedthecaver, o yourpalmouse. shes a neat-ish friend of mine. shes great.</p>
+		<br>
+		<img src="/media/further/unknown-20.jpg" alt="screenshot of toontown rewritten game. it is my character standing next to another person" title="squeeeaak">
+		<p>mismo pero como en agosto de 2020. con mi homie 127. hes a great dude. again.</p>
+		<br>
+		<img src="/media/further/rainbow.png" alt="screenshot of club penguin island" title="colors :)">
+		<p>screenshot de cuando jugue club penguin island a inicios de 2021. lo jugue cuando estaba vivo como por 5 minutos, recuerdo que habia una colab con la peli de cars 3 lol. well, its full of colors, and its pretty, and i love it.</p>
+		<br>
+		<img src="/media/further/keep.png" alt="piccture of my homie keepit in club penguin" title="god damnit where have you gone">
+		<p>MMMMM tome esta en club penguin rewritten con el, creo que del 11 de agosto de 2020. hizo un impacto masivo en mi vida, de las personas mas importantes y significantes en mi vida y por mucho de forma directa.</p>
+		<p>i... really hope i matter the same way for him too</p>
+		<br>
+		<h2>now lets add some drawings :)</h2>
+		<img src="/media/further/drawings/pepebirthday1.jpg" alt="drawing of a cartoon mouse, with a lot of in-jokes in it" title="yourplamou">
+		<p>drawn by ted on my birthday i think for august 2018. cant believe it was 4 years ago as of today (03/05/2022). i... can kind of recall most jokes but not all of them :(</p>
+		<br>
+		<img src="/media/further/drawings/RsgP6Ky.png" alt="a drawing of 2 mice laying together" title="this was NOT the skin color of my rat. they got it wrong">
+		<p>commissioned by ted for dirt cheap with in game money. it is gorgeous, that red ice cube was of my favorite items along with the fish earring. beautiful.</p>
+		<br>
+		<img src="/media/further/drawings/smiler.png" alt="drawing of daredevil with puffles on him" title="the man without fear">
+		<p>drawn by 127 on august 2020. 2 years ago. its matt murdock (i love daredevil and spiderman) with puffles on him, he was reading i think michael bendis' run during this time cuz i kept recommending it to him. i adore it. the linework is a bit wonky tbh but i adore it with all my heart. the puffles are so pretty.</p>
+		<br>
+		<img src="/media/further/drawings/76_sin_titulo_20200719143502.png" alt="simple drawing of a puffle" title="i fear not, the jaws of death">
+		<p>drawn by some sorta... person. i ah, really shouldnt be putting this drawing here. but i preserved it. the story behind it is just embarrasing. alas, i am a free person.</p>
+		<br>
+		<br>
+		<br>
+		<img src="/media/further/xenoblade-16-1.jpg" alt="pic of elma from xenoblade chronicles x" title="a fragile illusion">
+		<p>today, we use our power to fell a god, and then seize our destiny.</p>
+		<br>
+		<p>nuevas adiciones del 08/06/2024</p>
+		<br>
+		<br>
+		<img src="/media/further/19.jpg" title="wonkawoe did this">
+		<p>what even?</p>
+		<br>
+		<img src="/media/further/999.jpg" title="june">
+		<p>999 es INCREIBLE, gracias keepit</p>
+		<img src="/media/further/1271.jpg" title="logic so hot">
+		<p>como iba a saber yo que en varios años este mismo juego se convertiria en algo TAN importante para mi?</p>
+		<br>
+		<img src="/media/further/1272.jpg" title="this detective is NOT single anymore">
+		<p>edgeworth lo mejor de mi vida</p>
+		<br>
+		<img src="/media/further/aura1.jpg" title="bald">
+		<br>
+		<img src="/media/further/aura2.jpg" title="bald">
+		<br>
+		<img src="/media/further/aura3.jpg" title="bald">
+		<p>no puedo, con palabras, estresar lo suficiente lo importante que aurateur fue durante 3 años de mi vida or so, terriblemente.</p>
+		<br>
+		<img src="/media/further/bb.jpg" title="bird">
+		<p>a bird, taken by me, on me, by me, all me.</p>
+		<br>
+		<img src="/media/further/cat.jpg" title="more aurateur">
+		<p>so much fucking fooling around, i remember feeling like crap and just telling this dude i loved him helped me, in a sense, in a way, de una forma pepesitoista</p>
+		<br>
+		<img src="/media/further/cp1.jpg" title="black">
+		<br>
+		<img src="/media/further/cp2.jpg" title="yellow">
+		<br>
+		<p>i got the third one of these tattooed on me lmao</p>
+		<br>
+		<img src="/media/further/dog.jpg" title="smiler">
+		<p>smile any smilers? smile any smilers?</p>
+		<br>
+		<img src="/media/further/edge.jpg" title="127">
+		<p>una screenshot pepesitoista, keepitista</p>
+		<br>
+		<img src="/media/further/gummy.jpg" title="this clan was the SHIT dude">
+		<p>le hackearon la cuenta al lider de este clan que era increiblemente buenisimo y se perdio todo lol</p>
+		<br>
+		<img src="/media/further/math.jpg" title="Dedicado A Max">
+		<p>le debo mi vida, y tantisimo conocimiento de maths n shit, a keepit, le debo todo, todo, todo.</p>
+		<br>
+		<img src="/media/further/mc.jpg" title="alminho">
+		<p>una screenshot con alm, cuando primero jugue minecraft en mi vida (even though i had THOUSANDS of hours watching it) junto a juancalcetin. verdaderamente un social link rank up event, fue, con todo sentido de la palabra, increible</p>
+		<br>
+		<img src="/media/further/mh1.jpg" title="Waiting For Someone To Come">
+		<br>
+		<img src="/media/further/mh2.jpg" title="Drunken Thoughts At Midgnight">
+		<br>
+		<img src="/media/further/mh3.jpg" title="A Tipsy Drunkard">
+		<br>
+		<img src="/media/further/mh4.jpg" title="Let's Drink One">
+		<br>
+		<p>um, this was just... completely out of this world, i dont think, i mean, i TRULY appreciated it when it happened, but i appreciate it so much more now. te amo, alm, y a ti, juan, dedicado a ustedes, a mis mejores amigos, te amo alm con toda mi alma</p>
+		<br>
+		<img src="/media/further/mh5.jpg" title="una screenshot pepesitoista">
+		<p>verdaderamente menimemoista</p>
+		<br>
+		<img src="/media/further/moe.jpg" title="moe moe kyun <3">
+		<p>ahem, llegue a ver esta pfp en los foros de atelier801, and i just inmediately fell SO MUCH in love with it. its not quite literally me, pero es pepesitoista, right?</p>
+		<br>
+		<img src="/media/further/morrowind.jpg" title="Long Live The Warrior Poet">
+		<p>morrowind, oblivion y skyrim son... increibles, ah, no me arrepiento de NADA en mi vida</p>
+		<br>
+		<img src="/media/further/rag.jpg" title="funky korean music">
+		<p>una screenshot juancalcetinista</p>
+		<br>
+		<img src="/media/further/sad.jpg" title="una galeria de">
+		<p>una galeria de, de mi mismo, de yo, de narcisismo, de mis gustos, de yo, de yo, de yo</p>
+		<br>
+		<img src="/media/further/sky.jpg" title="jeremy soule has ALLEGATIONS?!?!?!">
+		<p>i still listen to its soundtrack and istg its like, god DAMN DUDE, unforgettable games</p>
+		<br>
+		<img src="/media/further/spidey.jpg" title="Una Depresion Pepesitoista">
+		<p>my sweet valentine</p>
+		<br>
+		<img src="/media/further/sw.jpg" title="una foto pepesioista">
+		<p>this shit lame as fuck but i was proud alright?</p>
+		<br>
+		<img src="/media/further/terraria.jpg" title="rainbows, dude">
+		<p>i fucking love rainbows did you know that</p>
+		<br>
+		<img src="/media/further/tfm.jpg" title="drawn by me, for me">
+		<p>por mi, ayudado por keepit</p>
+		<br>
+		<img src="/media/further/tt1.jpg" title="its da freaking bat">
+		<br>
+		<img src="/media/further/tt2.jpg" title="A QUE TE REFIERES con que no soy unico?">
+		<br>
+		<p>screenshots keepitistas, con el mejor amigo de mi vida</p>
+		<br>
+		<img src="/media/further/woe.jpg" title="The Real Slim Shady">
+		<p>woe, plague be upon ye</p>
+		<br>
+		<img src="/media/further/x2.jpg" title="this game is ass">
+		<p>la historia de xenoblade 2 es malisima pero al menos obtuve esta screenshot?</p>
+		<br>
+		<img src="/media/further/xx.jpg" title="una ilusion fragil, or some such">
+		<p>xenoblade x de lo mejor que me ha pasado</p>
+		<br>
+		<img src="/media/further/xx3.jpg" title="Elma Xenoblade">
+		<p>todo es pepesitoista, ves?</p>
+		<br>
+		`;
+
+		var headerContentEn	= `
+		<h1>images</h1>
+		`;
+		var contentEn = `
+		<p>this is not a complete collection of every single image i have ever loved, or something like that. its just random. wahtever i had stored in my hard drive or my google drive. yet here it is:</p>
+		<br>
+		<img src="/media/further/dibujo-kermes-09-1.webp" alt="club penguin game screenshot from 2009, i am in there" title="i dont know what the puffles name was. im sorry.">
+		<p>oldest picture of me in the internet. pic taken the 11th of september, 2009. it is ME in 2009 in club penguin.<a href="https://staraptor98.wordpress.com/2009/09/11/club-penguin-kermes-2009/"> this is the blogs link</a></p>
+		<br>
+		<img src="/media/further/susnet.png" alt="penguin looking at the horizon" title="svg art is unrivaled">
+		<p>club penguin svg art. aint it just nice?</p>
+		<br>
+		<img src="/media/further/itsthemonkeyaug2017.jpg" alt="screenshot of toontown rewritten game. a monkey character is approaching. my character says -its the monkey-" title="meow, meow meow meow meow">
+		<p>screenshot from toontown rewritten with tedthecaver, or yourpalmouse. shes a neat-ish friend of mine. shes great.</p>
+		<br>
+		<img src="/media/further/unknown-20.jpg" alt="screenshot of toontown rewritten game. it is my character standing next to another person" title="squeeeaak">
+		<p>same thing but in august of 20200. with ma homie 127. hes a great dude. again.</p>
+		<br>
+		<img src="/media/further/rainbow.png" alt="screenshot of club penguin island" title="colors :)">
+		<p>screenshot of when i played club penguin island at the beginning of 2021. i played it when it was still up for like 5 minutes, i remember there was some collab going on with the movie of cars 3 lol. well, its full of colors, and its pretty, and i love it.</p>
+		<br>
+		<img src="/media/further/keep.png" alt="piccture of my homie keepit in club penguin" title="god damnit where have you gone">
+		<p>i took this picture with him on club penguin rewritten, i believe in the 11th of august, 2020. he had a massive influence on my life, easily of the most important [and influential] people in my life and by a mile, directly, if u mind.</p>
+		<p>i... really hope i matter the same way for him too</p>
+		<br>
+		<h2>now lets add some drawings :)</h2>
+		<img src="/media/further/drawings/pepebirthday1.jpg" alt="drawing of a cartoon mouse, with a lot of in-jokes in it" title="yourplamou">
+		<p>drawn by ted on my birthday i think for august 2018. cant believe it was 4 years ago as of today (03/05/2022). i... can kind of recall most jokes but not all of them :(</p>
+		<br>
+		<img src="/media/further/drawings/RsgP6Ky.png" alt="a drawing of 2 mice laying together" title="this was NOT the skin color of my rat. they got it wrong">
+		<p>commissioned by ted for dirt cheap with in game money. it is gorgeous, that red ice cube was of my favorite items along with the fish earring. beautiful.</p>
+		<br>
+		<img src="/media/further/drawings/smiler.png" alt="drawing of daredevil with puffles on him" title="the man without fear">
+		<p>drawn by 127 on august 2020. 2 years ago. its matt murdock (i love daredevil and spiderman) with puffles on him, he was reading i think michael bendis' run during this time cuz i kept recommending it to him. i adore it. the linework is a bit wonky tbh but i adore it with all my heart. the puffles are so pretty.</p>
+		<br>
+		<img src="/media/further/drawings/76_sin_titulo_20200719143502.png" alt="simple drawing of a puffle" title="i fear not, the jaws of death">
+		<p>drawn by some sorta... person. i ah, really shouldnt be putting this drawing here. but i preserved it. the story behind it is just embarrasing. alas, i am a free person.</p>
+		<br>
+		<br>
+		<br>
+		<img src="/media/further/xenoblade-16-1.jpg" alt="pic of elma from xenoblade chronicles x" title="a fragile illusion">
+		<p>today, we use our power to fell a god, and then seize our destiny.</p>
+		<br>
+		<p>new additions circa 08/06/2024</p>
+		<br>
+		<br>
+		<img src="/media/further/19.jpg" title="wonkawoe did this">
+		<p>what even?</p>
+		<br>
+		<img src="/media/further/999.jpg" title="june">
+		<p>999 is EXACTLY the sort of novel i myself would love to write, ily keepit</p>
+		<img src="/media/further/1271.jpg" title="logic so hot">
+		<p>was i even meant to know that within 2 or 3 years of this screenshot, this very same game would become such a pinnacle of my life?</p>
+		<br>
+		<img src="/media/further/1272.jpg" title="this detective is NOT single anymore">
+		<p>I'm literally edgeworth dude</p>
+		<br>
+		<img src="/media/further/aura1.jpg" title="bald">
+		<br>
+		<img src="/media/further/aura2.jpg" title="bald">
+		<br>
+		<img src="/media/further/aura3.jpg" title="bald">
+		<p>Aurateur was my everything dude</p>
+		<br>
+		<img src="/media/further/bb.jpg" title="bird">
+		<p>a bird, taken by me, on me, by me, all me.</p>
+		<br>
+		<img src="/media/further/cat.jpg" title="more aurateur">
+		<p>so much fucking fooling around, i remember feeling like crap and just telling this dude i loved him helped me, in a sense, in a way, de una forma pepesitoista</p>
+		<br>
+		<img src="/media/further/cp1.jpg" title="black">
+		<br>
+		<img src="/media/further/cp2.jpg" title="yellow">
+		<br>
+		<p>i got the third one of these tattooed on me lmao</p>
+		<br>
+		<img src="/media/further/dog.jpg" title="smiler">
+		<p>smile any smilers? smile any smilers?</p>
+		<br>
+		<img src="/media/further/edge.jpg" title="127">
+		<p>una screenshot pepesitoista, keepitista</p>
+		<br>
+		<img src="/media/further/gummy.jpg" title="this clan was the SHIT dude">
+		<p>le hackearon la cuenta al lider de este clan que era increiblemente buenisimo y se perdio todo lol</p>
+		<br>
+		<img src="/media/further/math.jpg" title="Dedicado A Max">
+		<p>le debo mi vida, y tantisimo conocimiento de maths n shit, a keepit, le debo todo, todo, todo.</p>
+		<br>
+		<img src="/media/further/mc.jpg" title="alminho">
+		<p>una screenshot con alm, cuando primero jugue minecraft en mi vida (even though i had THOUSANDS of hours watching it) junto a juancalcetin. verdaderamente un social link rank up event, fue, con todo sentido de la palabra, increible</p>
+		<br>
+		<img src="/media/further/mh1.png" title="Waiting For Someone To Come">
+		<br>
+		<img src="/media/further/mh2.png" title="Drunken Thoughts At Midgnight">
+		<br>
+		<img src="/media/further/mh3.png" title="A Tipsy Drunkard">
+		<br>
+		<img src="/media/further/mh4.png" title="Let's Drink One">
+		<br>
+		<p>um, this was just... completely out of this world, i dont think, i mean, i TRULY appreciated it when it happened, but i appreciate it so much more now. te amo, alm, y a ti, juan, dedicado a ustedes, a mis mejores amigos, te amo alm con toda mi alma</p>
+		<br>
+		<img src="/media/further/mh5.jpg" title="una screenshot pepesitoista">
+		<p>verdaderamente menimemoista</p>
+		<br>
+		<img src="/media/further/moe.jpg" title="moe moe kyun <3">
+		<p>ahem, llegue a ver esta pfp en los foros de atelier801, and i just inmediately fell SO MUCH in love with it. its not quite literally me, pero es pepesitoista, right?</p>
+		<br>
+		<img src="/media/further/morrowind.jpg" title="Long Live The Warrior Poet">
+		<p>morrowind, oblivion y skyrim son... increibles, ah, no me arrepiento de NADA en mi vida</p>
+		<br>
+		<img src="/media/further/rag.jpg" title="funky korean music">
+		<p>una screenshot juancalcetinista</p>
+		<br>
+		<img src="/media/further/sad.jpg" title="una galeria de">
+		<p>una galeria de, de mi mismo, de yo, de narcisismo, de mis gustos, de yo, de yo, de yo</p>
+		<br>
+		<img src="/media/further/sky.jpg" title="jeremy soule has ALLEGATIONS?!?!?!">
+		<p>i still listen to its soundtrack and istg its like, god DAMN DUDE, unforgettable games</p>
+		<br>
+		<img src="/media/further/spidey.jpg" title="Una Depresion Pepesitoista">
+		<p>my sweet valentine</p>
+		<br>
+		<img src="/media/further/sw.jpg" title="una foto pepesioista">
+		<p>this shit lame as fuck but i was proud alright?</p>
+		<br>
+		<img src="/media/further/terraria.jpg" title="rainbows, dude">
+		<p>i fucking love rainbows did you know that</p>
+		<br>
+		<img src="/media/further/tfm.jpg" title="drawn by me, for me">
+		<p>por mi, ayudado por keepit</p>
+		<br>
+		<img src="/media/further/tt1.jpg" title="its da freaking bat">
+		<br>
+		<img src="/media/further/tt2.jpg" title="A QUE TE REFIERES con que no soy unico?">
+		<br>
+		<p>screenshots keepitistas, con el mejor amigo de mi vida</p>
+		<br>
+		<img src="/media/further/woe.jpg" title="The Real Slim Shady">
+		<p>woe, plague be upon ye</p>
+		<br>
+		<img src="/media/further/x2.jpg" title="this game is ass">
+		<p>la historia de xenoblade 2 es malisima pero al menos obtuve esta screenshot?</p>
+		<br>
+		<img src="/media/further/xx.jpg" title="una ilusion fragil, or some such">
+		<p>xenoblade x de lo mejor que me ha pasado</p>
+		<br>
+		<img src="/media/further/xx3.jpg" title="Elma Xenoblade">
+		<p>todo es pepesitoista, ves?</p>
+		<br>
+		`;
+			
+		var headerContentEs	= `
+		<h1>imágenes</h1>
+		`;
+		var contentEs = `
+		<p>esta no es una coleccion completa de toodas las imagenes que jamas me hayan agradado, o algo. son imagenes random. cosas que tenia guardadas en mi disco duro o en google drive. aaaaaa aqui estan:</p>
+		<br>
+		<img src="/media/further/dibujo-kermes-09-1.webp" alt="foto de club penguin en 2009, yo estoy ahi" title="no recuerdo el nombre del puffle :(">
+		<p>la foto mas vieja mia en el internet. foto tomada el 11 de septiembre del 2009. soy YO en 2009 en club penguin.<a href="https://staraptor98.wordpress.com/2009/09/11/club-penguin-kermes-2009/"> este es el link del blog</a></p>
+		<br>
+		<img src="/media/further/susnet.png" alt="pinguino mirando hacia el horizonte" title="arte svg de flash, alguien? anyone?">
+		<p>arte svg de club penguin. bonis.</p>
+		<br>
+		<img src="/media/further/itsthemonkeyaug2017.jpg" alt="foto de toontown rewritten. hay un mono acercandose y mi personaje dice "its the monkey" title="meow, meow meow meow meow">
+		<p>foto de toontown rewritten con tedthecaver, o yourpalmouse. es una buena compi. simplemente buena.</p>
+		<br>
+		<img src="/media/further/unknown-20.jpg" alt="foto de toontown rewritten. es mi personaje parado junto a otra persona" title="squeeeaak">
+		<p>mismo pero como en agosto de 2020. con mi homie 127. es buen tipo. again.</p>
+		<br>
+		<img src="/media/further/rainbow.png" alt="foto de club penguin island" title="colores :)">
+		<p>foto de cuando jugue club penguin island a inicios de 2021. lo jugue cuando estaba vivo como por 5 minutos, recuerdo que habia como una colab con la peli de cars 3 lol. pues, esta lleno d colores, y esta bonito, y me encanta.</p>
+		<br>
+		<img src="/media/further/keep.png" alt="foto de mi hermano espiritual 127 en club penguin" title="god damnit where have you gone">
+		<p>MMMMM tome esta en club penguin rewritten con el, creo que del 11 de agosto de 2020. hizo un impacto masivo en mi vida, de las personas mas importantes y significantes en mi vida y por mucho de forma directa.</p>
+		<p>ojala el pueda decir lo mismo de mi :)</p>
+		<br>
+		<h2>dibujoss :)</h2>
+		<img src="/media/further/drawings/pepebirthday1.jpg" alt="dibujo de un raton, con un monton de chistes um -grupales-?" title="yourplamou">
+		<p>dibujado por ted en mi cumpleaños creo que en agosto de 2018. fue hace 4 años contando hot (03/05/2022). puedo maso recordar muchos de los chistes pero no todos :(</p>
+		<br>
+		<img src="/media/further/drawings/RsgP6Ky.png" alt="dibujo de 2 ratones juntos" title="le cambiaron el color de piel a mi raton :/">
+		<p>ted pago por esto con dinero del juego por baratisimo lol. esta muy bonito, ese item de cubo de hielo rojo y los aretes de pescadito me encantaban.</p>
+		<br>
+		<img src="/media/further/drawings/smiler.png" alt="dibujo de daredevil con puffles en el" title="the man without fear">
+		<p>dibujado por 127 en agosto 2020. hace 2 años. es matt murdock (me encanta daredevil y spiderman) con puffles en el, creo que el en ese entonces estaba leyendo los comics de michael bendis porque yo no dejaba de recomendarselos. lo adoro. las lineas no me hiper mega convencen pero lo adoro con todo mi corazon. los puffles son bonitos</p>
+		<br>
+		<img src="/media/further/drawings/76_sin_titulo_20200719143502.png" alt="simple drawing of a puffle" title="i fear not, the jaws of death">
+		<p>me rehuso  a describir esto en español lol. es solo un dibujo de una foto de perfil que yo use como desde 2012 creo que 2013 en el internet, en una red social. esta info no la escribi en el idioma original o en ingles asi que felicidades por leer esto en español :)</p>
+		<br>
+		<br>
+		<br>
+		<img src="/media/further/xenoblade-16-1.jpg" alt="pic of elma from xenoblade chronicles x" title="a fragile illusion">
+		<p>como traduciria esto? ahem:</p>
+		<p>el dia de hoy, utilizamos nuestro poder para detronar a una deidad, y usurpar nuestro propio destino.</p>
+		`;
+	</script>
+	<script src="/js/langswitcher.js"></script>
+	<script src="/js/phiSwitcher.js"></script>
+	</body>
+</html>

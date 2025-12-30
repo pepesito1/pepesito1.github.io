@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!-- this whole html is disgusting because im copying and pasting the entire music-containing block of code several times
+i know there are better ways to do it
+with appendChild perhaps?
+im just not interested in modifying the langswitcher.js so it works every time the language is switched
+sorry
+i think its actually not that bad cuz its not like im reloading the music slowly every time. its just a reference link. idk -->
+
+<!-- i should also set a max-width for the controls but ill do that some other day-->
+	<html lang="en">
+	<meta charset="UTF-8">
+	<title>Ship of Theseus or some such</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link href="/css-styles/style.css" rel="stylesheet">
+	
+	<style>
+	p {
+	text-indent: 0px /*nullifies the text indent in style.css . i realize i should be using <p> and </p> for every line but oh well*/
+	}
+	</style>
+	
+	<body>
+	<img src="/media/greenKeeper.gif" id="boilerKeeper" alt="bouncing puffle gif" title="Click me!">
+	
+	<div class="entireBody">
+		<div class="onlyHeader">
+			<div id="header"></div>
+			
+			<button id="theme-switcher">night night</button>
+			<br>
+				
+			<div id="languageLabel"><label>language/idioma:
+				<select id="lang">
+					<option></option>
+					<option value="original">original</option>
+					<option value="es">spanish</option>
+					<option value="en">english</option>
+					<option value="secret">club penguin PSA/EPF code</option>
+				</select>
+			</label></div>
+				
+			<button id="languageSwitcher">Switch language!/cambiar idioma :)</button>
+		</div>
+			
+		<hr class="solid">
+		
+		<div id="index"></div>
+		
+		<div id="mainBodyContent">
+		<img src="/media/rainbowsidewrapper.png" id="rainWrapper" alt="rainbow :)"> <!--rainbow image-->
+		</div>
+			
+		<hr class="solid">
+		
+		<a id="footer" href="/index">return to homepage</a>
+	</div>
+	
+	<script src="/js/darkbutton.js"></script>
+	<script src="/js/pufflescript.js"></script>
+	<script src="/js/indexsetter.js"></script>
+	<script>
+		var headerContentOg	= `
+		<h1>I do this for you, red legions, for I love you</h1>
+		`;
+		var contentOg = `
+		<p>ves, toda la musica en music1, la pagina que esta arriba en el index de music2</p>
+		<p>xenoblade x lo jugue a mediados de 2019 y todos los ace attorney los jugue en 2020, elder scrolls 2020 septiembre-noviembre, los 3 elder scrolls back to back</p>
+		<p>dont get me wrong, lo que escribi en su entonces aun lo siento, que es musica que podria escuchar por horas en loop</p>
+		<p>ahem, obviously...</p>
+		<p>los gustos cambian, y la musica de oblivia de xenoblade x estara por siempre marcada en mi mente</p>
+		<p>conoces musica nueva, y estoy eternamente agradecido con mi amiga artemisa, cambio demasiado el rumbo de mi vida, demasiado demasiado</p>
+		<p>esta página, <a href="pepesito1.github.io">pepesito1.github.io</a>, um, es</p>
+		<p>un sueño, cuando aprendi a escribir en javascript basico, fue increible, mi intelecto, la sutileza con la que escribi el codigo que divide un string de characters para despues reunirlos pero coloreados de arcoiris, el codigo con el que conservo el idioma elegido ENTRE paginas, el codigo de qualia, es fascinante, un sueño, un sueño</p>
+		<br>
+		<p>alas, no se si volvere a escribir cosas fascinantes como ellas de nuevo, esto escrito el 01/04/2024</p>
+		<p>pero esto, esto es una oda, una oda a mi mismo, una oda a mis 3 primeras spreadsheets jamas creadas antes de esta pagina en donde escribi toneladas de texto sobre mis pensamientos y emociones</p>
+		<p>una oda hacia artemisa, hacia nadie, hacia nadie que leera esto jamas</p>
+		<p>as I very wisefully said 4 years ago, (y solo en mp3 esta vez y no en flac):</p>
+		<p>let's list some bangers</p>
+		<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				granado espada, "rosa rosado", dedicado a todas las experiencias fueras de este mundo contenidas dentro de libros, peliculas, series y videojuegos que posiblemente jamas llegare a experimentar
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/rosarosado.mp3" type="audio/mp3">
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				persona 3 reload, its going down now. as a little bit of extra information, quiero confesar al mundo entero que logre, bastante recientemente, jalar a una 10/10, but i fumbled it. and persona will forever live in my mind alongside her
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%">  <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/p3r.mp3" type="audio/mp3">
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				outer wilds: echoes of the eye, the river
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/theriver.mp3" type="audio/mp3">
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				outer wilds: echoes of the eye, echoes of the eye
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/eote.mp3" type="audio/mp3">
+				</audio>
+			</figure>
+		`;
+
+		var headerContentEn	= `
+		<h1>I do this for you, red legions, for I love you</h1>
+		`;
+		var contentEn = `
+		<p>all of the music in the other music page, you know, the one above THIS one, above music2</p>
+		<p>i played xenoblade x mid 2019 and all of the ace attorneys starting 2020, and i played the 3 elder scroll games that matter around september-november in 2020 ofc</p>
+		<p>what i said, what i wrote, what i felt, i meant it, and i still mean it, as they truly are songs (music?) i could still listen to for hours on loop today</p>
+		<p>ahem, obviously...</p>
+		<p>tastes change, grab oblivia from xenoblade x for instance, that is just forever burned into my mind</p>
+		<p>you ah, get to listen to new music. as a side note, or main note for that matter, im eternally thankful to themis, a... beautiful, beautiful woman that intercepted my path and forever changed it</p>
+		<p>this webpage, <a href="pepesito1.github.io">pepesito1.github.io</a>, um, is</p>
+		<p>its, it is like a dream, its fascinating, and i am still today 3 years later fascinated at my intellect and how i managed to come up with the beautiful concise code that makes up the thing that splits text into different letters to later rejoin everything but colored with rainbow characters, and how i wrote from scratch the code that stores whatever language the user has selected on cache, and most of all perhaps the qualia webpage</p>
+		<br>
+		<p>and this, i say, on the 1st of april 2024, i do not know if i will ever write stuff like that again</p>
+		<p>this, this music2 subpage, is an ode, to myself, to the 3 spreadsheets i wrote before learning how to write basic html and javascript, to themis</p>
+		<p>an ode towards everyone, towards the void, towards space, towards no one that is reading this</p>
+		<p>as I very wisefully said 4 years ago, (and just in mp3s this time, no flacs):</p>
+		<p>let's list some bangers</p>
+		<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				granado espada, "rosa rosado", dedicated to all of the out of world experiences i shall not ever get to experience from books, tv shows, movies or videogames
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/rosarosado.mp3" type="audio/mp3">
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				persona 3 reload, its going down now. as a little bit of extra information, i wanna confess i once managed to pull a 10/10, but i fumbled it. and persona will forever live in my mind alongside her
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%">  <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/p3r.mp3" type="audio/mp3">
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				outer wilds: echoes of the eye, the river
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/theriver.mp3" type="audio/mp3">
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				outer wilds: echoes of the eye, echoes of the eye
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/eote.mp3" type="audio/mp3">
+				</audio>
+			</figure>
+		`;
+			
+		var headerContentEs	= `
+		<h1>hago esto para ustedes, legiones rojas, por yo las amo (...or some such)</h1>
+		`;
+		var contentEs = `
+		<p>ves, toda la musica en music1, la pagina que esta arriba en el indice, arriba de music2</p>
+		<p>xenoblade x y todos los ace attorney los jugue en 2019, elder scrolls 2020 septiembre-noviembre, los 3 elder scrolls seguiditos</p>
+		<p>no me arrepiento, lo que escribi en su entonces aun lo siento, que es musica que podria escuchar por horas De Forma Cíclica</p>
+		<p>ahem, y obvio...</p>
+		<p>los gustos cambian, y la musica de oblivia de xenoblade x estara por siempre marcada en mi mente</p>
+		<p>conoces musica nueva, y estoy eternamente agradecido con mi amiga artemisa, cambio demasiado el rumbo de mi vida, demasiado demasiado</p>
+		<p>esta página, <a href="pepesito1.github.io">pepesito1.github.io</a>, um, es</p>
+		<p>un sueño, cuando aprendi a escribir en javascript basico, fue increible, mi intelecto, la sutileza con la que escribi el codigo que divide un string de characters para despues reunirlos pero coloreados de arcoiris, el codigo con el que conservo el idioma elegido ENTRE paginas, el codigo de qualia, es fascinante, un sueño, un sueño</p>
+		<br>
+		<p>Por Ende, no se si volvere a escribir cosas fascinantes como ellas de nuevo, esto escrito el 01/04/2024</p>
+		<p>pero esto, esto es una oda, una oda a mi mismo, una oda a mis 3 primeras spreadsheets jamas creadas antes de esta pagina en donde escribi toneladas de texto sobre mis pensamientos y emociones</p>
+		<p>una oda hacia artemisa, hacia nadie, hacia nadie que leera esto jamas</p>
+		<p>como dijo cierto pepesitoX hace 3 años, (y solo en mp3 esta vez y no en flac):</p>
+		<p>let's list some bangers</p>
+		<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				granado espada, "rosa rosado", dedicado a todas las experiencias fueras de este mundo contenidas dentro de libros, peliculas, series y videojuegos que posiblemente jamas llegare a experimentar
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/rosarosado.mp3" type="audio/mp3">
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				persona 3 reload, its going down now. como un extra, quiero confesar al mundo entero que logre, bastante recientemente, jalar a una 10/10, y lo arruine lmfao. y... ah, persona estara por siempre relacionado a ella, lo que es... estúpido y gracioso.
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%">  <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/p3r.mp3" type="audio/mp3">
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				outer wilds: echoes of the eye, the river
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/theriver.mp3" type="audio/mp3">
+				</audio>
+			</figure>
+			<br>
+			<figure style="margin: 0%"> <!--margin matters for everything to be lined up-->
+				<figcaption>
+				outer wilds: echoes of the eye, echoes of the eye
+				</figcaption>
+				<audio controls style="width: 500px; max-width: 100%"> <!--width helps it for mobile devices //width 100% for mobile users. adapt to white div. amazing. -->
+					<source src="/media/mp3/eote.mp3" type="audio/mp3">
+				</audio>
+			</figure>
+		`;
+	</script>
+	<script src="/js/langswitcher.js"></script>
+	<script src="/js/phiSwitcher.js"></script>
+	<script>//grabbed from the internet, this should stop multiple audios from playing?
+	document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+		}
+	}
+	}, true);
+	</script>
+	</body>
+</html>
