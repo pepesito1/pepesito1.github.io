@@ -95,8 +95,7 @@
     
     <br>
     
-	&lt;
-tr&gt;<table id="gametable">
+	<tr><table id="gametable">
       <tbody>
         <tr>
           <th scope="col" onclick="sortTable(0)" width="26%">Game</th>
@@ -105,7 +104,7 @@ tr&gt;<table id="gametable">
           <th scope="col" width="26%">Personal comments</th>
 		  <th scope="col" width="8%">Date 1st played</th>
           <th scope="col" width="26%">Additional Info.</th>
-        </tr>
+    </tr>
 <tr><td>Resident Evil 6</td><td style="background-color:rgb(60,219,78);">Xbox (all gens)</td><td>☆☆☆☆☆</td><td>rating pending</td><td>xx/02/2026</td><td></td></tr><tr>
 <td>Pikmin 4</td><td style="background-color: rgb(255,69,84);">Switch</td><td>☆☆☆☆☆</td><td>rating pending</td><td>xx/02/2026</td><td></td></tr><tr>
 <td>Metroid Prime 4: Beyond</td><td style="background-color: rgb(255,69,84);">Switch</td><td>☆☆☆☆☆</td><td>rating pending</td><td>xx/02/2026</td><td></td></tr><tr>
@@ -770,7 +769,7 @@ tr&gt;<table id="gametable">
 	}
     </script>
     <script> 
-	function sortTable(n) {
+	function sortTable(n) { //i did not write this i simply grabbed it from the internet sorry. sorting algorithms are beyond me.
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   table = document.getElementById("gametable");
   switching = true;
