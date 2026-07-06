@@ -64,7 +64,7 @@
 				<option value="PS2">PlayStation 2</option>
 				<option value="PSP">PlayStation Portable</option>
 				<option value="PC">PC</option>
-				<option value="Others">Others</option>
+				<option value="Mobile">Mobile</option>
 			</select>
 	</label><br>
      
@@ -108,8 +108,8 @@
 <tr><td>Super Punch-Out!!</td><td style="background-color: rgb(137, 104, 184);">SNES</td><td>★★★☆☆</td><td></td><td>xx/06/2026</td><td>pc emu</td></tr>
 <tr><td>Dino Crisis</td><td style="background-color: rgb(60, 253, 201);">PS1</td><td>★★★★☆</td><td>finished it on 04/07/2026. masterful map design. found the puzzles and items way harder and easier to miss and i had to use a guide a lot when i didnt for res evil</td><td>xx/06/2026</td><td>pc emu</td></tr>
 <tr><td>Dino Crisis</td><td style="background-color: rgb(211, 211, 211)">PC</td><td>★★★★☆</td><td>changed the rating retroactively. after hating on this i went back to re1 and loved it</td><td>xx/02/2026</td><td></td></tr>
-<tr><td>Donkey Kong Jungle Beat</td><td style="background-color: rgb(155, 155, 155);">Wii</td><td>★★★☆☆</td><td>the motion controls are pointless but seeing where the dk country returns &amp; mario galaxy games evolved from is crazy</td><td>6/20/2026</td><td>wii u retrocompat</td></tr><tr>
-<td>Lost in Shadow</td><td style="background-color: rgb(155, 155, 155);">Wii</td><td>★★★☆☆</td><td>i mean its a cool gimmick</td><td>6/20/2026</td><td>wii u retrocompat</td></tr>
+<tr><td>Donkey Kong Jungle Beat</td><td style="background-color: rgb(155, 155, 155);">Wii</td><td>★★★☆☆</td><td>the motion controls are pointless but seeing where the dk country returns &amp; mario galaxy games evolved from is crazy</td><td>6/20/2026</td><td>wii u retrocompat</td></tr>
+<tr><td>Lost in Shadow</td><td style="background-color: rgb(155, 155, 155);">Wii</td><td>★★★☆☆</td><td>i mean its a cool gimmick</td><td>6/20/2026</td><td>wii u retrocompat</td></tr>
 <tr><td>Slay the Spire</td><td style="background-color: rgb(255, 69, 84);">Switch</td><td>★★★☆☆</td><td>its really decent but come on man its nowhere close to being that big of a deal</td><td>10/06/2026</td><td></td></tr>
 <tr><td>Mina the Hollower</td><td style="background-color: rgb(255, 69, 84);">Switch</td><td>★★★★☆</td><td>i really enjoyed it but it didnt feel particularly magical. shovel knight will forever be their greatest work.</td><td>08/06/2026</td><td></td></tr>
 <tr><td>Picross 3D</td><td style="background-color: rgb(255, 182, 193);">DS</td><td>★★★★☆</td><td>they dont make games like this no more</td><td>17/06/2026</td><td>wii u vc</td></tr>
@@ -341,7 +341,7 @@
 <tr><td>Brain Age: Train Your Brain in Minutes a Day!</td><td style="background-color: rgb(255, 182, 193);">DS</td><td>★★★★☆</td><td></td><td>~2020</td><td>emu</td></tr>
 <tr><td>Celeste</td><td style="background-color: rgb(211, 211, 211)">PC</td><td>★★★★☆</td><td></td><td>2021</td><td></td></tr>
 <tr><td>Cities: Skylines - Remastered</td><td style="background-color: rgb(60, 219, 78);">Xbox (all gens)</td><td>★★★★☆</td><td></td><td>20/07/2023</td><td></td></tr>
-<tr><td>Clair Obscur: Expedition 33</td><td style="background-color: rgb(60, 219, 78);">Xbox (all gens)</td><td>★★★☆☆</td><td>i mean its a decent game by all means but its a standard (j)rpg whose target audience is the overwhelming amount of live service unreal engine 5 players and thats where its popularity comes from/td&gt;</td><td>16/05/2025</td><td></td></tr>
+<tr><td>Clair Obscur: Expedition 33</td><td style="background-color: rgb(60, 219, 78);">Xbox (all gens)</td><td>★★★☆☆</td><td>i mean its a decent game by all means but its a standard (j)rpg whose target audience is the overwhelming amount of live service unreal engine 5 players and thats where its popularity comes from</td><td>16/05/2025</td><td></td></tr>
 <tr><td>Crazy Taxi</td><td style="background-color: rgb(166, 49, 205);">GameCube</td><td style="background-color: rgb(218, 165, 32);">★★★★★</td><td>just recently beat it a few months ago (mid 2025). finally 100%ed crazy taxi in 10/05/2026. about 23 years since i first played it.</td><td>&lt;~2012</td><td></td></tr>
 <tr><td>Crypt of the Necrodancer</td><td style="background-color: rgb(211, 211, 211)">PC</td><td>★★★★☆</td><td></td><td>2020</td><td></td></tr>
 <tr><td>Dead Space</td><td style="background-color: rgb(60, 219, 78);">Xbox (all gens)</td><td>★★★★☆</td><td></td><td>~2024</td><td></td></tr>
@@ -763,7 +763,7 @@
 		var PS2="rgb(60,253,201)";
 		var PSP="rgb(60,253,201)";
 		var PC="rgb(211, 211, 211)";
-		var OTHERS="rgb(166,49,205)";
+		var MOBILE="rgb(119,193,)";
 		
 		if (addedconsole.innerHTML == "NES") {
 		addedconsole.style.backgroundColor = NES;
@@ -797,8 +797,8 @@
 		addedconsole.style.backgroundColor = PSP;
 		} else if (addedconsole.innerHTML == "PC") {
 		addedconsole.style.backgroundColor = PC;
-		} else if (addedconsole.innerHTML == "Others") {
-		addedconsole.style.backgroundColor = OTHERS;
+		} else if (addedconsole.innerHTML == "Mobile") {
+		addedconsole.style.backgroundColor = MOBILE;
 		}
 		
 		addedpeakmedia = document.getElementById("peakmediayes");
