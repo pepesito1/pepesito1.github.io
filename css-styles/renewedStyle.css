@@ -44,7 +44,7 @@ inner body only changes the entire text content background */
 
 table, th, td {
 	  border: 1px solid;
-    border:--bordercolor;
+    border: var(--bordercolor);
 	  padding: 2px;
 	  max-width: 100%;
 }
