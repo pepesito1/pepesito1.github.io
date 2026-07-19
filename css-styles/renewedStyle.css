@@ -26,6 +26,7 @@ inner body only changes the entire text content background */
   --visitedLinkColor: rgb(255, 255, 255);
   --indexBg: rgb(138, 70, 29);
   --indexLetterColor: white;
+  --bordercolor: black
 }
 
 [data-theme="secret"] {
@@ -37,7 +38,15 @@ inner body only changes the entire text content background */
   --visitedLinkColor: rgb(255, 255, 255);
   --indexBg: rgb(158, 90, 49);
   --indexLetterColor: white;
+  --bordercolor: rgb(0, 255, 0);
 }
+
+table, th, td {
+	  border: 1px solid --bordercolor;
+	  padding: 2px;
+	  max-width: 100%;
+}
+
 a:link {
   color: var(--linkColor);
 }
@@ -125,6 +134,7 @@ p {
 	line-height: 1.6;
 	text-indent: 30px
 }
+
 #forRainbowText{
 	padding: 3px;
 	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; /**dunno what this does but it makes it look beautiful. outline.**/
