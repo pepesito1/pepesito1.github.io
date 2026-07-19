@@ -21,7 +21,7 @@ inner body only changes the entire text content background */
 [data-theme="dark"] {
   --background-color: rgb(47, 79, 79);
   --header-background: rgb(95, 96, 133);
-  --inner-body: rgb(64, 64, 64);
+  --inner-body: rgb(35, 34, 34);
   --text-color: white;
   --linkColor: #C8FFF4;
   --visitedLinkColor: rgb(255, 255, 255);
@@ -43,8 +43,7 @@ inner body only changes the entire text content background */
 }
 
 table, th, td {
-	  border: 1px solid;
-    border: var(--bordercolor);
+	  border: 1px solid var(--bordercolor);
 	  padding: 2px;
 	  max-width: 100%;
 }
