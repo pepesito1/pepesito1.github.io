@@ -44,8 +44,9 @@ inner body only changes the entire text content background */
 
 table, th, td {
 	  border: 1px solid var(--bordercolor);
-	  padding: 2px;
-	  max-width: 100%;
+	  padding: 5px;
+    max-width: 1100px;
+    margin: auto;
 }
 
 a:link {
