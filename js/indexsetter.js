@@ -10,6 +10,9 @@ var indexContent = `
 			<li><a href="/main/music2">music 2, 4-5 years later or such</a></li>
 		</ol>
 		<li><a href="/main/images">images</a><br></li>
+        <ol>
+			<li><a href="/renewal/images2">images 2, 5-6 years later or such</a></li>
+		</ol>
 		<li><a href="/main/qualia">qualia</a><br></li>
 	</ul>`;
 
